@@ -11,6 +11,33 @@
 		right: 0
 		z-index: 99
 
+	&-top
+		padding: 7px 0 0 0
+		border-bottom: 1px solid $grey-light
+		&__menu-sections
+				display: flex
+				justify-content: space-between
+				align-items: center
+				width: 114px
+				min-height: 50px
+				border-right: 1px solid $grey-light
+				
+		&-text
+			font-family: 'Lato'
+			font-weight: bold
+			color: $text-color
+			
+
+			&__sections
+				font-size: 14px
+				line-height: 20px
+				margin: 0 25px 0 0
+		&__menu-btn
+			margin: 0 16px 0 0
+				
+
+
+
 
 	&__top
 		display: flex
@@ -91,7 +118,7 @@
 
 
 
-.navbar__burger
+
 	display: none
 	// visibility: hidden
 	// opacity: 0
@@ -140,20 +167,22 @@
 
 
 .menu-btn
-	display: block
-	width: 16px
-	height: 11px
-	display: none
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	width: 18px
+	height: 14px
 	border: none
 	padding: 0
-	@media screen and ( max-width: 767px)
-		display: flex
-		flex-direction: column
-		justify-content: space-between
+	background-color: transparent
 	&__line
-		width: 16px
-		height: 1px
-		background-color: $text-color
+		width: 18px
+		height: 2px
+		background-color: $grey-light
+		&:nth-child(2)
+			width: 12px
+
+			
 		// @media screen and ( max-width: 767px)
 	&:hover
 		cursor: pointer

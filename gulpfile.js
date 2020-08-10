@@ -22,9 +22,9 @@ function servSass() {
 			.pipe(sass())
 			.pipe(group_media())
       //восстановить - убрать комменты
-      .pipe(autoprefixer({
-        cascade: false
-      }))
+      // .pipe(autoprefixer({
+      //   cascade: false
+      // }))
       .pipe(dest("./css"))
       .pipe(browserSync.stream());
 }
@@ -106,7 +106,7 @@ function minifyCss() {
 function html() {
 	src('**html')
 		.pipe(fileinclude())
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    // .pipe(htmlmin({ collapseWhitespace: true })) временно
     .pipe(dest('dist/'));
   // done();
 }
@@ -150,7 +150,7 @@ function buildJsDone(done) {
 function htmlDone(done) {
 	src('**html')
 		.pipe(fileinclude())
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    // .pipe(htmlmin({ collapseWhitespace: true })) временно
     .pipe(dest('dist/'));
   done();
 }
