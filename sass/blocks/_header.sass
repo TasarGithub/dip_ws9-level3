@@ -28,16 +28,15 @@
 		&-text
 			font-weight: bold
 			color: $text-color
-			
-
 			&__sections
 				font-size: 14px
 				line-height: 20px
-				margin: 0 25px 0 0
+				margin: 0 27px 0 0
 		&__menu-btn
 			margin: 0 16px 0 0
 		&__subscribe 
 			align-self: flex-end
+			margin:  0 31px -1px 0
 				
 
 
@@ -182,6 +181,7 @@
 	max-width: 195px
 	width: 100%
 	min-height: 44px
+	background-color: transparent
 	&__navbar-top 
 
 	&__img
@@ -197,58 +197,50 @@
 		font-weight: normal
 		font-size: 12px
 		line-height: 15px
-		c
+		text-align: left
 	&__text-line1
 		font-weight: bold
 
 
 
 
-.user
+.signin
 	display: flex
 	justify-content: space-between
 	align-items: center
-	max-width: 107px
+	max-width: 72px
+	width: 100%
 	text-decoration: none
 	color: $text-color
-	@media screen and ( max-width: 767px)
-		display: none
-
-	&__avatar
-		border-radius: 50%
-		height: 40px 
-		width: 40px
-		object-fit: cover
-		background: url('../img/user-avatar.jpg') no-repeat center/cover
-		color: $text-color
-		@media screen and ( max-width: 767px)
-			text-align: center
-			margin: 0 auto 10px
-	&__name
-		margin-left: 18px
-		// @media screen and ( max-width: 786px)
-		@media screen and ( max-width: 767px)
-			margin: 0 0 7px 0
-			display: inline-block
-			color: $light
+	// @media screen and ( max-width: 767px)
+	// 	display: none
+	&__text
+		font-size: 14px
+		line-height: 20px
+	&__img
+		width: 20px
+		height: 20px
 
 
-.mobile-block-invisible
-	display: block
-	@media screen and ( max-width: 767px)
-		display: none
 
-.mobile-block-visible
-	display: none
-	@media screen and ( max-width: 767px)
-		display: block
 
-.mobile-flex-invisible
-	display: flex
-	@media screen and ( max-width: 767px)
-		display: none
 
-.mobile-flex-visible
-	display: none
-	@media screen and ( max-width: 767px)
-		display: flex
+// .mobile-block-invisible
+// 	display: block
+// 	@media screen and ( max-width: 767px)
+// 		display: none
+
+// .mobile-block-visible
+// 	display: none
+// 	@media screen and ( max-width: 767px)
+// 		display: block
+
+// .mobile-flex-invisible
+// 	display: flex
+// 	@media screen and ( max-width: 767px)
+// 		display: none
+
+// .mobile-flex-visible
+// 	display: none
+// 	@media screen and ( max-width: 767px)
+// 		display: flex

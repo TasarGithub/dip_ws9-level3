@@ -646,7 +646,7 @@ div[id$='-error'] {
 .navbar-top-text__sections {
   font-size: 14px;
   line-height: 20px;
-  margin: 0 25px 0 0;
+  margin: 0 27px 0 0;
 }
 
 .navbar-top__menu-btn {
@@ -655,6 +655,7 @@ div[id$='-error'] {
 
 .navbar-top__subscribe {
   align-self: flex-end;
+  margin: 0 31px -1px 0;
 }
 
 .navbar__top {
@@ -747,6 +748,7 @@ div[id$='-error'] {
   max-width: 195px;
   width: 100%;
   min-height: 44px;
+  background-color: transparent;
 }
 
 .subscribe__img {
@@ -765,48 +767,31 @@ div[id$='-error'] {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  text-align: left;
 }
 
 .subscribe__text-line1 {
   font-weight: bold;
 }
 
-.user {
+.signin {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 107px;
+  max-width: 72px;
+  width: 100%;
   text-decoration: none;
   color: #4B5157;
 }
 
-.user__avatar {
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  object-fit: cover;
-  background: url("../img/user-avatar.jpg") no-repeat center/cover;
-  color: #4B5157;
+.signin__text {
+  font-size: 14px;
+  line-height: 20px;
 }
 
-.user__name {
-  margin-left: 18px;
-}
-
-.mobile-block-invisible {
-  display: block;
-}
-
-.mobile-block-visible {
-  display: none;
-}
-
-.mobile-flex-invisible {
-  display: flex;
-}
-
-.mobile-flex-visible {
-  display: none;
+.signin__img {
+  width: 20px;
+  height: 20px;
 }
 
 .breadcrumbs {
@@ -2023,37 +2008,6 @@ div[id$='-error'] {
 
   .menu__item {
     margin: 0 0 20px 0;
-  }
-
-  .user {
-    display: none;
-  }
-
-  .user__avatar {
-    text-align: center;
-    margin: 0 auto 10px;
-  }
-
-  .user__name {
-    margin: 0 0 7px 0;
-    display: inline-block;
-    color: #ffffff;
-  }
-
-  .mobile-block-invisible {
-    display: none;
-  }
-
-  .mobile-block-visible {
-    display: block;
-  }
-
-  .mobile-flex-invisible {
-    display: none;
-  }
-
-  .mobile-flex-visible {
-    display: flex;
   }
 
   .hotel-body {
