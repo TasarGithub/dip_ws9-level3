@@ -11,11 +11,11 @@
 	&__content
 		display: flex
 		border-radius: 10px
-		// overflow: hidden
+		overflow: hidden
 	&__page
 		width: 877px
 		// width: 100%
-		height: 570px
+		height: auto
 		// height: 100%
 		background-repeat: no-repeat
 		background-position: center
@@ -44,37 +44,68 @@
 	&__link-category
 		display: block
 		margin: 0 0 35px 0
+		text-decoration: none
+		font-size: 12px
+		line-height: 15px
+		letter-spacing: 0.5px
+		text-transform: uppercase
+		color: $blue-light
+
 	&__title
 		display: block
 		max-width: 537px
 		width: 100%
-		margin: 0 0 49px 0
+		margin: 0 0 47px 0
 	&__run-wrap
 		display: flex
-		max-width: 500px
-		width: 100%
+		// justify-content: space-between
+		align-items: center
+		// max-width: 500px
+		// width: 100%
 		min-height: 50px
 	&__img 
 
 	&__btn
-		// margin: 0 0 145px 0
+		margin: 0 24px 0 0
 
 	&-swiper
 		margin: 0 0 250px 0
 
-.tabs__link
+	&__link
+
+	&__text-wrap
+		margin: 0 0 0 10px
+
+	&__play
+		
 
 
+.btn-readmore
+	display: flex
+	justify-content: center
+	align-items: center
+	max-width: 138px
+	width: 100%
+	height: 40px
+	padding: 10px 0
+	background-color: $blue-light
+	color: $light
+	border-radius: 20px
+	text-decoration: none
 
-.btn-readmore__text 
+.btn-readmore__text
+	margin: 0 6px 0 0 
 
 .btn-readmore__arrow 
 
-.author 
+.author
+	text-decoration: none
 
-.author__img 
-
-.author__text-line1
+	&__img
+		width: 45px
+		height: 45px
+		border-radius: 50% 
+	
 
 .btn 
 
@@ -123,7 +154,7 @@
 		align-items: center
 		max-width: 263px
 		min-height: 99px
-		padding: 0 25px 0 25px
+		padding: 10px 25px
 		background-color: $light
 		border-bottom: 1px solid $grey-for-borfer
 		text-decoration: none
@@ -142,24 +173,10 @@
 			border-width: 0 22px 0 20px
 			z-index: 100
 			transition: all 0.5s ease
-			// border-color: transparent #000 transparent transparent
 		&::before
-			border-color: transparent //$grey-for-borfer transparent transparent
+			border-color: transparent
 		&::after
-			// margin-right: -1px
 			border-color: transparent $grey-bg transparent transparent
-		// content: ""
-		// position: absolute
-		// right: 0
-		// top: 0
-		// width: 0
-		// height: 0
-		// border-style: solid
-		// border-width: 20px
-		// border-color: transparent black transparent transparent 
-		// &::after 
-		// 	// border-right-color: #fff
-		// 	// margin-left: -1px
 		&.link__item--active::before,
 		&.link__item--active::after 
 			border-width: 20px 22px 20px 
@@ -172,6 +189,8 @@
 
 	&__play
 		margin: 0 0 -5px 5px
+
+
 
 
 
@@ -212,3 +231,25 @@
 		border-width: 20px
 		border-color: transparent black transparent transparent 
 		// z-index: 80
+
+.text-line1, .text-line2
+		display: block
+		font-size: 14px
+		line-height: 20px
+		opacity: 0.85
+		color: $light
+		text-align: left
+.text-line2
+		font-size: 12px
+		line-height: 15px
+		opacity: 0.4
+
+.btn-play 
+	display: flex
+	justify-content: space-between
+	align-items: center
+.img-play 
+
+.btn-play__img-play 
+
+

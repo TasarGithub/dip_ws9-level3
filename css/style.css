@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Lato';
-  src: url("Lato-Regular.eot");
-  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
+  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,8 +8,7 @@
 
 @font-face {
   font-family: 'Lato';
-  src: url("Lato-HeavyItalic.eot");
-  src: local("Lato Heavy Italic"), local("Lato-HeavyItalic"), url("../fonts/Lato-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-HeavyItalic.woff") format("woff"), url("../fonts/Lato-HeavyItalic.woff2") format("woff2"), url("../fonts/Lato-HeavyItalic.ttf") format("truetype");
+  src: local("Lato Heavy Italic"), local("Lato-HeavyItalic"), url("../fonts/Lato-HeavyItalic.woff") format("woff"), url("../fonts/Lato-HeavyItalic.woff2") format("woff2");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -18,8 +16,7 @@
 
 @font-face {
   font-family: 'Lato';
-  src: url("Lato-Heavy.eot");
-  src: local("Lato Heavy"), local("Lato-Heavy"), url("../fonts/Lato-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Heavy.woff") format("woff"), url("../fonts/Lato-Heavy.woff2") format("woff2"), url("../fonts/Lato-Heavy.ttf") format("truetype");
+  src: local("Lato Heavy"), local("Lato-Heavy"), url("../fonts/Lato-Heavy.woff") format("woff"), url("../fonts/Lato-Heavy.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -453,6 +450,7 @@ span {
 button {
   outline: none;
   border: none;
+  background-color: transparent;
 }
 
 button:hover {
@@ -802,11 +800,12 @@ div[id$='-error'] {
 .tabs__content {
   display: flex;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .tabs__page {
   width: 877px;
-  height: 570px;
+  height: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -833,24 +832,65 @@ div[id$='-error'] {
 .tabs__link-category {
   display: block;
   margin: 0 0 35px 0;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #4592FF;
 }
 
 .tabs__title {
   display: block;
   max-width: 537px;
   width: 100%;
-  margin: 0 0 49px 0;
+  margin: 0 0 47px 0;
 }
 
 .tabs__run-wrap {
   display: flex;
-  max-width: 500px;
-  width: 100%;
+  align-items: center;
   min-height: 50px;
+}
+
+.tabs__btn {
+  margin: 0 24px 0 0;
 }
 
 .tabs-swiper {
   margin: 0 0 250px 0;
+}
+
+.tabs__text-wrap {
+  margin: 0 0 0 10px;
+}
+
+.btn-readmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 138px;
+  width: 100%;
+  height: 40px;
+  padding: 10px 0;
+  background-color: #4592FF;
+  color: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.btn-readmore__text {
+  margin: 0 6px 0 0;
+}
+
+.author {
+  text-decoration: none;
+}
+
+.author__img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 .link {
@@ -910,7 +950,7 @@ div[id$='-error'] {
   align-items: center;
   max-width: 263px;
   min-height: 99px;
-  padding: 0 25px 0 25px;
+  padding: 10px 25px;
   background-color: #ffffff;
   border-bottom: 1px solid #D9DADB;
   text-decoration: none;
@@ -995,6 +1035,28 @@ div[id$='-error'] {
   border-style: solid;
   border-width: 20px;
   border-color: transparent black transparent transparent;
+}
+
+.text-line1,
+.text-line2 {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.85;
+  color: #ffffff;
+  text-align: left;
+}
+
+.text-line2 {
+  font-size: 12px;
+  line-height: 15px;
+  opacity: 0.4;
+}
+
+.btn-play {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .swiper-slide-active {
