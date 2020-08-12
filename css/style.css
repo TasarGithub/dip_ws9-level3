@@ -563,43 +563,6 @@ div[id$='-error'] {
   width: 100%;
 }
 
-.button-book {
-  flex: 0 0 auto;
-  position: relative;
-  max-width: 180px;
-  padding: 7px 20px;
-  font-family: Nunito;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16px;
-  border-radius: 4px;
-  background-color: #EC1F46;
-  color: inherit;
-}
-
-.guests,
-.room,
-.adress {
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.flash-offer {
-  position: absolute;
-  left: 0;
-  top: 26px;
-  padding: 4px 9px 4px 9px;
-  max-width: 60px;
-  min-height: 18px;
-  font-weight: 600;
-  font-size: 8px;
-  line-height: 10px;
-  border-radius: 0 4px 4px 0;
-  color: #ffffff;
-  background-color: #EC1F46;
-  text-align: center;
-}
-
 .back {
   display: block;
   text-decoration: none;
@@ -718,7 +681,7 @@ div[id$='-error'] {
   width: 100%;
 }
 
-.form-search__form-button {
+.form-search__form-btn {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -1299,6 +1262,13 @@ div[id$='-error'] {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .form-search__form-btn {
+    justify-content: flex-start;
+    width: 25px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .body__lock {
     overflow: hidden;
@@ -1363,6 +1333,7 @@ div[id$='-error'] {
 @media screen and (max-width: 576px) {
   .navbar-top__sections {
     width: 18px;
+    max-width: none;
     border-right: none;
   }
 
@@ -1376,6 +1347,10 @@ div[id$='-error'] {
 
   .navbar-top__image-text {
     margin: 0 auto;
+  }
+
+  .subscribe-text-line:nth-child(2) {
+    display: none;
   }
 
   .navbar-top__subscribe-img {

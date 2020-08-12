@@ -29,6 +29,7 @@
 				border-right: 1px solid $grey-for-borfer
 				@media screen and ( max-width: 576px)
 					width: 18px
+					max-width: none
 					//padding: 0 10px 0 0
 					border-right: none
 				
@@ -106,7 +107,7 @@
 			border-top: 1px solid $grey-for-borfer
 			// margin: 20px 0 20px 0
 
-		&__form-button
+		&__form-btn
 			display: flex
 			justify-content: flex-end
 			align-items: center
@@ -118,14 +119,10 @@
 			top: 0
 			bottom: 0
 			background-color: transparent
-		// @media screen and ( max-width: 992px)
-		// 	margin-left: 33px
-		// 	min-height: 30px
-		// @media screen and ( max-width: 767px)
-		// 	width: 245px
-		// 	min-height: 40px
-		// 	margin: 0 auto 19px
-		// 	display: none
+			@media screen and ( max-width: 768px)
+				justify-content: flex-start
+				width: 25px
+
 		&-input
 			height: 100%
 			width: 100%
@@ -201,6 +198,8 @@
 			color: $text-black
 		&:nth-child(2)
 			color: $text-light
+			@media screen and ( max-width: 576px)
+				display: none
 
 
 
