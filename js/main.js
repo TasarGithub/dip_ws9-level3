@@ -122,11 +122,11 @@ $(document).ready(function () {
 
 
   //initialize swiper when document ready
-  var mySwiper = new Swiper ('.swiper-container.swiper-container--hotel-body', {
+  var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     // direction: 'vertical',
     loop: true,
-    // // pagination: {
+    //pagination: {
     // //   el: '.swiper-pagination',
     // //   type: 'bullets',
     // //   clickable: true,
@@ -137,13 +137,13 @@ $(document).ready(function () {
 		},
 
     navigation: {
-      nextEl: '.swiper-button--next',
-      prevEl: '.swiper-button--prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
 		}
 		
   });
-  var next = $('.swiper-button--next');
-  var prev = $('.swiper-button--prev');
+  var next = $('.swiper-button-next');
+  var prev = $('.swiper-button-prev');
   // //var bullets = $('.swiper-pagination');
   
   // next.css('left',prev.width() + 6 + bullets.width() + 32);
@@ -151,25 +151,25 @@ $(document).ready(function () {
 	// // bullets.css('left',prev.width() + 21);
 
   //initialize swiper when document ready
-  var mySwiperReveiwes = new Swiper ('.swiper-container.swiper-container--reviews', {
-    // Optional parameters
-    // direction: 'vertical',
-    loop: true,
-    // // pagination: {
-    // //   el: '.swiper-pagination',
-    // //   type: 'bullets',
-    // //   clickable: true,
-		// // },
-		// keyboard: {
-		// 	//enabled: true,
-		// 	// onlyInViewport: true,
-		// },
+  // var mySwiperReveiwes = new Swiper ('.swiper-container.swiper-container--reviews', {
+  //   // Optional parameters
+  //   // direction: 'vertical',
+  //   loop: true,
+  //   // // pagination: {
+  //   // //   el: '.swiper-pagination',
+  //   // //   type: 'bullets',
+  //   // //   clickable: true,
+	// 	// // },
+	// 	// keyboard: {
+	// 	// 	//enabled: true,
+	// 	// 	// onlyInViewport: true,
+	// 	// },
 
-		navigation: {
-			nextEl: '.swiper-button--reviews-next',
-			prevEl: '.swiper-button--reviews-prev',
-		},
-  });
+	// 	navigation: {
+	// 		nextEl: '.swiper-button--reviews-next',
+	// 		prevEl: '.swiper-button--reviews-prev',
+	// 	},
+  // });
 
 
 
@@ -458,6 +458,77 @@ $(document).ready(function () {
 		$('#google-map').css('display',"block");
 
 	});
+
+
+	// Табы
+	var $tabs = function (target) {
+		var
+			_elemTabs = (typeof target === 'string' ? document.querySelector(target) : target),
+			_eventTabsShow,
+
+			_showTab = function (tabsLinkTarget) {
+				var tabsPageTarget, tabsLinkActive, tabsPageShow;
+				tabsPageTarget = document.querySelector(tabsLinkTarget.getAttribute('data-href'));
+				// console.log('tabsLinkTarget: ', tabsLinkTarget);
+				// console.log('tabsPageTarget: ', tabsPageTarget);
+				tabsLinkActive = tabsLinkTarget.parentElement.querySelector('.link__item--active');
+				tabsPageShow = tabsPageTarget.parentElement.querySelector('.tabs__page--show');
+				// если следующая вкладка равна активной, то завершаем работу
+				if (tabsLinkTarget === tabsLinkActive) {
+					return;
+				}
+				// удаляем классы у текущих активных элементов
+				if (tabsLinkActive !== null) {
+					tabsLinkActive.classList.remove('link__item--active');
+				}
+				if (tabsPageShow !== null) {
+					tabsPageShow.classList.remove('tabs__page--show');
+				}
+				// добавляем классы к элементам (в завимости от выбранной вкладки)
+				tabsLinkTarget.classList.add('link__item--active');
+				tabsPageTarget.classList.add('tabs__page--show');
+				document.dispatchEvent(_eventTabsShow);
+			},
+			_switchTabTo = function (tabsLinkIndex) {
+				var tabsLinks = _elemTabs.querySelectorAll('.link__item');
+				if (tabsLinks.length > 0) {
+					if (tabsLinkIndex > tabsLinks.length) {
+						tabsLinkIndex = tabsLinks.length;
+					} else if (tabsLinkIndex < 1) {
+						tabsLinkIndex = 1;
+					}
+					_showTab(tabsLinks[tabsLinkIndex - 1]);
+				}
+			};
+
+		_eventTabsShow = new CustomEvent('tab.show', { detail: _elemTabs });
+
+		_elemTabs.addEventListener('click', function (e) {
+			var tabsLinkTarget = e.target.closest('.link__item');
+			console.log('e: ', e);
+			console.log('tabsLinkTarget: ', tabsLinkTarget);
+			// завершаем выполнение функции, если кликнули не по ссылке
+			if (!tabsLinkTarget.classList.contains('link__item')) {
+				return;
+			}
+			// отменяем стандартное действие
+			e.preventDefault();
+			_showTab(tabsLinkTarget);
+		});
+
+		return {
+			showTab: function (target) {
+				_showTab(target);
+			},
+			switchTabTo: function (index) {
+				_switchTabTo(index);
+			}
+		}
+
+	};
+
+	$tabs('.tabs');
+
 
 
 });
