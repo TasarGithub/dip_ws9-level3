@@ -4,12 +4,12 @@
 	// &__wrap
 	// 	margin: 0 0 18px 0
 	// &--mobile-fixed
-	@media screen and ( max-width: 767px)
-		position: fixed
-		top: 0
-		left: 0
-		right: 0
-		z-index: 99
+	// @media screen and ( max-width: 767px)
+	// 	position: fixed
+	// 	top: 0
+	// 	left: 0
+	// 	right: 0
+	// 	z-index: 99
 
 	&-top
 		display: flex
@@ -56,13 +56,13 @@
 
 	&__logo
 		display: block
-		max-height: 24px
-		width: 177px // если поставить др картинку, надо чтобы сохранилась размер занимаемого места. Можно не max-width, тк контроль будет на адаптиве в медиазапросах
-		@media screen and ( max-width: 992px)
-			width: 132px
-			margin: 0 15px 0 0 
-		@media screen and ( max-width: 767px)
-			width: 99px
+		max-height: 84px
+		width: 100px // если поставить др картинку, надо чтобы сохранилась размер занимаемого места. Можно не max-width, тк контроль будет на адаптиве в медиазапросах
+		// @media screen and ( max-width: 992px)
+		// 	width: 132px
+		// 	margin: 0 15px 0 0 
+		// @media screen and ( max-width: 767px)
+		// 	width: 99px
 
 	&__bottom
 		background-color: $dark
@@ -221,9 +221,17 @@
 		width: 20px
 		height: 20px
 
+.navbar-middle
+	display: flex
+	justify-content: space-between
+	align-items: start
 
 
-
+.logo
+	&__text
+		color: $text-color
+	&__img
+		margin: 0 0 0 10px
 
 // .mobile-block-invisible
 // 	display: block

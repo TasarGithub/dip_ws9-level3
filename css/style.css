@@ -22,6 +22,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Roboto Slab';
+  src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url("../fonts/RobotoSlab-Bold.woff") format("woff"), url("../fonts/RobotoSlab-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -666,8 +674,8 @@ div[id$='-error'] {
 
 .navbar__logo {
   display: block;
-  max-height: 24px;
-  width: 177px;
+  max-height: 84px;
+  width: 100px;
 }
 
 .navbar__bottom {
@@ -792,6 +800,20 @@ div[id$='-error'] {
   height: 20px;
 }
 
+.navbar-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.logo__text {
+  color: #4B5157;
+}
+
+.logo__img {
+  margin: 0 0 0 10px;
+}
+
 .tabs {
   padding: 40px 0 0 0;
   margin: 0 0 250px 0;
@@ -831,7 +853,7 @@ div[id$='-error'] {
 
 .tabs__link-category {
   display: block;
-  margin: 0 0 35px 0;
+  margin: 0 0 26px 0;
   text-decoration: none;
   font-size: 12px;
   line-height: 15px;
@@ -841,10 +863,17 @@ div[id$='-error'] {
 }
 
 .tabs__title {
+  position: relative;
   display: block;
-  max-width: 537px;
+  max-width: 540px;
   width: 100%;
-  margin: 0 0 47px 0;
+  margin: 0 0 38px 0;
+  font-family: 'Roboto Slab', slab-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: #ffffff;
 }
 
 .tabs__run-wrap {
@@ -1216,11 +1245,6 @@ div[id$='-error'] {
     max-width: 700px;
   }
 
-  .navbar__logo {
-    width: 132px;
-    margin: 0 15px 0 0;
-  }
-
   .menu {
     padding: 22px 0;
   }
@@ -1243,18 +1267,6 @@ div[id$='-error'] {
   .container {
     max-width: 700px;
     width: 92%;
-  }
-
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-  }
-
-  .navbar__logo {
-    width: 99px;
   }
 
   .navbar__bottom {
