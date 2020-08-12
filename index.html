@@ -36,21 +36,25 @@
 					</button>
 					<input type="text" class="form-input form-search-input  form-search-input__navbar-top" placeholder="Search">
 				</form>
+				<div class="navbar-wrap-2element navbar-top__navbar-wrap-2element">
+					<a href="#" class="image-text  navbar-top__subscribe">
+						<img src="img/header/subscribe.jpg" alt="Subscribe" class="navbar-top__subscribe-img">
+	
+		
+						<div class="image-text__text">
+							<span class="text-line subscribe-text-line text-line--bold">Subscribe Now</span>
+							<span class="text-line subscribe-text-line text-line--12-normal">3 month for $19 </span>
+						</div>
+						<!-- /.subscribe__text -->
+					</a>
+	
+					<a href="#" class="signin navbar-top__signin">
+						<img src="img/header/man.svg" alt="Sign in Man" class="signin__img">
+						<span class="signin__text">Sign In</span>
+					</a>
+				</div>
+				<!-- /.navbar__wrap-2element -->
 
-				<button class="subscribe navbar-top__subscribe">
-					<img src="img/header/subscribe.jpg" alt="Subscribe" class="subscribe__img">
-
-					<div class="subscribe__text">
-						<span class="subscribe__text-line1">Subscribe Now</span>
-						<span class="subscribe__text-line2">3 month for $19 </span>
-					</div>
-					<!-- /.subscribe__text -->
-				</button>
-
-				<a href="#" class="signin navbar-top__signin">
-					<img src="img/header/man.svg" alt="Sign in Man" class="signin__img">
-					<span class="signin__text">Sign In</span>
-				</a>
 				<!-- /.signin navbar-top__signin -->
 				<!-- /.subscribe subscribe__navbar-top -->
 
@@ -70,8 +74,21 @@
 
 					<span class="logo__text">Boston and New York Bear Brunt</span>
 				</a>
+				<a href="#" class="logo-letter-link">
+					<img src="img/universal.svg" class="logo-letter navbar__logo-letter">
+				</a>
 
 
+				<div class="navbar-wrap-2element">
+					<span class="calendar">Monday, January 1, 2018</span>
+
+					<div class="weather navbar__weather">
+						<img src="img/header/sun.svg" alt="Weather" class="sun">
+						<span class="temperature">- 23 °C</span>
+					</div>
+
+				</div>
+				<!-- /.navbar__wrap-2element -->
 
 
 			</div>
@@ -84,22 +101,21 @@
 
 
 
-
-
-
-
 	<section class="tabs">
 		<div class="container tabs__container">
 			<div class="tabs__content">
+
 				<div class="tabs__page tabs__page--show" id="tabs__page-1" style="background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('img/tabs/foto-1.jpg')">
 					<div class="tabs__page-wrap">
-						<a href="#" class="author tabs__author">
-							<img src="img/authors/Benjamin_Turner.png" alt="Author" class="author__img">
-							<div class="tabs__text-wrap">
-								<span class="text-line1 author__text-line1">By Benjamin Turner</span>
-								<span class="text-line2 author__text-line2">Traveler</span>
+						
+						<a href="#" class="image-text tabs__author">
+							<img src="img/authors/Benjamin_Turner.png" alt="Author" class="author-img">
+
+							<div class="image-text__text">
+								<span class="text-line text-line--white">By Benjamin Turner</span>
+								<span class="text-line text-line--white text-line--op04">Traveler</span>
 							</div>
-							<!--/. author__text -->
+
 						</a>
 						<!-- /.autor -->
 					
@@ -111,16 +127,19 @@
 						<!-- /.tabs__title -->
 
 						<div class="tabs__run-wrap">
-							<a href="#" class="btn btn-readmore tabs__btn"><span class="btn-readmore__text">Read more</span><img src="img/arrow.svg" alt="Arrow Button" class="btn-readmore__arrow"></a>
+							<a href="#" class="btn btn-readmore tabs__btn">
+								<span class="btn-readmore__text">Read more</span>
+								<img src="img/arrow.svg" alt="Arrow Button" class="btn-readmore__arrow">
+							</a>
 
-							<button class="btn-play tabs__play">
-								<img src="img/Play.png" alt="Play Video on Youtube" class="img-play btn-play__img-play">
+							<a href="" class="image-text tabs__play">
+								<img src="img/play.png" alt="Play Video on Youtube" class="img-play">
 
-								<div class="tabs__text-wrap">
-									<span class="text-line1">The chalk cliff of Beachy Head</span>
-									<span class="text-line2">18:05</span>
+								<div class="image-text__text">
+									<span class="text-line text-line--op085">The chalk cliff of Beachy Head</span>
+									<span class="text-line text-line--op04">18:05</span>
 								</div>
-							</button>
+							</a>
 
 						</div>
 						<!-- /.tabs__run-wrap -->
@@ -131,137 +150,191 @@
 				<!-- /.tabs__page 1-->
 
 				<div class="tabs__page" id="tabs__page-2" style="background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('img/tabs/foto-2.jpg')">
+
 					<div class="tabs__page-wrap">
-						<a href="#" class="author tabs__author">
-							<img src="img/authors/Benjamin_Turner.png" alt="Author" class="author__img">
-							<div class="author__text">
-								<span class="author__text-line1"></span>
-								<span class="author__text-line2"></span>
+						
+						<a href="#" class="image-text tabs__author">
+							<img src="img/authors/David_Williams.png" alt="David Williams" class="author-img">
+
+							<div class="image-text__text">
+								<span class="text-line text-line--white">By David Williams</span>
+								<span class="text-line text-line--white text-line--op04">Architect</span>
 							</div>
-							<!--/. author__text -->
+
 						</a>
 						<!-- /.autor -->
 					
-						<a href="#" class="tabs__link-category">Destinations</a>
+						<a href="#" class="tabs__link-category">Car</a>
 
-						<img src="img/tabs/tab-title.svg" alt="In Southeast England" class="tabs__title">
+						<h2 class="tabs__title">
+							Storm Has Car Dealers Doing Swift Business
+						</h2>
+						<!-- /.tabs__title -->
 
 						<div class="tabs__run-wrap">
-							<a href="#" class="btn btn-readmore tabs__btn"><span class="btn-readmore__text">Read more</span><img src="img/arrow.svg" alt="Arrow Button" class="btn-readmore__arrow"></a>
+							<a href="#" class="btn btn-readmore tabs__btn">
+								<span class="btn-readmore__text">Read more</span>
+								<img src="img/arrow.svg" alt="Arrow Button" class="btn-readmore__arrow">
+							</a>
 
-							<button class="btn-play tabs__play">
-								<img src="img/Play.png" alt="Play Video on Youtube" class="img-play btn-play__img-play">
+							<a href="" class="image-text tabs__play">
+								<img src="img/play.png" alt="Play Video on Youtube" class="img-play">
 
-								<div class="tabs__text-wrap">
-									<span class="text-line1">The chalk cliff of Beachy Head</span>
-									<span class="text-line2">18:05</span>
+								<div class="image-text__text">
+									<span class="text-line text-line--op085">Storm Has Car Dealers Doing Swift Business</span>
+									<span class="text-line text-line--op04">15:05</span>
 								</div>
-							</button>
+							</a>
 
 						</div>
 						<!-- /.tabs__run-wrap -->
 
 					</div>
 					<!-- /.tabs__page-wrap -->
+
 				</div>
 				<!-- /.tabs__page 2-->
+
 				<div class="tabs__page" id="tabs__page-3" style="background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('img/tabs/foto-3.jpg')">
+
 					<div class="tabs__page-wrap">
-						<a href="#" class="author tabs__author">
-							<img src="img/authors/Benjamin_Turner.png" alt="Author" class="author__img">
-							<div class="author__text">
-								<span class="author__text-line1"></span>
-								<span class="author__text-line2"></span>
+						
+						<a href="#" class="image-text tabs__author">
+							<img src="img/authors/Jessica_Miller.png" alt="Jessica Miller" class="author-img">
+
+							<div class="image-text__text">
+								<span class="text-line text-line--white">By Jessica Miller</span>
+								<span class="text-line text-line--white text-line--op04">Journalist</span>
 							</div>
-							<!--/. author__text -->
+
 						</a>
 						<!-- /.autor -->
 					
-						<a href="#" class="tabs__link-category">Destinations</a>
+						<a href="#" class="tabs__link-category">Movies</a>
 
-						<img src="img/tabs/tab-title.svg" alt="In Southeast England" class="tabs__title">
+						<h2 class="tabs__title">
+							War Is Hell? In New Military Dramas, It’s One-Dimensional
+						</h2>
+						<!-- /.tabs__title -->
 
 						<div class="tabs__run-wrap">
-							<a href="#" class="btn btn-readmore tabs__btn"><span class="btn-readmore__text">Read more</span><img src="img/arrow.svg" alt="Arrow Button" class="btn-readmore__arrow"></a>
+							<a href="#" class="btn btn-readmore tabs__btn">
+								<span class="btn-readmore__text">Read more</span>
+								<img src="img/arrow.svg" alt="Arrow Button" class="btn-readmore__arrow">
+							</a>
 
-							<button class="btn-play tabs__play">
-								<img src="img/Play.png" alt="Play Video on Youtube" class="img-play btn-play__img-play">
+							<a href="" class="image-text tabs__play">
+								<img src="img/play.png" alt="Play Video on Youtube" class="img-play">
 
-								<div class="tabs__text-wrap">
-									<span class="text-line1">The chalk cliff of Beachy Head</span>
-									<span class="text-line2">18:05</span>
+								<div class="image-text__text">
+									<span class="text-line text-line--op085">War Is Hell? In New Military Dramas, It’s One-Dimensional</span>
+									<span class="text-line text-line--op04">14:15</span>
 								</div>
-							</button>
+							</a>
 
 						</div>
 						<!-- /.tabs__run-wrap -->
 
-
 					</div>
 					<!-- /.tabs__page-wrap -->
+
 				</div>
 				<!-- /.tabs__page 3-->
+
+
 				<div class="tabs__page" id="tabs__page-4" style="background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('img/tabs/foto-4.jpg')">
+
 					<div class="tabs__page-wrap">
-						<a href="#" class="author tabs__author">
-							<img src="img/authors/Benjamin_Turner.png" alt="Author" class="author__img">
-							<div class="author__text">
-								<span class="author__text-line1"></span>
-								<span class="author__text-line2"></span>
+						
+						<a href="#" class="image-text tabs__author">
+							<img src="img/authors/Olivia_Thompson.png" alt="Olivia Thompson" class="author-img">
+
+							<div class="image-text__text">
+								<span class="text-line text-line--white">By Olivia Thompson</span>
+								<span class="text-line text-line--white text-line--op04">Coacher</span>
 							</div>
-							<!--/. author__text -->
+
 						</a>
 						<!-- /.autor -->
 					
-						<a href="#" class="tabs__link-category">Destinations</a>
+						<a href="#" class="tabs__link-category">NFL</a>
 
-						<img src="img/tabs/tab-title.svg" alt="In Southeast England" class="tabs__title">
+						<h2 class="tabs__title">
+							11 surprising stat rankings for active NFL players
+						</h2>
+						<!-- /.tabs__title -->
 
 						<div class="tabs__run-wrap">
-							<a href="#" class="btn btn-readmore tabs__btn"><span class="btn-readmore__text">Read more</span><img src="img/arrow.svg" alt="Arrow Button" class="btn-readmore__arrow"></a>
+							<a href="#" class="btn btn-readmore tabs__btn">
+								<span class="btn-readmore__text">Read more</span>
+								<img src="img/arrow.svg" alt="Arrow Button" class="btn-readmore__arrow">
+							</a>
 
-							<button class="btn-play tabs__play">
-								<img src="img/Play.png" alt="Play Video on Youtube" class="img-play btn-play__img-play">
+							<a href="" class="image-text tabs__play">
+								<img src="img/play.png" alt="Play Video on Youtube" class="img-play">
 
-								<div class="tabs__text-wrap">
-									<span class="text-line1">The chalk cliff of Beachy Head</span>
-									<span class="text-line2">18:05</span>
+								<div class="image-text__text">
+									<span class="text-line text-line--op085">11 surprising stat rankings for active NFL players</span>
+									<span class="text-line text-line--op04">13:25</span>
 								</div>
-							</button>
+							</a>
 
 						</div>
 						<!-- /.tabs__run-wrap -->
 
-
 					</div>
 					<!-- /.tabs__page-wrap -->
+
 				</div>
 				<!-- /.tabs__page 4-->
 
 				<div class="tabs__page" id="tabs__page-5" style="background-image: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('img/tabs/foto-5.jpg')">
+
 					<div class="tabs__page-wrap">
-						<a href="#" class="author tabs__author">
-							<img src="img/authors/Benjamin_Turner.png" alt="Author" class="author__img">
-							<div class="author__text">
-								<span class="author__text-line1"></span>
-								<span class="author__text-line2"></span>
+						
+						<a href="#" class="image-text tabs__author">
+							<img src="img/authors/Sarah_Jenkins.png" alt="Sarah Jenkins" class="author-img">
+
+							<div class="image-text__text">
+								<span class="text-line text-line--white">By Sarah Jenkins</span>
+								<span class="text-line text-line--white text-line--op04">Photographer</span>
 							</div>
-							<!--/. author__text -->
+
 						</a>
 						<!-- /.autor -->
 					
-						<a href="#" class="tabs__link-category">Destinations</a>
+						<a href="#" class="tabs__link-category">Tech Reviews</a>
 
-						<img src="img/tabs/tab-title.svg" alt="In Southeast England" class="tabs__title">
+						<h2 class="tabs__title">
+							The bookcases you can buy online and assemble yourself
+						</h2>
+						<!-- /.tabs__title -->
 
-						
+						<div class="tabs__run-wrap">
+							<a href="#" class="btn btn-readmore tabs__btn">
+								<span class="btn-readmore__text">Read more</span>
+								<img src="img/arrow.svg" alt="Arrow Button" class="btn-readmore__arrow">
+							</a>
+
+							<a href="" class="image-text tabs__play">
+								<img src="img/play.png" alt="Play Video on Youtube" class="img-play">
+
+								<div class="image-text__text">
+									<span class="text-line text-line--op085">The bookcases you can buy online and assemble yourself</span>
+									<span class="text-line text-line--op04">12:05</span>
+								</div>
+							</a>
+
+						</div>
+						<!-- /.tabs__run-wrap -->
 
 					</div>
 					<!-- /.tabs__page-wrap -->
+
 				</div>
 				<!-- /.tabs__page 5-->
 
-
+				<!-- #####  Клавиши таба  ##### -->
 				<div class="link tabs__link">
 					<h2 class="link__title">Recommended for you</h2>
 					<div data-href="#tabs__page-1" class="link__item link__item--active">

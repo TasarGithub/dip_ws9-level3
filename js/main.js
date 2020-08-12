@@ -505,8 +505,8 @@ $(document).ready(function () {
 
 		_elemTabs.addEventListener('click', function (e) {
 			var tabsLinkTarget = e.target.closest('.link__item');
-			console.log('e: ', e);
-			console.log('tabsLinkTarget: ', tabsLinkTarget);
+			// console.log('e: ', e);
+			// console.log('tabsLinkTarget: ', tabsLinkTarget);
 			// завершаем выполнение функции, если кликнули не по ссылке
 			if (!tabsLinkTarget.classList.contains('link__item')) {
 				return;
