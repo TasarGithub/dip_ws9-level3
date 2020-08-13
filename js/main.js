@@ -444,11 +444,50 @@ $(document).ready(function () {
 	
 	// $('.parallax-window').parallax({imageSrc: '../img/bg-subscribe.jpg'});
 	// Бургер клик
+
+		// определение элемента в поле зрения
+		function elementInViewport(el){
+			var bounds = el.getBoundingClientRect();
+			return (
+					(bounds.top + bounds.height > 0) && // Елемент ниже верхней границы
+					(window.innerHeight - bounds.top > 0) && // Выше нижней
+					(bounds.left + bounds.width > 0) && // Правее левой
+					(window.innerWidth - bounds.left > 0)// Левее правой
+			);
+		}
+
+
+		// document.addEventListener("scroll", (e) => {
+		// 		var el = document.querySelector(".navbar-middle");
+		// 		var inViewport = elementInViewport(el);
+		// 		document.querySelector("#status").innerText = inViewport ? "Елемент в поле зрения" : "Елемент не в поле зрения";
+		// });
+
+
 	$('.navbar__burger').click(function (e) {
 		// $('.user, .form__search').toggleClass('mobile-block--visible');
-		$('.navbar__bottom').toggleClass('navbar__bottom--mobile-menu');
-		$('.navbar__burger').toggleClass('active');
-		$('body').toggleClass('body__lock');
+		var el = document.querySelector(".navbar-middle");
+		var inViewport = elementInViewport(el);
+
+		console.log('window.outerWidth: ', window.outerWidth);
+		if (window.outerWidth < 768){
+			
+			
+				$('.navbar-bottom').toggleClass('navbar-bottom--mobile-menu');
+				$('.navbar__burger').toggleClass('active');
+		} else {
+			if (!inViewport ) {
+				$('.navbar-bottom').toggleClass('navbar-burger-for-scroll');
+				// $('.navbar-bottom').toggleClass('navbar__bottom--mobile-menu');
+				$('.navbar__burger').toggleClass('active');
+				// $("body").toggleClass("fixed");
+				// $('body').toggleClass('body__lock');
+			} else if ($('.navbar__burger').hasClass('active')) {
+				$('.navbar__burger').toggleClass('active');
+				$('.navbar-bottom').toggleClass('navbar-burger-for-scroll');
+			}
+	
+		}
 	});
 
 
@@ -528,6 +567,8 @@ $(document).ready(function () {
 	};
 
 	$tabs('.tabs');
+
+
 
 
 
