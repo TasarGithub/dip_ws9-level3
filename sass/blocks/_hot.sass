@@ -1,0 +1,56 @@
+.hot
+	background-color: $primary
+
+
+	&-list
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-radius: 10px
+		padding: 30px 25px 35px 25px
+		background-color: $dark
+		min-height: 130px
+		
+
+	&__hot-list
+
+
+	&-item
+		cursor: pointer
+		border-right: 1px solid $dark-for-border
+		&:last-child
+			border-right: none
+
+
+	&-list__hot-item 
+
+	&-link
+		display: flex
+		justify-content: space-between
+		align-items: center
+		max-width: 234px
+		width: 100%
+	&-item__hot-link
+		margin: 0 25px 0 0
+		@media screen and ( max-width: 1200px)
+			margin: 0 5px 0 0
+
+		
+
+
+	&-title
+		font-family: Roboto Slab
+		font-weight: bold
+		font-size: 16px
+		line-height: 25px
+		color: $light
+		margin: 0 15px 0 0
+		@media screen and ( max-width: 1200px)
+			margin: 0 5px 0 0
+			font-size: 12px
+
+	&-img
+		width: 65px
+		height: 65px
+
+	&-img__hot-item

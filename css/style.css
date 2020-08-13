@@ -520,7 +520,7 @@ div[id$='-error'] {
   height: 100%;
   border: none;
   padding: 18px 65px;
-  background-color: #EC1F46;
+  background-color: #262D33;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -672,7 +672,7 @@ div[id$='-error'] {
 }
 
 .navbar__bottom {
-  background-color: #0A223D;
+  background-color: #30363D;
 }
 
 .form-search {
@@ -834,9 +834,21 @@ div[id$='-error'] {
   letter-spacing: 1px;
 }
 
+.navbar-bottom {
+  padding: 18px 115px;
+  background-color: #262D33;
+}
+
+.menu__link {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .tabs {
   padding: 40px 0 0 0;
   margin: 0 0 250px 0;
+  background: linear-gradient(0deg, #E5E5E5 50%, #262D33 50%);
 }
 
 .tabs__content {
@@ -947,6 +959,7 @@ div[id$='-error'] {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   border-bottom: 1px solid #D9DADB;
+  background-color: #ffffff;
 }
 
 .link__subtitle {
@@ -1115,6 +1128,55 @@ div[id$='-error'] {
   background-image: url("../img/reviews/arrow-dark-next.svg");
 }
 
+.hot {
+  background-color: #262D33;
+}
+
+.hot-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 30px 25px 35px 25px;
+  background-color: #30363D;
+  min-height: 130px;
+}
+
+.hot-item {
+  cursor: pointer;
+  border-right: 1px solid #4B5157;
+}
+
+.hot-item:last-child {
+  border-right: none;
+}
+
+.hot-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 234px;
+  width: 100%;
+}
+
+.hot-item__hot-link {
+  margin: 0 25px 0 0;
+}
+
+.hot-title {
+  font-family: Roboto Slab;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+  margin: 0 15px 0 0;
+}
+
+.hot-img {
+  width: 65px;
+  height: 65px;
+}
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -1137,7 +1199,7 @@ div[id$='-error'] {
   bottom: 50%;
   left: 50%;
   padding: 33px 88px;
-  background-color: #0A223D;
+  background-color: #30363D;
   border-radius: 8px;
   color: #ffffff;
   z-index: 101;
@@ -1223,6 +1285,15 @@ div[id$='-error'] {
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+
+  .hot-item__hot-link {
+    margin: 0 5px 0 0;
+  }
+
+  .hot-title {
+    margin: 0 5px 0 0;
+    font-size: 12px;
   }
 }
 
