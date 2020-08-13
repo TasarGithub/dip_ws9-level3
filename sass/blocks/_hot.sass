@@ -10,6 +10,9 @@
 		padding: 30px 25px 35px 25px
 		background-color: $dark
 		min-height: 130px
+		@media screen and ( max-width: 767px)
+			flex-wrap: wrap
+		// @media screen and ( max-width: 576px)
 		
 
 	&__hot-list
@@ -18,8 +21,34 @@
 	&-item
 		cursor: pointer
 		border-right: 1px solid $dark-for-border
+		margin: 0 25px 0 0
+		@media screen and ( max-width: 1200px)
+			margin: 0 15px 0 0
+		@media screen and ( max-width: 992px)
+			margin: 0 10px 0 0
+		@media screen and ( max-width: 767px)
+			flex-basis: 45%
+			&:nth-child(1),&:nth-child(2)
+				margin: 0 10px 10px 0
+				border-bottom: 1px solid $dark-for-border
+			&:nth-child(4)
+				margin: 0 10px 0 0
+				border-right: 1px solid $dark-for-border
+		@media screen and ( max-width: 576px)
+			flex-basis: 95%
+			&:nth-child(3)
+				margin: 0 10px 10px 0
+
+
+				
 		&:last-child
+			margin: 0
 			border-right: none
+		@media screen and ( max-width: 767px)
+				border-right: 1px solid $dark-for-border
+				border-bottom: 1px solid $dark-for-border
+		@media screen and ( max-width: 576px)
+			margin: 0 auto 10px auto
 
 
 	&-list__hot-item 
@@ -29,11 +58,20 @@
 		justify-content: space-between
 		align-items: center
 		max-width: 234px
-		width: 100%
+		// width: 100%
 	&-item__hot-link
-		margin: 0 25px 0 0
-		@media screen and ( max-width: 1200px)
-			margin: 0 5px 0 0
+		@media screen and ( max-width: 576px)
+			margin: 0 auto
+		// margin: 0 25px 0 0
+		// @media screen and ( max-width: 1200px)
+		// 	margin: 0 15px 0 0
+		// @media screen and ( max-width: 992px)
+		// 	margin: 0 10px 0 0
+
+	&-item__hot-link-last
+		@media screen and ( max-width: 576px)
+			margin: 0 auto
+
 
 		
 
@@ -48,9 +86,16 @@
 		@media screen and ( max-width: 1200px)
 			margin: 0 5px 0 0
 			font-size: 12px
+		// @media screen and ( max-width: 992px)
+		// 	// font-size: 10px
 
 	&-img
 		width: 65px
 		height: 65px
 
 	&-img__hot-item
+		margin: 0 25px 0 5px
+		@media screen and ( max-width: 1200px)
+			margin: 0 15px 0 5px
+		@media screen and ( max-width: 992px)
+			margin: 0 10px 0 5px

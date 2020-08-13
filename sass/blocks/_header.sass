@@ -5,13 +5,20 @@
 	// 	margin: 0 0 18px 0
 	// &--mobile-fixed
 	// @media screen and ( max-width: 767px)
-	// 	position: fixed
-	// 	top: 0
-	// 	left: 0
-	// 	right: 0
-	// 	z-index: 99
-
+	// position: fixed
+	// top: 0
+	// left: 0
+	// right: 0
+	// z-index: 99
+	&-fixed
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 99
+		background-color: $light
 	&-top
+
 		display: flex
 		justify-content: space-between
 		align-items: center
@@ -228,12 +235,15 @@
 	min-height: 84px
 	@media screen and ( max-width: 992px)
 		flex-wrap: wrap
+		padding: 0 0 10px 0
+
 	&__navbar-wrap-2element
 		@media screen and ( max-width: 992px)
 			max-width: 100%
 			flex: 0 0 100%
 			order: -1
-			margin: 20px 0 20px 0
+			margin: 10px 0 10px 0
+		
 	&__logo-letter
 		@media screen and ( max-width: 992px)
 			flex: 0 0 100%
@@ -304,10 +314,10 @@
 
 .temperature 
 
-// .mobile-block-invisible
-// 	display: block
-// 	@media screen and ( max-width: 767px)
-// 		display: none
+.mobile-block-invisible
+	display: block
+	@media screen and ( max-width: 767px)
+		display: none
 
 // .mobile-block-visible
 // 	display: none
@@ -327,9 +337,58 @@
 .navbar-bottom
 	padding: 18px 115px
 	background-color: $primary
+	@media screen and ( max-width: 992px)
+		padding: 18px 0
 
 
 .menu__link
 	letter-spacing: 0.5px
 	text-transform: uppercase
 	color: $light
+
+
+		// 	width: 18px
+		// height: 2px
+		// background-color: $grey-light
+		// &:nth-child(2)
+		// 	width: 12px
+
+.navbar__burger
+	//display: none
+	// visibility: hidden
+	// opacity: 0
+	position: relative
+	width: 18px
+	height: 14px
+	@media screen and ( max-width: 767px)
+		display: block
+	&::after,&::before
+		content: ''
+		background-color: $grey-light
+		position: absolute
+		width: 18px
+		height: 2px
+		left: 0
+		top: 0
+		transition: all 0.3s ease 0s
+	&::after 
+		top: 11px
+	&>span
+		position: absolute
+		background-color: $grey-light
+		left: 0
+		top: 6px
+		width: 12px
+		height: 2px
+		transition: all 0.3s ease 0s
+
+.navbar__burger.active
+	&>span
+		opacity: 0
+	&::before
+		transform: rotate(45deg)
+		top: 4px
+	&::after
+		transform: rotate(-45deg)
+		top: 4px
+		// bottom: 2px
