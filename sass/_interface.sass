@@ -15,30 +15,67 @@
 	line-height: 15px
 	opacity: 0.4
 
-// .comment 
-// 	display: flex
-// 	justify-content: space-between
-// 	align-items: center
-// 	max-width: 41px
-// 	min-height: 15px
-// 	&__img
+.image-text 
+	display: flex
+	align-items: center
 
-// 	&__number
-// 		font-size: 12px
-// 		line-height: 15px
+	width: 100%
+	text-decoration: none
+	&__img
+		// margin: 0 10px 0 0
+	&__text
+		padding: 5px 5px 5px 10px
+		// margin: 5px 0 0 10px
+	&__text-flex
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		padding: 5px 5px 5px 10px
+		@media screen and ( max-width: 576px)
+			align-items: flex-start
+			flex-direction: column
 
-// .comment
-// 	padding: 5px
-// 	&>img
-// 		width: 15px
-// 		height: 15px
 
-// .like
-// 	padding: 5px
-// 	&>img
-// 		width: 15px
-// 		height: 15px
 
-// .date
-// 	padding: 5px 5px 5px 0
-// 	// margin: 5px 0 0 10px
+
+
+
+.text-line
+		display: block
+		text-align: left
+		color: $grey-text
+		&--op04
+			opacity: 0.4
+		&--op085
+			opacity: 0.85
+		&--bold
+			font-weight: bold
+		&--12-normal
+			font-size: 12px
+			line-height: 15px
+		&--white
+			color: $light
+		&--black
+			font-weight: bold
+			color: $text-black
+		&--grey
+			color: $grey-text
+		
+
+		
+.author-img
+		width: 45px
+		height: 45px
+		border-radius: 50% 
+
+.post-h2, .post-h3, .post-h3-20
+	font-family: 'Roboto Slab', slab-serif
+	font-style: normal
+	font-weight: bold
+	font-size: 25px
+	line-height: 30px
+
+
+.post-h3-20
+	font-size: 20px
+	line-height: 25px	
