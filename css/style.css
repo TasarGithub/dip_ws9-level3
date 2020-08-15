@@ -457,22 +457,6 @@ strong {
   font-weight: 400;
 }
 
-.post-h2 {
-  font-family: 'Roboto Slab', slab-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
-}
-
-.post-h3 {
-  font-family: 'Roboto Slab', slab-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -1338,9 +1322,9 @@ div[id$='-error'] {
 
 .articles__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-row-gap: 29px;
+  grid-template-columns: repeat(4, 263px);
+  grid-template-rows: repeat(4, 172px);
+  grid-row-gap: 26px;
   grid-column-gap: 30px;
 }
 
@@ -1355,7 +1339,7 @@ div[id$='-error'] {
   grid-column: 1/4;
   padding: 15px 0 0 0;
   display: grid;
-  grid-template-columns: minmax(auto, 228px) auto;
+  grid-template-columns: minmax(auto, 261px) auto;
   grid-template-rows: 300px auto;
   max-width: 555px;
   min-height: 370px;
@@ -1447,17 +1431,16 @@ div[id$='-error'] {
   grid-row: 1/3;
   grid-column: 3/4;
   align-items: start;
-  padding: 18px 18px 25px 18px;
+  padding: 18px 18px 25px 25px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   max-width: 263px;
   min-height: 370px;
-  background: url("../img/articles/bg-artdesign.png") no-repeat center/cover;
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/articles/bg-artdesign.png") no-repeat center/cover;
 }
 
 .post-vertical__mark {
-  margin: 0 0 117px 0;
+  margin: 0 0 118px -7px;
 }
 
 .post-vertical__category {
@@ -1466,24 +1449,57 @@ div[id$='-error'] {
   color: #E7D9FF;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  margin: 0 0 10px 0;
+  margin: 0 0 9px 0;
 }
 
 .post-vertical__post-h2 {
   color: #ffffff;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  line-height: 25px;
+  max-width: 203px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .post-vertical__post-bottom {
   border: none;
   padding: 0;
+  display: flex;
+  align-items: center;
 }
 
-.post-vertical__text-line {
+.post-vertical__wrap-bottom-line {
+  margin: 0 0 0 10px;
+}
+
+.post-vertical__text-line-1 {
+  margin: 1px 0 0 0;
+}
+
+.post-vertical__text-line-2 {
   display: flex;
   justify-content: space-between;
   color: #ffffff;
-  margin: 5px 0 0  0;
+  margin: 5px 0 0 0;
+}
+
+.post-vertical__comment {
+  margin: -4px 0 0 5px;
+}
+
+.post-vertical__like {
+  margin: -4px 0 0 5px;
+}
+
+.post-vertical__date {
+  margin: 0 5px 0 0;
+}
+
+.post-vertical__author-img {
+  width: 45px;
+  height: 45px;
+  text-decoration: none;
 }
 
 .post-picture {
@@ -1494,11 +1510,18 @@ div[id$='-error'] {
   min-height: 370px;
   background: #ffffff;
   overflow: hidden;
+  justify-self: start;
 }
 
 .post-picture__img {
   max-width: 263px;
   min-height: 275px;
+}
+
+.post-picture__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .post-picture__post-h2 {
@@ -1513,6 +1536,7 @@ div[id$='-error'] {
   padding: 25px 25px 30px 25px;
   max-width: 263px;
   min-height: 170;
+  justify-self: end;
 }
 
 .post-small__post-h3 {
@@ -1538,15 +1562,16 @@ div[id$='-error'] {
   grid-row: 1/5;
   justify-self: stretch;
   display: grid;
-  width: 263px;
-  min-height: 770px;
+  max-width: 263px;
+  width: 100%;
+  height: 100%;
   color: #ffffff;
   background-color: #6E99AE;
   border-radius: 10px;
 }
 
 .columns__header {
-  padding: 20px 25px 20px 35px;
+  padding: 22px 25px 16px 25px;
   border-bottom: 1px solid #B4D1E0;
 }
 
@@ -1559,17 +1584,13 @@ div[id$='-error'] {
   text-align: left;
 }
 
-.columns__list {
-  padding: 0 25px 0 35px;
-}
-
 .columns__item {
-  padding: 45px 10px 39px 10px;
+  padding: 47px 24px 39px 35px;
   min-height: 220px;
-  border-bottom: 1px solid #B4D1E0;
+  height: 100%;
   background: url("../img/quote.svg") no-repeat;
   background-size: 40px 40px;
-  background-position: 0 35px;
+  background-position: 25px 35px;
 }
 
 .columns__item:last-child {
@@ -1584,12 +1605,25 @@ div[id$='-error'] {
 
 .columns__bootom {
   border-top: 1px solid #B4D1E0;
-  padding: 20px 25px 20px 35px;
+  padding: 13px 25px 12px 25px;
   font-size: 14px;
   font-weight: bold;
   line-height: 20px;
   color: #ffffff;
   text-align: center;
+}
+
+.columns__hr {
+  max-width: 213px;
+  width: 100%;
+  height: 1px;
+  background-color: #B4D1E0;
+  border: none;
+  margin: 0 auto;
+}
+
+.columns__text-line {
+  margin: 0 0 5px 0;
 }
 
 .modal {
@@ -1714,6 +1748,61 @@ div[id$='-error'] {
   .hot-img__hot-item {
     margin: 0 15px 0 5px;
   }
+
+  .articles__grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(340px, max-content) repeat(4, 1fr);
+    justify-content: space-between;
+  }
+
+  .post-big {
+    max-width: 100%;
+    grid-row: 2/4;
+    grid-column: 1/3;
+  }
+
+  .post-vertical {
+    grid-row: 2/4;
+    grid-column: 3/4;
+    justify-self: end;
+    min-height: min-content;
+    justify-content: start;
+    height: 100%;
+  }
+
+  .post-picture {
+    grid-row: 4/6;
+    grid-column: 1/2;
+    justify-self: start;
+  }
+
+  .post-picture__img {
+    min-height: 325px;
+  }
+
+  .columns {
+    padding: 0 35px;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    grid-template-columns: repeat(3, minmax(263px, max-content));
+    grid-template-rows: minmax(60px, max-content) minmax(220px, max-content) minmax(60px, max-content);
+    max-width: 100%;
+    min-height: 340px;
+  }
+
+  .columns__header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  .columns__item {
+    border-bottom: none;
+  }
+
+  .columns__bootom {
+    text-align: left;
+    grid-column: 1/4;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1763,12 +1852,103 @@ div[id$='-error'] {
   .hot-img__hot-item {
     margin: 0 10px 0 5px;
   }
+
+  .articles__grid {
+    grid-template-rows: minmax(min-content, max-content) repeat(4, minmax(min-content, max-content));
+  }
+
+  .text-speech {
+    max-width: 90%;
+  }
+
+  .post-vertical__mark {
+    margin: 0 0 57px 0;
+  }
+
+  .post-vertical__post-h2 {
+    margin: 0 0 40px 0;
+  }
+
+  .columns {
+    grid-template-columns: repeat(2, minmax(230px, max-content));
+  }
+
+  .columns__header {
+    grid-column: 1/3;
+  }
+
+  .columns__item:nth-child(2) {
+    max-width: 350px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+  }
+
+  .columns__item:nth-child(1) {
+    max-width: 350px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .columns__item:nth-child(3) {
+    display: none;
+  }
+
+  .columns__bootom {
+    grid-column: 1/3;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .form-search__form-btn {
     justify-content: flex-start;
     width: 25px;
+  }
+
+  .post-big {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    min-height: 100%;
+    justify-self: end;
+    align-self: end;
+  }
+
+  .post-big__img {
+    display: none;
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .post__body {
+    background: url("../img/articles/car.png") no-repeat;
+    background-position: 100% 10%;
+    background-size: 70px;
+    grid-column: 1/3;
+    max-width: 100%;
+    min-height: auto;
+    height: 100%;
+    padding: 22px 70px 0 20px;
+  }
+
+  .post-vertical {
+    padding: 10px 10px 15px 10px;
+  }
+
+  .post-vertical__post-h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .post-vertical__comment {
+    display: none;
+  }
+
+  .post-vertical__like {
+    display: none;
+  }
+
+  .post-vertical__author-img {
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -1938,25 +2118,6 @@ div[id$='-error'] {
     margin: 0 auto;
   }
 
-  .post-big {
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    min-height: 100%;
-    justify-self: end;
-    align-self: end;
-  }
-
-  .post__body {
-    background: url("../img/articles/car.png") no-repeat;
-    background-position: 100% 10%;
-    background-size: 70px;
-    grid-column: 1/3;
-    max-width: 100%;
-    min-height: auto;
-    height: 100%;
-    padding: 22px 70px 0 20px;
-  }
-
   .post-bottom {
     width: 100%;
     padding: 12px 15px 12px 15px;
@@ -1969,14 +2130,6 @@ div[id$='-error'] {
 
   .modal__dialog {
     padding: 33px 5vw;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .post-big__img {
-    display: none;
-    grid-row: auto;
-    grid-column: auto;
   }
 }
 

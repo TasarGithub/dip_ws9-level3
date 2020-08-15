@@ -507,53 +507,43 @@
 
 						<div class="post-vertical__post-bottom">
 
-							<a href="#" class="post-vertical__author-img">
+							<a href="#" class="image-text image-text__author">
 								<img src="img/authors/Jessica_Miller.png" alt="Jessica Miller" class="author-img">
-							</a>
 
-							<div class="post-vertical__wrap-bottom-line">
-
-								<span class="post-vertical__text-line-1 
-								text-line text-line--white 
-								text-line--op085">By Sarah Jenkins</span>
-
-								<div class="text-line post-vertical__text-line-2 ">
-										<time pubdate datetime="2019-09-26" class="date post-vertical__date">
+								<div class="image-text__text">
+									<span class="text-line text-line--white text-line--op085">By Sarah Jenkins</span>
+									<div class="text-line post-vertical__text-line ">
+										<time pubdate datetime="2019-09-26" class="date">
 											Sept 26
 										</time>
 										<!--/. time -->
-		
-										<div class="comment post-vertical__comment">
+
+										<div class="comment">
 											<img src="img/comment.png" alt="Comment" class="comment__img" >
 											<span class="comment__number">342</span>
 										</div>
 										<!-- /.comment -->
 										
-										<div class="like post-vertical__like">
+										<div class="like">
 											<img src="img/heart.png" alt="Like" class="like__img" >
 											<span class="like__number">842</span>
 										</div>
 										<!-- /.like -->
+									</div>
+									<!--/. text-line post-vertical__text-line -->
 								</div>
-								<!--/. text-line post-vertical__text-line-2 -->
-
-							</div>
-
-
+							</a>
 							<!-- /.autor -->
 
 			
-						<!-- </div> -->
+						</div>
 						<!-- /.post-bottom -->
 
 					</article>
 					<!-- /.post-vertical post -->
 
 					<article class="post post-vertical post-picture">
-						<div class="post-picture__img">
-							<img src="img/articles/cat.png" alt="Cat image">
-						</div>
-						
+						<img src="img/articles/cat.png" alt="Cat image" class="post-picture__img">
 						<header><h2 class="post-h2 post-picture__post-h2">200+ Doomed Cats Saved From Euthanization</h2></header>
 					</article>
 					<!-- /.post-vertical post -->
@@ -585,7 +575,7 @@
 						<header>
 							<h3 class="post-h3 post-small__post-h3">It’s a Stressful World</h3>
 						</header>
-						<p class="post-small__text">Can a cruise skeptic enjoy four days on the seas with his family and a bunch of princesses?</p>
+						<p class="post-text post-small__post-text">Can a cruise skeptic enjoy four days on the seas with his family and a bunch of princesses?</p>
 						<time pubdate datetime="2019-10-13" class="date post-small__date">
 							Oct 14
 						</time>
@@ -606,8 +596,8 @@
 						<header class="columns__header">
 							<h2 class="columns__h2">Columns</h2>
 						</header>
-							<!-- <ul class="columns__list"> -->
-								<div class="columns__item">
+							<ul class="columns__list">
+								<li class="columns__item">
 									
 									<a href="#" class="columns__title"><h3 class="post-h3-20">Architecture is the thoughtful making of space</h3></a>
 	
@@ -615,14 +605,30 @@
 										<img src="img/authors/David_Williams.png" alt="David Williams" class="author-img">
 									
 										<div class="image-text__text">
-											<span class="text-line text-line--grey columns__text-line">David Williams</span>
+											<span class="text-line text-line--grey">David Williams</span>
 											<span class="text-line text-line--12-normal text-line--grey">Architect</span>
 										</div>
 									</a>
+	
+								</li>
+								<li class="columns__item">
 									
-								</div>
-								<hr class="columns__hr">
-								<div class="columns__item">
+									<a href="#" class="columns__title">
+										<h3 class="post-h3-20">The details are not the details. They make the design.</h3>
+									</a>
+	
+									<a href="#" class="image-text columns__image-text">
+										<img src="img/authors/Alexandra_Green.png" alt="Alexandra Green" class="author-img">
+									
+										<div class="image-text__text">
+											<span class="text-line text-line--grey">Alexandra Green</span>
+											<span class="text-line text-line--12-normal text-line--grey">Interior designer</span>
+										</div>
+									</a>
+	
+								</li>
+								<!--/. columns__item -->
+								<li class="columns__item">
 									
 									<a href="#" class="columns__title"><h3 class="post-h3-20">The details are not the details. They make the design.</h3></a>
 	
@@ -630,16 +636,14 @@
 										<img src="img/authors/Alexandra_Green.png" alt="Alexandra Green" class="author-img">
 									
 										<div class="image-text__text">
-											<span class="text-line text-line--grey columns__text-line">Alexandra Green</span>
+											<span class="text-line text-line--grey">Alexandra Green</span>
 											<span class="text-line text-line--12-normal text-line--grey">Interior designer</span>
 										</div>
 									</a>
-								</div>
+	
+								</li>
 								<!--/. columns__item -->
-
-								<hr class="columns__hr">
-								
-								<div class="columns__item">
+								<li class="columns__item">
 									
 									<a href="#" class="columns__title"><h3 class="post-h3-20">Live life to the fullest, and focus on the positive</h3></a>
 	
@@ -647,14 +651,14 @@
 										<img src="img/authors/Olivia_Thompson.png" alt="Olivia Thompson" class="author-img">
 									
 										<div class="image-text__text">
-											<span class="text-line text-line--grey columns__text-line">Olivia Thompson</span>
-											<span class="text-line text-line--12-normal text-line--grey ">Coacher</span>
+											<span class="text-line text-line--grey">Olivia Thompson</span>
+											<span class="text-line text-line--12-normal text-line--grey">Coacher</span>
 										</div>
 									</a>
-									
-								</div>
+	
+								</li>
 								<!--/. columns__item -->
-							<!-- </ul> -->
+							</ul>
 							<a href="#" class="columns__bootom">
 								Read more
 							</a>
