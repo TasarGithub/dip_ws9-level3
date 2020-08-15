@@ -623,28 +623,6 @@ div[id$='-error'] {
   padding: 5px 5px 5px 10px;
 }
 
-.comment {
-  padding: 5px;
-}
-
-.comment > img {
-  width: 15px;
-  height: 15px;
-}
-
-.like {
-  padding: 5px;
-}
-
-.like > img {
-  width: 15px;
-  height: 15px;
-}
-
-.date {
-  padding: 5px 5px 5px 0;
-}
-
 .text-line {
   display: block;
   text-align: left;
