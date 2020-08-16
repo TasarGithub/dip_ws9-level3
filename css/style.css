@@ -670,6 +670,22 @@ div[id$='-error'] {
   color: #D1E2EB;
 }
 
+.text-line--blue-light {
+  color: #4592FF;
+}
+
+.text-line--green-text {
+  color: #3BBDC4;
+}
+
+.text-line--red {
+  color: #FF4F52;
+}
+
+.text-line--purple-middle {
+  color: #AC8EE3;
+}
+
 .author-img {
   width: 45px;
   height: 45px;
@@ -1648,6 +1664,53 @@ div[id$='-error'] {
 
 .flower__btn {
   margin: 0 auto;
+}
+
+.cards__wrap {
+  background-color: #ffffff;
+  padding: 0 25px;
+}
+
+.card {
+  display: flex;
+  max-width: 848px;
+  min-height: 245px;
+  padding: 25px 0;
+  border-bottom: 1px solid #D9DADB;
+}
+
+.card__text {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 20px 0;
+}
+
+.card__foto {
+  max-width: 336px;
+  min-height: 195px;
+}
+
+.card-body {
+  padding: 0 0 0 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category__card {
+  margin: 0 0 15px 0;
+}
+
+.title-card {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25p;
+}
+
+.title-card__left {
+  margin: 0 0 10px 0;
 }
 
 .modal {
