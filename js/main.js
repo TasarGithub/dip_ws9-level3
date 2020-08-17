@@ -568,7 +568,29 @@ $(document).ready(function () {
 
 	$tabs('.tabs');
 
+	$('#card-1').click(function (e) {
+		$('#favorit-1').toggleClass('favorit-red');
+	});
 
+	$('#card-2').click(function (e) {
+		$('#favorit-2').toggleClass('favorit-red');
+	});
+
+	$('#card-3').click(function (e) {
+		$('#favorit-3').toggleClass('favorit-red');
+	});
+
+	$('#card-4').click(function (e) {
+		$('#favorit-4').toggleClass('favorit-red');
+	});
+
+	$('#card-5').click(function (e) {
+		$('#favorit-5').toggleClass('favorit-red');
+	});
+
+	$('#card-6').click(function (e) {
+		$('#favorit-6').toggleClass('favorit-red');
+	});
 
 
 

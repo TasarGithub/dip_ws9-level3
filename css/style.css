@@ -589,6 +589,36 @@ div[id$='-error'] {
   margin: 0 0 0 10px;
 }
 
+.responsive-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.responsive-img-ofcontain {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.responsive-img-ofcover {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.grid {
+  display: grid;
+}
+
+.bcg-img-768 {
+  background-position: 100% 5%;
+  background-size: 70px;
+  background-repeat: no-repeat;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -601,6 +631,7 @@ div[id$='-error'] {
   font-size: 12px;
   line-height: 15px;
   opacity: 0.4;
+  margin: -1px 0 0 5px;
 }
 
 .like > img,
@@ -1666,28 +1697,53 @@ div[id$='-error'] {
   margin: 0 auto;
 }
 
+.cards {
+  padding: 60px 0 60px;
+  background-color: #E5E5E5;
+}
+
 .cards__wrap {
+  max-width: 848px;
+  background-color: #ffffff;
+  border-radius: 10px;
   background-color: #ffffff;
   padding: 0 25px;
 }
 
 .card {
   display: flex;
-  max-width: 848px;
+  align-items: center;
   min-height: 245px;
-  padding: 25px 0;
+  padding: 24px 0 23px;
   border-bottom: 1px solid #D9DADB;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card__category {
+  margin: 0 0 15px 0;
 }
 
 .card__text {
   font-size: 14px;
   line-height: 20px;
-  margin: 0 0 20px 0;
+  margin: 0 0 16px 0;
 }
 
-.card__foto {
+.card__text-line {
+  color: #939699;
+  opacity: 1;
+  justify-content: start;
+}
+
+.card-img__wrap {
+  flex: 0 0 100%;
   max-width: 336px;
   min-height: 195px;
+  width: 100%;
+  height: 100%;
 }
 
 .card-body {
@@ -1697,8 +1753,11 @@ div[id$='-error'] {
   justify-content: space-between;
 }
 
-.category__card {
-  margin: 0 0 15px 0;
+.category {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .title-card {
@@ -1706,11 +1765,25 @@ div[id$='-error'] {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 25p;
+  line-height: 25px;
 }
 
 .title-card__left {
   margin: 0 0 10px 0;
+}
+
+.favorit {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 13px 7px 5px 7px;
+  border-color: #BCBFC2 #BCBFC2 transparent #BCBFC2;
+  align-self: flex-start;
+  margin: 0 0 0 auto;
+}
+
+.favorit-red {
+  border-color: #FF4F52 #FF4F52 transparent #FF4F52;
 }
 
 .modal {
@@ -2055,6 +2128,14 @@ div[id$='-error'] {
 
   .post-picture__img {
     margin: 0 0 30px 0;
+  }
+
+  .card-img__wrap {
+    display: none;
+  }
+
+  .card-body {
+    flex-basis: 90%;
   }
 }
 
