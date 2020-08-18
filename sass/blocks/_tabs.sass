@@ -30,8 +30,11 @@
 		&-wrap
 			padding: 55px 19.498% 95px 6.271%
 			@media screen and ( max-width: 768px)
-				padding: 20px 10% 20px 6%
-			
+				padding: 40px 10% 20px 15%
+			@media screen and ( max-width: 576px)
+				padding: 30px 10% 20px 15%
+			@media screen and ( max-width: 320px)
+				padding: 15px 10% 15px 15%
 
 	&__page-swiper
 		display: flex
@@ -44,7 +47,8 @@
 		background-repeat: no-repeat
 		background-position: center
 		background-size: cover
-
+		// border-radius: 8px
+		// overflow: hidden
 
 	&__author
 		margin: 0 0 145px 0
@@ -81,14 +85,23 @@
 		font-size: 40px
 		line-height: 50px
 		color: $light
+		@media screen and ( max-width: 768px)
+			font-size: 30px
+			line-height: 35px
+			margin: 0 0 16vw 0
+			max-width: 90%
 		@media screen and ( max-width: 576px)
+			font-size: 25px
+			line-height: 30px
+			margin: 0 0 15vw 0
+		@media screen and ( max-width: 440px)
 			font-size: 16px
 			line-height: 20px
-			margin: 0 0 18px 0
-		// @media screen and ( max-width: 410px)
-		// 	margin: 0 0 1vw 0
-		// @media screen and ( max-width: 320px)
-		// 	margin: 0 0 5px 0
+			margin: 0 0 5vw 0
+		@media screen and ( max-width: 320px)
+			font-size: 14px
+			line-height: 18px			
+			margin: 0 0 5px 0
 
 	&__run-wrap
 		display: flex
@@ -284,13 +297,41 @@
 		&__img-play
 			width: 30px
 			height: 30px
+		&-button
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			width: 30px
+			height: 30px
+			color: rgba(255, 255, 255, 0.8)
+			z-index: 10
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+			border: none
+			cursor: pointer
+			background-color: transparent
+			z-index: 20
+			&-prev
+				left: 2.57%
+				background-image: url(../img/arrow-prev.svg)
+			&-next
+				right: 2.57%
+				background-image: url(../img/arrow-next.svg)
+
 	&__swiper
 	
 		&-container
 			display: none
 			@media screen and ( max-width: 768px)
+				border-radius: 8px
+				overflow: hidden
 				display: block
-		&-slide
-			display: grid
-			justify-content: center
+		&__swiper-slide
+
+
+		&-slide   
+			// display: grid // Из-за него сжимался куда-то на 576 слайд
+			// justify-content: center
+
 

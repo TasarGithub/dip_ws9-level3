@@ -669,6 +669,8 @@ div[id$='-error'] {
   display: block;
   text-align: left;
   color: #D1E2EB;
+  max-width: 24vw;
+  width: max-content;
 }
 
 .text-line--op04 {
@@ -1285,13 +1287,35 @@ div[id$='-error'] {
   height: 30px;
 }
 
-.tabs__swiper-container {
-  display: none;
+.tabs-swiper-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 20;
 }
 
-.tabs__swiper-slide {
-  display: grid;
-  justify-content: center;
+.tabs-swiper-button-prev {
+  left: 2.57%;
+  background-image: url(../img/arrow-prev.svg);
+}
+
+.tabs-swiper-button-next {
+  right: 2.57%;
+  background-image: url(../img/arrow-next.svg);
+}
+
+.tabs__swiper-container {
+  display: none;
 }
 
 .swiper-slide-active {
@@ -2431,7 +2455,7 @@ div[id$='-error'] {
   }
 
   .tabs__page-wrap {
-    padding: 20px 10% 20px 6%;
+    padding: 40px 10% 20px 15%;
   }
 
   .tabs__author {
@@ -2442,7 +2466,16 @@ div[id$='-error'] {
     margin: 0 0 2vw 0;
   }
 
+  .tabs__title {
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0 0 16vw 0;
+    max-width: 90%;
+  }
+
   .tabs__swiper-container {
+    border-radius: 8px;
+    overflow: hidden;
     display: block;
   }
 
@@ -2681,6 +2714,10 @@ div[id$='-error'] {
     max-width: 190px;
   }
 
+  .tabs__page-wrap {
+    padding: 30px 10% 20px 15%;
+  }
+
   .tabs__author {
     margin: 0 0 8vw 0;
   }
@@ -2690,9 +2727,9 @@ div[id$='-error'] {
   }
 
   .tabs__title {
-    font-size: 16px;
-    line-height: 20px;
-    margin: 0 0 18px 0;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0 0 15vw 0;
   }
 
   .btn-readmore {
@@ -2875,6 +2912,14 @@ div[id$='-error'] {
   }
 }
 
+@media screen and (max-width: 440px) {
+  .tabs__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 5vw 0;
+  }
+}
+
 @media screen and (max-width: 370px) {
   .careers-big__img {
     right: -15%;
@@ -2892,6 +2937,16 @@ div[id$='-error'] {
   .post-h3-20 {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .tabs__page-wrap {
+    padding: 15px 10% 15px 15%;
+  }
+
+  .tabs__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 5px 0;
   }
 
   .careers-slider__btn {

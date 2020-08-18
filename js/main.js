@@ -137,8 +137,8 @@ $(document).ready(function () {
 		},
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.tabs-swiper-button-next',
+      prevEl: '.tabs-swiper-button-prev',
 		}
 		
   });
