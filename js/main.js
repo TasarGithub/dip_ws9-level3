@@ -157,6 +157,7 @@ var mySwiperCareers = new Swiper ('.swiper-container.swiper-container--careers',
 	// Optional parameters
 	// direction: 'vertical',
 	loop: true,
+	// autoHeight: true,
 	pagination: {
 		el: '.swiper-pagination.careers-pagination',
 		type: 'bullets',
