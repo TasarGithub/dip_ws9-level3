@@ -150,6 +150,42 @@ $(document).ready(function () {
 	
 	// // bullets.css('left',prev.width() + 21);
 
+
+
+//initialize swiper when document ready
+var mySwiperCareers = new Swiper ('.swiper-container.swiper-container--careers', {
+	// Optional parameters
+	// direction: 'vertical',
+	loop: true,
+	pagination: {
+		el: '.swiper-pagination.careers-pagination',
+		type: 'bullets',
+		clickable: true,
+	},
+	keyboard: {
+		enabled: true,
+		onlyInViewport: true,
+	},
+
+	// navigation: {
+	// 	nextEl: '.swiper-button-next',
+	// 	prevEl: '.swiper-button-prev',
+	
+	
+});
+
+
+var next = $('.swiper-button-next');
+var prev = $('.swiper-button-prev');
+// //var bullets = $('.swiper-pagination');
+
+// next.css('left',prev.width() + 6 + bullets.width() + 32);
+
+// // bullets.css('left',prev.width() + 21);
+
+
+
+
   //initialize swiper when document ready
   // var mySwiperReveiwes = new Swiper ('.swiper-container.swiper-container--reviews', {
   //   // Optional parameters

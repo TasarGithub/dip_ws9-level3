@@ -1,6 +1,6 @@
 .tabs
-	padding: 40px 0 30px 0
-	margin: 0 0 250px 0
+	padding: 40px 0 15px 0
+
 	background: linear-gradient(0deg, $bg-primary 50%, $primary 50%)
 
 
@@ -13,9 +13,12 @@
 		grid-template-columns: minmax(auto, 877px) 1fr 
 		border-radius: 10px
 		overflow: hidden
+		@media screen and ( max-width: 768px)
+			display: none
 
 
 	&__page
+		display: none
 		max-width: 877px
 		width: 100%
 		height: auto
@@ -26,12 +29,17 @@
 
 		&-wrap
 			padding: 55px 19.498% 95px 6.271%
+			@media screen and ( max-width: 768px)
+				padding: 20px 10% 20px 6%
 			
 
 	&__page-swiper
-		width: 877px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		width: 100%
 		// width: 100%
-		height: 570px
+		height: 74vw
 		// height: 100%
 		background-repeat: no-repeat
 		background-position: center
@@ -40,6 +48,11 @@
 
 	&__author
 		margin: 0 0 145px 0
+		@media screen and ( max-width: 768px)
+			margin: 0 0 11vw 0
+		@media screen and ( max-width: 576px)
+			margin: 0 0 8vw 0
+
 
 	&__link-category
 		display: block
@@ -50,7 +63,12 @@
 		letter-spacing: 0.5px
 		text-transform: uppercase
 		color: $blue-light
+		@media screen and (max-width: 768px)
+			margin: 0 0 2vw 0
 
+		@media screen and (max-width: 576px)
+			margin: 0 0 1vw 0
+		
 	&__title
 		position: relative
 		display: block
@@ -63,6 +81,14 @@
 		font-size: 40px
 		line-height: 50px
 		color: $light
+		@media screen and ( max-width: 576px)
+			font-size: 16px
+			line-height: 20px
+			margin: 0 0 18px 0
+		// @media screen and ( max-width: 410px)
+		// 	margin: 0 0 1vw 0
+		// @media screen and ( max-width: 320px)
+		// 	margin: 0 0 5px 0
 
 	&__run-wrap
 		display: flex
@@ -85,6 +111,7 @@
 		margin: 0 0 0 10px
 
 	&__play
+
 		
 
 
@@ -100,18 +127,18 @@
 	color: $light
 	border-radius: 20px
 	text-decoration: none
+	@media screen and ( max-width: 576px)
+		max-width: 100px
+		height: 30px
+		padding: 6px 0
+		font-size: 11px
+
 
 .btn-readmore__text
 	margin: 0 6px 0 0 
 
 .btn-readmore__arrow 
 
-
-	
-
-.btn 
-
-.btn-readmore 
 
 
 .link
@@ -208,12 +235,12 @@
 .link__item:not(.link__item_active):hover,
 .link__item:not(.link__item_active):focus
 	background-color: $grey-bg
-	
 
 
 
-.tabs__page
-	display: none
+
+// .tabs__page
+// 	display: none
 	
 
 .tabs__page--show
@@ -244,4 +271,26 @@
 
 .btn-play__img-play 
 
+
+
+.link__item--swiper
+	margin: 0 auto
+
+.tabs
+	&-swiper
+		&__it-text
+			font-size: 10px
+			line-height: 12px
+		&__img-play
+			width: 30px
+			height: 30px
+	&__swiper
+	
+		&-container
+			display: none
+			@media screen and ( max-width: 768px)
+				display: block
+		&-slide
+			display: grid
+			justify-content: center
 
