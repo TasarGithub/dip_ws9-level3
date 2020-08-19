@@ -1,0 +1,160 @@
+.page-container 
+	
+.hero
+	padding: 63px 0 60px
+	background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/page/hero/bg-foto.jpg') no-repeat center/cover
+	
+
+	&-body
+		position: relative
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		min-height: 590px
+		height: 100%
+		color: $light
+		
+	
+	&__hero-top, &__hero-bottom 
+		display: flex
+		justify-content: space-between
+		align-items: center
+	
+	&__hero-top
+
+	&__hero-bottom 
+	&__container
+
+	&__category
+		color: $blue-light
+		
+	&__title
+		font-family: Roboto Slab
+		font-style: normal
+		font-weight: bold
+		font-size: 55px
+		line-height: 70px
+		margin: 0 0 30px 0
+		color: $light
+
+
+	&__subtitle
+		margin: 0 0 60px 0
+		opacity: 0.6
+		max-width: 556px
+		font-size: 18px
+		line-height: 30px
+
+
+	&__favorit
+		position: absolute
+		left: -7% //-67
+		top: 150px
+
+	&-top
+		&__wrap
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin: 0 0 52px 0
+			width: 100%
+		&-block__wrap
+			display: flex
+			justify-content: space-between
+			align-items: center
+			
+		&__back
+			display: flex
+			justify-content: space-between
+			align-items: center
+			
+			margin: 0 30px 0  0
+		&__img-home
+			width: 20px
+			height: 20px
+			margin: 0  5px 0  0
+
+		&__prev
+			display: flex
+			justify-content: space-between
+			align-items: center
+			
+			margin: 0  20px 0  0
+
+		&__img-prev
+			margin: 0  5px 0  0 
+
+		&__next
+			display: flex
+			justify-content: space-between
+			align-items: center
+			
+
+		&__img-next
+			margin: 0   0  0 5px
+
+
+	&-bottom
+		display: flex
+		// justify-content: space-between
+		align-items: center
+		max-width: 396px
+		width: 100%
+		
+		&__clock, &__like, 	&__comment 
+			margin: 0  20px 10px  0	
+
+		
+		&__clock
+			display: flex
+			// justify-content: space-between
+			align-items: center
+			
+			margin: 0  20px 10px  0
+			&>span
+				margin: 0  0 3px 0 
+				opacity: 0.4
+		&__img-clock 
+			margin: 0  5px 0  0
+
+		&__like
+			&>img
+				max-width: 15px
+				max-height: 15px
+				width: 100%
+				height: 100%
+				opacity: 0.4
+
+
+		&__comment
+			margin: 0  30px 10px  0
+			&>img
+				max-width: 15px
+				max-height: 15px
+				width: 100%
+				height: 100%
+
+		&__share 
+			margin: 0  0 10px  0	
+
+
+
+
+.share
+	display: flex
+	justify-content: center
+	align-items: center
+	max-width: 143px
+	width: 100%
+	height: 40px
+	padding: 10px
+	background-color: transparent
+	color: $light
+	border-radius: 20px
+	text-decoration: none
+	border: 1px solid $light
+	@media screen and ( max-width: 576px)
+		max-width: 100px
+		height: 30px
+		padding: 6px 0
+		font-size: 11px

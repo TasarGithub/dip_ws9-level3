@@ -635,6 +635,10 @@ var prev = $('.swiper-button-prev');
 		$('#favorit-6').toggleClass('favorit-red');
 	});
 
+	$('#favorit-page').click(function (e) {
+		$('#favorit-page').toggleClass('favorit-red');
+	});
+
 
 
 });
