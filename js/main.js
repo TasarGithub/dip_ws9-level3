@@ -585,8 +585,8 @@ var prev = $('.swiper-button-prev');
 			if (tabsLinkTarget === null) {
 				return;
 			} 
-				console.log('e: ', e);
-				console.log('tabsLinkTarget: ', tabsLinkTarget);
+				// console.log('e: ', e);
+				// console.log('tabsLinkTarget: ', tabsLinkTarget);
 				// завершаем выполнение функции, если кликнули не по ссылке
 				if (!tabsLinkTarget.classList.contains('link__item')) {
 					return;

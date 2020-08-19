@@ -756,6 +756,24 @@ div[id$='-error'] {
   text-align: center;
 }
 
+.btn-readmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 138px;
+  width: 100%;
+  height: 40px;
+  padding: 10px 0;
+  background-color: #4592FF;
+  color: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.btn-readmore__text {
+  margin: 0 6px 0 0;
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -1130,24 +1148,6 @@ div[id$='-error'] {
 
 .tabs__text-wrap {
   margin: 0 0 0 10px;
-}
-
-.btn-readmore {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 138px;
-  width: 100%;
-  height: 40px;
-  padding: 10px 0;
-  background-color: #4592FF;
-  color: #ffffff;
-  border-radius: 20px;
-  text-decoration: none;
-}
-
-.btn-readmore__text {
-  margin: 0 6px 0 0;
 }
 
 .link {
@@ -2150,6 +2150,55 @@ div[id$='-error'] {
   margin: 0 8.5px;
 }
 
+.subscribe {
+  padding: 60px 20px 70px 20px;
+}
+
+.subscribe__post-h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0 0 8px 0;
+  text-align: center;
+  color: #262D33;
+}
+
+.form__subscribe {
+  margin: 0 auto;
+  padding: 17px 0 0 0;
+  max-width: 442px;
+}
+
+.form-input__subscribe {
+  max-width: 313px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 40px;
+  padding: 0 10px 0 20px;
+  color: #4B5157;
+  border-radius: 5px;
+  border: 1px solid #D9DADB;
+}
+
+.form-input__subscribe::placeholder {
+  color: #939699;
+}
+
+.form-input__subscribe::-moz-placeholder,
+.form-input__subscribe :-moz-placeholder {
+  opacity: 1;
+}
+
+.form-button__subscribe {
+  min-height: 40px;
+  max-width: 119px;
+}
+
+#userEmailSubscribe-error {
+  top: 0;
+  left: 7px;
+}
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -2621,6 +2670,10 @@ div[id$='-error'] {
     right: -14%;
     left: 72%;
   }
+
+  .subscribe {
+    padding: 30px 20px 35px 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2733,6 +2786,12 @@ div[id$='-error'] {
   }
 }
 
+@media screen and (max-width: 670px) {
+  .form__subscribe {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 630px) {
   .articles__grid {
     grid-template-columns: none;
@@ -2801,6 +2860,13 @@ div[id$='-error'] {
     line-height: 25px;
   }
 
+  .btn-readmore {
+    max-width: 100px;
+    height: 30px;
+    padding: 6px 0;
+    font-size: 11px;
+  }
+
   .navbar-top__sections {
     width: 18px;
     max-width: none;
@@ -2847,13 +2913,6 @@ div[id$='-error'] {
     font-size: 25px;
     line-height: 30px;
     margin: 0 0 15vw 0;
-  }
-
-  .btn-readmore {
-    max-width: 100px;
-    height: 30px;
-    padding: 6px 0;
-    font-size: 11px;
   }
 
   .hot-item {
@@ -2983,6 +3042,10 @@ div[id$='-error'] {
 
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 10px;
+  }
+
+  .form-input__subscribe {
+    width: 100%;
   }
 
   .modal__dialog {

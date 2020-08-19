@@ -7,8 +7,10 @@
 	<link rel="dns-prefetch" href="//api-maps.yandex.ru"> -->
 	<!-- font-family: 'Muli', sans-serif;
 	font-family: 'Nunito', sans-serif; -->
+	<link rel="stylesheet" href="./css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/style.css">
+
 	<!-- <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> -->
 	<!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
   <title>Universal Magazin</title>
@@ -190,8 +192,8 @@
 								<span class="btn-readmore__text">Read more</span>
 								<img src="img/arrow.svg" alt="Arrow Button" class="btn-readmore__arrow">
 							</a>
-
-							<a href="" class="image-text tabs__play">
+							
+							<a data-fancybox href="https://www.youtube.com/watch?v=0kmir7O3afU" class="image-text tabs__play">
 								<img src="img/play.png" alt="Play Video on Youtube" class="img-play">
 
 								<div class="image-text__text">
@@ -328,10 +330,10 @@
 								<img src="img/arrow.svg" alt="Arrow Button" class="btn-readmore__arrow">
 							</a>
 
-							<a href="" class="image-text tabs__play tabs-swiper__img-play">
+							<a data-fancybox href="https://www.youtube.com/watch?v=u-VCBZ8LG_k" class="image-text tabs__play tabs__img-play">
 								<img src="img/play.png" alt="Play Video on Youtube" class="img-play">
 
-								<div class="image-text__text tabs-swiper__it-text">
+								<div class="image-text__text tabs__it-text">
 									<span class="text-line text-line--op085">11 surprising stat rankings for active NFL players</span>
 									<span class="text-line text-line--op04">13:25</span>
 								</div>
@@ -477,7 +479,7 @@
 										<img src="img/arrow.svg" alt="Arrow Button" class="btn-readmore__arrow">
 									</a>
 			
-									<a href="" class="image-text tabs__play">
+									<a data-fancybox href="https://www.youtube.com/watch?v=0kmir7O3afU" class="image-text tabs__play">
 										<img src="img/play.png" alt="Play Video on Youtube" class="img-play tabs-swiper__img-play">
 			
 										<div class="image-text__text tabs-swiper__it-text">
@@ -618,7 +620,7 @@
 										<img src="img/arrow.svg" alt="Arrow Button" class="btn-readmore__arrow">
 									</a>
 		
-									<a href="" class="image-text tabs__play tabs-swiper__img-play">
+									<a data-fancybox href="https://www.youtube.com/watch?v=u-VCBZ8LG_k" class="image-text tabs__play tabs-swiper__img-play">
 										<img src="img/play.png" alt="Play Video on Youtube" class="img-play">
 		
 										<div class="image-text__text tabs-swiper__it-text">
@@ -713,13 +715,13 @@
 					<!-- <a href="" class="post-link post-link-big"></a> -->
 						<article class="post post-big">
 							
-								<a class="post__body">
+								<a href="#" class="post__body">
 									<span class="post-category post-big__post-category">Cars</span>
 									<header><h2 class="post-h2 post-big__post-h2">The joy of replicas: A $ 5 million car for $ 50,000</h2></header>
 									<p class="post-text post-big__post-text">The 31-year-old self-taught engineer and former amateur racer spends his days building artful recreations of one of most iconic sports cars</p>
 								</a>
 								<!-- /.post__body -->
-								<a class="post-big__img">
+								<a href="#" class="post-big__img">
 									<img src="img/articles/car.png" alt="Cars">
 								</a>
 		
@@ -804,7 +806,7 @@
 					<!-- /.post-vertical post -->
 					<!-- </a> -->
 
-					<a class="post post-picture">
+					<a href="#" class="post post-picture">
 						<div class="post-picture__img">
 							<img src="img/articles/cat.png" alt="Cat image">
 						</div>
@@ -813,7 +815,7 @@
 					</a>
 					<!-- /.post-vertical post -->
 
-					<a class="post post-small">
+					<a href="#" class="post post-small">
 						<header>
 							<h3 class="post-h3 post-small__post-h3">Is Coffee Bad for Bones?</h3>
 						</header>
@@ -825,7 +827,7 @@
 					</a>
 					<!-- /.post post-small -->
 
-					<a class="post post-small">
+					<a href="#" class="post post-small">
 						<header>
 							<h3 class="post-h3 post-small__post-h3">What We Manufacture</h3>
 						</header>
@@ -836,7 +838,7 @@
 					</a>
 					<!-- /.post post-small -->
 					
-					<a class="post post-small">
+					<a href="#" class="post post-small">
 						<header>
 							<h3 class="post-h3 post-small__post-h3">It’s a Stressful World</h3>
 						</header>
@@ -847,7 +849,7 @@
 					</a>
 					<!-- /.post post-small -->
 
-					<a class="post post-small">
+					<a href="#" class="post post-small">
 						<header>
 							<h3 class="post-h3 post-small__post-h3">A Treat for Lemon Lovers</h3>
 						</header>
@@ -1543,7 +1545,28 @@
 </section>
 <!-- /.swiper -->
 
+<section class="subscribe">
+	<div class="container subscribe__container">
+		<h2 class="post-h2 subscribe__post-h2">Subscribe now and get 20% off</h2>
 
+		<form action="send.php" method="POST" class="form form__subscribe form--radius">
+	
+			<input 
+			type="email" 
+			class="form-input form-input--290 form-input__subscribe" 
+			placeholder="Your email address"
+			name="userEmailSubscribe"
+			>
+		<button class="btn-readmore form-button form-button__subscribe" type="submit">
+			Subscribe
+		</button>
+	</form>
+
+
+	</div>
+	<!-- /.container subscribe__container -->
+</section>
+<!-- /.subscribe -->
 
 
 <footer>
@@ -1559,7 +1582,7 @@
 	<!-- <script src="//code.jquery.com/jquery-3.4.1.min.js"></script> -->
 	<!--СТАРАЯ версия  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
 	<script src="js/swiper-bundle.min.js"></script>
-
+	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.mask.min.js"></script>
