@@ -740,6 +740,15 @@ div[id$='-error'] {
   line-height: 25px;
 }
 
+.readme-bottom {
+  border-top: 1px solid #B4D1E0;
+  padding: 13px 25px 12px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -1693,13 +1702,7 @@ div[id$='-error'] {
 }
 
 .columns__bootom {
-  border-top: 1px solid #B4D1E0;
-  padding: 13px 25px 12px 25px;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 20px;
   color: #ffffff;
-  text-align: center;
 }
 
 .columns__hr {
@@ -1834,21 +1837,23 @@ div[id$='-error'] {
 }
 
 .cards-mini__wrap {
-  padding: 10px 25px;
-  max-width: 263px;
+  grid-template-rows: repeat(9, min-content);
+  padding: 10px 0;
+  width: 263px;
   min-height: 770px;
   background-color: #ffffff;
   align-self: start;
   border-radius: 10px;
+  justify-content: center;
 }
 
 .card-mini {
+  padding: 13px 25px 13px;
+  position: relative;
   display: flex;
   align-items: center;
-  padding: 17px 0;
-  max-width: 213px;
-  min-height: 95px;
-  border-bottom: 1px solid #D9DADB;
+  min-height: 94px;
+  z-index: 10;
 }
 
 .card-mini:hover {
@@ -1866,7 +1871,16 @@ div[id$='-error'] {
   height: 100%;
 }
 
+.card-mini__title {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  padding: 29px 25px 18px;
+  border-bottom: 1px solid #D9DADB;
+}
+
 .card-mini-body {
+  position: relative;
   padding: 0 0 0 10px;
 }
 
@@ -1876,6 +1890,33 @@ div[id$='-error'] {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+  margin: 2px 0 5px 0;
+}
+
+.card-mini__post-bottom {
+  color: #4B5157;
+}
+
+.card-mini__number {
+  font-weight: 900;
+  font-style: italic;
+  position: absolute;
+  z-index: 1;
+  right: 25px;
+  bottom: 50%;
+  transform: translateY(50%);
+  font-size: 70px;
+  color: #262D33;
+  opacity: 0.08;
+}
+
+.test2 {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
+  height: 200px;
+  padding: 50px 50px;
 }
 
 .careers {
