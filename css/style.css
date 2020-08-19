@@ -2583,6 +2583,66 @@ div[id$='-error'] {
   margin: 0 0 30px 0;
 }
 
+.part-2__grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.part-2__insert {
+  margin: 0 0 35px 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 590px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.part-2__insert-author-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.part-2__insert-author-wrap > img {
+  height: 60px;
+  width: 60px;
+  margin: 0 0 15px 0;
+}
+
+.part-2__it-text {
+  padding: 0;
+}
+
+.part-2__it-text > .text-line {
+  color: #262D33;
+  opacity: 0.5;
+}
+
+.part-2__it-text > .text-line:nth-child(1) {
+  opacity: 0.7;
+}
+
+.part-2__quote {
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: -20px;
+  opacity: 0.75;
+}
+
+.part-2__insert-text {
+  max-width: 458px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  position: relative;
+  z-index: 10;
+  color: #262D33;
+}
+
 .flex-num {
   flex: 0 0 100%;
 }
@@ -2640,6 +2700,80 @@ div[id$='-error'] {
 .swiper-article-button-next {
   right: 3%;
   background-image: url(../img/arrow-next.svg);
+}
+
+.right-block {
+  margin: 134px 0  0;
+  max-width: 263px;
+  min-height: 430px;
+  width: 100%;
+  height: 100%;
+}
+
+.right-block__title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #262D33;
+  margin: 0 0 20px 0;
+}
+
+.right-block__img {
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 263px;
+  min-height: 180px;
+  margin: 0 0 11px 0;
+}
+
+.right-block__img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.right-block__subtitle {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 0 0 8px 0;
+}
+
+.right-block__text {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.right-block__wrap-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100px;
+  width: 100%;
+}
+
+.right-block__views {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  line-height: 15px;
+  color: #939699;
+}
+
+.right-block__views > img {
+  width: 15px;
+  height: 15px;
+  opacity: 0.7;
+  margin: 0 3px 0 0;
+}
+
+.right-block__comment {
+  opacity: 0.7;
 }
 
 .modal {
