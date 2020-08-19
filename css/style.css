@@ -2151,7 +2151,7 @@ div[id$='-error'] {
 }
 
 .subscribe {
-  padding: 60px 20px 70px 20px;
+  padding: 60px 20px 35px 20px;
 }
 
 .subscribe__post-h2 {
@@ -2197,6 +2197,154 @@ div[id$='-error'] {
 #userEmailSubscribe-error {
   top: 0;
   left: 7px;
+}
+
+.footer {
+  padding: 35px 0 55px 0;
+}
+
+.footer__footer-middle {
+  margin: 0 0 40px 0;
+}
+
+.footer__footer-top {
+  margin: 0 0 64px 0;
+}
+
+.footer-top {
+  display: flex;
+}
+
+.footer-top-item {
+  max-width: 195px;
+  width: 100%;
+  border-top: 4px solid;
+  margin: 0 0 25px 0;
+}
+
+.footer-top-item:last-child {
+  margin: 0;
+}
+
+.footer-top-item:nth-child(1) {
+  border-top-color: #FF4F52;
+}
+
+.footer-top-item:nth-child(2) {
+  border-top-color: #AC8EE3;
+}
+
+.footer-top-item:nth-child(3) {
+  border-top-color: #4592FF;
+}
+
+.footer-top-item:nth-child(4) {
+  border-top-color: #FFA34D;
+}
+
+.footer-top-item:nth-child(5) {
+  border-top-color: #3DC47E;
+}
+
+.footer-top-item:nth-child(6) {
+  border-top-color: #6E99AE;
+}
+
+.footer-top-item__title {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 35px 0 25px 0;
+}
+
+.footer-top-list__item {
+  margin: 0 0 15px 0;
+}
+
+.footer-top-list__item:last-child {
+  margin: 0;
+}
+
+.footer-top-list__link {
+  color: #4B5157;
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+}
+
+.socialnet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 205px;
+  width: 100%;
+}
+
+.socialnet__item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-middle {
+  padding: 30px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #D9DADB;
+  border-bottom: 1px solid #D9DADB;
+}
+
+.footer-middle__logo-circle {
+  margin: 0 30px 10px  0;
+}
+
+.footer-middle-menu {
+  display: flex;
+  align-items: center;
+  max-width: 581px;
+  width: 100%;
+}
+
+.footer-middle__footer-middle-menu {
+  margin: 0 0 10px 0;
+}
+
+.footer-middle-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 501px;
+  width: 100%;
+}
+
+.footer-middle__item {
+  margin: 0 10px 10px 0;
+  text-align: left;
+}
+
+.footer-middle__link {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #262D33;
+}
+
+.footer-middle__socialnet {
+  margin: 0 0 20px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #939699;
+}
+
+.footer-bottom__description {
+  max-width: 750px;
+  margin: 0 0 25px 0;
 }
 
 .modal {
@@ -2445,6 +2593,22 @@ div[id$='-error'] {
   .careers-big__body {
     max-width: 680px;
   }
+
+  .footer-top {
+    flex-wrap: wrap;
+  }
+
+  .footer-top-item {
+    flex: 0 0 33.33%;
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .footer-top-item__title {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -2563,6 +2727,14 @@ div[id$='-error'] {
   .careers-big__body {
     max-width: 440px;
   }
+
+  .footer-middle {
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2672,7 +2844,20 @@ div[id$='-error'] {
   }
 
   .subscribe {
-    padding: 30px 20px 35px 20px;
+    padding: 30px 20px 15px 20px;
+  }
+
+  .subscribe__post-h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .footer {
+    padding: 20px 0 30px 0;
+  }
+
+  .footer-middle__footer-middle-menu {
+    margin: 0 0 25px 0;
   }
 }
 
@@ -3048,8 +3233,30 @@ div[id$='-error'] {
     width: 100%;
   }
 
+  .form-button__subscribe {
+    margin: 0 0 0 15px;
+  }
+
+  .footer-top-item {
+    flex: 0 0 45%;
+  }
+
+  .footer-middle-list {
+    flex-wrap: wrap;
+  }
+
+  .footer-middle__item {
+    flex: 0 0 40%;
+  }
+
   .modal__dialog {
     padding: 33px 5vw;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .footer-middle__item {
+    flex: 0 0 100%;
   }
 }
 
@@ -3071,6 +3278,12 @@ div[id$='-error'] {
     font-size: 16px;
     line-height: 20px;
     margin: 0 0 5vw 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer-top-item {
+    flex: 0 0 100%;
   }
 }
 
