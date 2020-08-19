@@ -1549,7 +1549,7 @@
 	<div class="container subscribe__container">
 		<h2 class="post-h2 subscribe__post-h2">Subscribe now and get 20% off</h2>
 
-		<form action="send.php" method="POST" class="form form__subscribe form--radius">
+		<!-- <form action="send.php" method="POST" class="form form__subscribe form--radius">
 	
 			<input 
 			type="email" 
@@ -1560,8 +1560,21 @@
 		<button class="btn-readmore form-button form-button__subscribe" type="submit">
 			Subscribe
 		</button>
-	</form>
+	</form> -->
 
+
+		<form action="send.php" method="POST" class="form form__subscribe">
+				<input 
+				type="email" 
+				class="form-input__subscribe" 
+				placeholder="Enter your email"
+				name="userEmailSubscribe"
+				>
+			<button class="btn-readmore form-button__subscribe" type="submit">
+					Send
+			</button>
+		</form>
+	<!-- /.subscribe__form -->
 
 	</div>
 	<!-- /.container subscribe__container -->
