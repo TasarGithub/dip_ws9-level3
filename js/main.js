@@ -185,6 +185,24 @@ var prev = $('.swiper-button-prev');
 // // bullets.css('left',prev.width() + 21);
 
 
+//initialize swiper when document ready
+var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container', {
+	// Optional parameters
+	// direction: 'vertical',
+	loop: true,
+	// autoHeight: true,
+	
+	keyboard: {
+		enabled: true,
+		onlyInViewport: true,
+	},
+
+	navigation: {
+		nextEl: '.swiper-article-button-next',
+		prevEl: '.swiper-article-button-prev',
+	}
+	
+});
 
 
   //initialize swiper when document ready
@@ -577,6 +595,10 @@ var prev = $('.swiper-button-prev');
 				}
 			};
 
+			//если табов на стр нет - уходим]
+			if (_elemTabs === null) {
+				return;
+			} 
 		_eventTabsShow = new CustomEvent('tab.show', { detail: _elemTabs });
 
 		_elemTabs.addEventListener('click', function (e) {
@@ -635,9 +657,9 @@ var prev = $('.swiper-button-prev');
 		$('#favorit-6').toggleClass('favorit-red');
 	});
 
-	$('#favorit-page').click(function (e) {
-		$('#favorit-page').toggleClass('favorit-red');
-	});
+	// $('#favorit-page').click(function (e) {
+	// 	$('#favorit-page').toggleClass('favorit-red');
+	// });
 
 
 
