@@ -442,6 +442,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 input {
@@ -617,6 +618,12 @@ div[id$='-error'] {
   background-position: 100% 5%;
   background-size: 70px;
   background-repeat: no-repeat;
+}
+
+.post-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -1429,6 +1436,11 @@ div[id$='-error'] {
   grid-template-rows: repeat(4, 172px);
   grid-row-gap: 26px;
   grid-column-gap: 30px;
+}
+
+.post-link-big {
+  grid-row: 1/3;
+  grid-column: 1/4;
 }
 
 .post {
@@ -2438,6 +2450,10 @@ div[id$='-error'] {
     grid-template-rows: minmax(min-content, max-content) repeat(4, minmax(min-content, max-content));
   }
 
+  .post-big__img > img {
+    height: 75%;
+  }
+
   .text-speech {
     max-width: 90%;
   }
@@ -2717,6 +2733,55 @@ div[id$='-error'] {
   }
 }
 
+@media screen and (max-width: 630px) {
+  .articles__grid {
+    grid-template-columns: none;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    grid-column-gap: unset;
+  }
+
+  .post-big {
+    grid-column: 1/4;
+    grid-row: auto;
+  }
+
+  .post-bottom {
+    width: 100%;
+    padding: 12px 15px 12px 15px;
+  }
+
+  .post-bottom-itlines {
+    flex: 0 0 100%;
+    padding: 0 10px 0  10px;
+  }
+
+  .post-vertical {
+    grid-column: 1/4;
+    grid-row: auto;
+  }
+
+  .post-picture {
+    grid-column: 1/4;
+    grid-row: auto;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .post-small {
+    grid-column: 1/4;
+    grid-row: auto;
+    margin: 0 auto;
+  }
+
+  .columns {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 620px) {
   .careers-big {
     background-position: 251px 73px;
@@ -2809,53 +2874,6 @@ div[id$='-error'] {
 
   .hot-item__hot-link-last {
     margin: 0 auto;
-  }
-
-  .articles__grid {
-    grid-template-columns: none;
-    grid-template-rows: auto;
-    grid-row-gap: 20px;
-    grid-column-gap: unset;
-  }
-
-  .post-big {
-    grid-column: 1/4;
-    grid-row: auto;
-  }
-
-  .post-bottom {
-    width: 100%;
-    padding: 12px 15px 12px 15px;
-  }
-
-  .post-bottom-itlines {
-    flex: 0 0 100%;
-    padding: 0 10px 0  10px;
-  }
-
-  .post-vertical {
-    grid-column: 1/4;
-    grid-row: auto;
-  }
-
-  .post-picture {
-    grid-column: 1/4;
-    grid-row: auto;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .post-small {
-    grid-column: 1/4;
-    grid-row: auto;
-    margin: 0 auto;
-  }
-
-  .columns {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    padding: 0;
   }
 
   .columns__header {
