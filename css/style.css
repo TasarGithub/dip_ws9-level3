@@ -2561,7 +2561,7 @@ div[id$='-error'] {
   }
 
   .post-vertical {
-    padding: 10px 10px 15px 10px;
+    padding: 10px 10px 15px 30px;
   }
 
   .post-vertical__post-h2 {
@@ -2698,6 +2698,8 @@ div[id$='-error'] {
 
   .hot-item {
     flex-basis: 45%;
+    border-right: none;
+    padding: 0 0 10px 0;
   }
 
   .hot-item:nth-child(1),
@@ -2708,11 +2710,9 @@ div[id$='-error'] {
 
   .hot-item:nth-child(4) {
     margin: 0 10px 0 0;
-    border-right: 1px solid #4B5157;
   }
 
   .hot-item {
-    border-right: 1px solid #4B5157;
     border-bottom: 1px solid #4B5157;
   }
 }
@@ -2842,6 +2842,8 @@ div[id$='-error'] {
     grid-column: 1/4;
     grid-row: auto;
     margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
   }
 
   .post-small {
@@ -2853,6 +2855,7 @@ div[id$='-error'] {
   .columns {
     grid-template-columns: auto;
     grid-template-rows: auto;
+    padding: 0;
   }
 
   .columns__header {
@@ -2894,6 +2897,11 @@ div[id$='-error'] {
   .cards__wrap {
     flex: 0 0 100%;
     margin: 0 0 20px 0;
+  }
+
+  .card-body {
+    flex-basis: 100%;
+    padding: 0;
   }
 
   .cards-mini__wrap {

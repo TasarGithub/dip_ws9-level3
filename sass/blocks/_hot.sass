@@ -22,18 +22,21 @@
 		cursor: pointer
 		border-right: 1px solid $dark-for-border
 		margin: 0 25px 0 0
+
 		@media screen and ( max-width: 1200px)
 			margin: 0 15px 0 0
 		@media screen and ( max-width: 992px)
 			margin: 0 10px 0 0
 		@media screen and ( max-width: 767px)
 			flex-basis: 45%
+			border-right: none
+			padding: 0 0 10px 0
 			&:nth-child(1),&:nth-child(2)
 				margin: 0 10px 10px 0
 				border-bottom: 1px solid $dark-for-border
 			&:nth-child(4)
 				margin: 0 10px 0 0
-				border-right: 1px solid $dark-for-border
+				// border-right: 1px solid $dark-for-border
 		@media screen and ( max-width: 576px)
 			flex-basis: 95%
 			&:nth-child(3)
@@ -45,7 +48,7 @@
 			margin: 0
 			border-right: none
 		@media screen and ( max-width: 767px)
-				border-right: 1px solid $dark-for-border
+				// border-right: 1px solid $dark-for-border
 				border-bottom: 1px solid $dark-for-border
 		@media screen and ( max-width: 576px)
 			margin: 0 auto 10px auto
