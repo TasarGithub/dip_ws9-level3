@@ -1744,11 +1744,12 @@ div[id$='-error'] {
 }
 
 .cards__grid-main {
-  grid-template-columns: auto auto;
+  display: flex;
   justify-content: space-between;
 }
 
 .cards__wrap {
+  margin: 0 20px 0 0;
   max-width: 848px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -1786,6 +1787,7 @@ div[id$='-error'] {
   color: #939699;
   opacity: 1;
   justify-content: start;
+  max-width: 100%;
 }
 
 .card-img__wrap {
@@ -1908,6 +1910,15 @@ div[id$='-error'] {
   font-size: 70px;
   color: #262D33;
   opacity: 0.08;
+}
+
+.card-mini__hr {
+  max-width: 213px;
+  width: 100%;
+  height: 1px;
+  background-color: #B4D1E0;
+  border: none;
+  margin: 0 auto;
 }
 
 .test2 {
@@ -2467,6 +2478,10 @@ div[id$='-error'] {
     border: none;
   }
 
+  .card-img__wrap {
+    display: none;
+  }
+
   .careers-big__post-h2 {
     font-size: 20px;
     line-height: 25px;
@@ -2570,10 +2585,6 @@ div[id$='-error'] {
   .flower__title {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .card-img__wrap {
-    display: none;
   }
 
   .card-body {
@@ -2874,6 +2885,19 @@ div[id$='-error'] {
 
   #columns__item-3 {
     display: block;
+  }
+
+  .cards__grid-main {
+    flex-wrap: wrap;
+  }
+
+  .cards__wrap {
+    flex: 0 0 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .cards-mini__wrap {
+    flex: 0 0 100%;
   }
 
   .careers__grid-main {
