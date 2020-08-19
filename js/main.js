@@ -581,15 +581,21 @@ var prev = $('.swiper-button-prev');
 
 		_elemTabs.addEventListener('click', function (e) {
 			var tabsLinkTarget = e.target.closest('.link__item');
-			// console.log('e: ', e);
-			// console.log('tabsLinkTarget: ', tabsLinkTarget);
-			// завершаем выполнение функции, если кликнули не по ссылке
-			if (!tabsLinkTarget.classList.contains('link__item')) {
+
+			if (tabsLinkTarget === null) {
 				return;
-			}
-			// отменяем стандартное действие
-			e.preventDefault();
-			_showTab(tabsLinkTarget);
+			} 
+				console.log('e: ', e);
+				console.log('tabsLinkTarget: ', tabsLinkTarget);
+				// завершаем выполнение функции, если кликнули не по ссылке
+				if (!tabsLinkTarget.classList.contains('link__item')) {
+					return;
+				}
+				// отменяем стандартное действие
+				e.preventDefault();
+				_showTab(tabsLinkTarget);
+		
+
 		});
 
 		return {
