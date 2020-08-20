@@ -761,18 +761,21 @@ div[id$='-error'] {
   text-align: center;
 }
 
-.btn-readmore {
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 138px;
   width: 100%;
   height: 40px;
-  padding: 10px 0;
+  padding: 10px;
   background-color: #4592FF;
   color: #ffffff;
   border-radius: 20px;
   text-decoration: none;
+}
+
+.btn-readmore {
+  max-width: 138px;
 }
 
 .btn-readmore__text {
@@ -1029,6 +1032,7 @@ div[id$='-error'] {
   position: relative;
   width: 18px;
   height: 14px;
+  cursor: pointer;
 }
 
 .navbar__burger::after,
@@ -2583,9 +2587,23 @@ div[id$='-error'] {
   margin: 0 0 30px 0;
 }
 
+.part-2__btn-category {
+  margin: 0 0 60px 0;
+}
+
+.part-2__hr {
+  max-width: 653px;
+  width: 100%;
+  height: 1px;
+  background-color: #B4D1E0;
+  border: none;
+  margin: 0 auto 0 0;
+}
+
 .part-2__grid {
   display: flex;
   justify-content: space-between;
+  margin: 0 0 20px 0;
 }
 
 .part-2__insert {
@@ -2774,6 +2792,32 @@ div[id$='-error'] {
 
 .right-block__comment {
   opacity: 0.7;
+}
+
+.btn-category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 433px;
+  width: 100%;
+  min-height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #262D33;
+}
+
+.btn-category-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #D9DADB;
+  padding: 4px 14px;
+}
+
+.btn-category__link {
+  color: #262D33;
 }
 
 .modal {
