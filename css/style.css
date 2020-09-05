@@ -643,6 +643,11 @@ div[id$='-error'] {
   line-height: 25px;
 }
 
+.title-16-25 {
+  font-size: 16px;
+  line-height: 25px;
+}
+
 .title-15-20 {
   font-size: 15px;
   line-height: 20px;
@@ -2977,6 +2982,70 @@ div[id$='-error'] {
 .big-round {
   width: 40px;
   height: 40px;
+}
+
+.more {
+  background-color: #F5F5F5;
+  padding: 60px 0 90px 0;
+}
+
+.more__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.more-card {
+  max-width: 263px;
+  min-height: 275px;
+  width: 100%;
+  height: 100%;
+}
+
+.more__img {
+  max-width: 263px;
+  min-height: 180px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 0 15px 0;
+}
+
+.more__img > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.more__title {
+  margin: 0 0 15px 0;
+}
+
+.watch-comment {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 15px;
+  opacity: 0.8;
+}
+
+.watch-comment__watch {
+  margin: 0 10px 0 0;
+}
+
+.watch {
+  padding: 0 0 0 20px;
+  background: url("../img/page/eye.svg") no-repeat left;
+  background-size: 15px 15px;
+}
+
+.comments {
+  padding: 0 0 0 20px;
+  background: url("../img/page/comment.svg") no-repeat left;
+  background-size: 15px 15px;
 }
 
 .modal {
