@@ -894,7 +894,7 @@ div[id$='-error'] {
   text-align: center;
 }
 
-.btn {
+.btn-link {
   display: flex;
   justify-content: center;
   align-items: center;
