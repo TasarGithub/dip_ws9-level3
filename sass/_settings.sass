@@ -65,14 +65,15 @@ button
 	outline: none
 	border: none
 	background-color: transparent
-	&:hover
-		cursor: pointer
+	@media screen and ( min-width: 992px)
+		&:hover
+			cursor: pointer
 
 
 
 
 
-.section
+
 
 .form--radius
 	overflow: hidden
@@ -80,6 +81,7 @@ button
 
 .invalid
   color: tomato
+
 input
   &.invalid
     border-bottom: 1px solid tomato
@@ -206,18 +208,39 @@ div[id$='-error']
 	&-40-50
 		font-size: 40px
 		line-height: 50px
+		@media screen and ( max-width: 576px)
+			font-size: 30px
+			line-height: 40px
+		@media screen and ( max-width: 320px)
+			font-size: 25px
+			line-height: 30px
 
 	&-25-30
 		font-size: 25px
 		line-height: 30px
+		@media screen and ( max-width: 576px)
+			font-size: 20px
+			line-height: 25px
+		@media screen and ( max-width: 320px)
+			font-size: 16px
+			line-height: 25px
 
 	&-20-25
 		font-size: 20px
 		line-height: 25px
+		@media screen and ( max-width: 576px)
+			font-size: 16px
+			line-height: 25px
+		@media screen and ( max-width: 320px)
+			font-size: 15px
+			line-height: 20px
 
 	&-16-25
 		font-size: 16px
 		line-height: 25px
+		@media screen and ( max-width: 576px)
+			font-size: 15px
+			line-height: 20px
 
 	&-15-20
 		font-size: 15px

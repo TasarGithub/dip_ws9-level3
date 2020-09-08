@@ -85,7 +85,13 @@
 		justify-content: space-between
 		// align-items: center
 		margin: 0 0 20px 0
-	
+		@media screen and ( max-width: 992px)
+			flex-wrap: wrap
+
+	&__wrap
+		margin: 0 20px 0 0
+		@media screen and ( max-width: 992px)
+			margin: 0 20px 0 0
 	
 
 	&__insert
@@ -137,6 +143,8 @@
 		position: relative
 		z-index: 10
 		color: $text-black
+
+		
 .flex-num
 	flex: 0 0 100%
 .author-block
@@ -205,9 +213,13 @@
 	&__number 
 
 .part2__right-block
+	margin: 134px 0  0
+	@media screen and ( max-width: 992px)
+		margin: 0 0 20px 0
+	
 
 .right-block
-	margin: 134px 0  0
+
 	max-width: 263px
 	min-height: 430px
 	width: 100%

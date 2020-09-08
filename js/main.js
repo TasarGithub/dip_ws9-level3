@@ -661,7 +661,9 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
 	// 	$('#favorit-page').toggleClass('favorit-red');
 	// });
 
-
+	$('#comments-block__load-more').click(function (e) {
+		$('.inactive-comments').toggleClass('active-comments');
+	});
 
 });
 
