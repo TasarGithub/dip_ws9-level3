@@ -2402,10 +2402,6 @@ div[id$='-error'] {
   align-items: center;
 }
 
-.hero__category {
-  color: #4592FF;
-}
-
 .hero__title {
   font-family: Roboto Slab;
   font-style: normal;
@@ -2430,6 +2426,10 @@ div[id$='-error'] {
   top: 150px;
 }
 
+.hero__category {
+  color: #4592FF;
+}
+
 .hero-top__wrap {
   display: flex;
   justify-content: space-between;
@@ -2438,7 +2438,13 @@ div[id$='-error'] {
   width: 100%;
 }
 
-.hero-top-block__wrap {
+.hero-top__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-top__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -4380,6 +4386,24 @@ div[id$='-error'] {
 
   .footer-middle__item {
     flex: 0 0 40%;
+  }
+
+  .hero__category {
+    margin: 0 0 30px 0;
+  }
+
+  .hero-top__wrap {
+    flex-wrap: wrap;
+  }
+
+  .hero-top__actions {
+    justify-content: flex-end;
+    flex: 1 1 100%;
+  }
+
+  .hero-top__nav {
+    justify-content: flex-end;
+    flex: 1 1 auto;
   }
 
   .share {

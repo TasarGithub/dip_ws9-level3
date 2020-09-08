@@ -25,8 +25,7 @@
 	&__hero-bottom 
 	&__container
 
-	&__category
-		color: $blue-light
+
 		
 	&__title
 		font-family: Roboto Slab
@@ -51,6 +50,11 @@
 		left: -7% //-67
 		top: 150px
 
+	&__category
+		color: $blue-light
+		@media screen and ( max-width: 576px)
+			margin: 0 0 30px 0
+
 	&-top
 		&__wrap
 			display: flex
@@ -58,11 +62,25 @@
 			align-items: center
 			margin: 0 0 52px 0
 			width: 100%
-		&-block__wrap
+			@media screen and ( max-width: 576px)
+				flex-wrap: wrap
+
+		&__actions
 			display: flex
 			justify-content: space-between
 			align-items: center
-			
+			@media screen and ( max-width: 576px)
+				justify-content: flex-end
+				flex: 1 1 100%
+
+		&__nav
+			display: flex
+			justify-content: space-between
+			align-items: center
+			@media screen and ( max-width: 576px)
+				justify-content: flex-end
+				flex: 1 1 auto
+
 		&__back
 			display: flex
 			justify-content: space-between
