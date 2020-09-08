@@ -1,8 +1,7 @@
 .art-main
 	padding: 60px 0 60px 0
 
-	&__author-block
-		margin: -130px 0 0  0
+
 	&-slider
 		&__wrap
 			border-radius: 10px
@@ -31,12 +30,14 @@
 				height: 100%
 
 
-.begin 
-	&__litter-m
+.litter-m
 		float: left
-		margin: 6px 10px 0px 0
+
 		width: 96px
 		height: 75px
+		@media screen and ( max-width: 400px)
+			width: 24vw
+			height: 18vw
 
 
 
@@ -45,19 +46,35 @@
 	max-width: 623px
 	font-size: 18px
 	line-height: 30px
+	@media screen and ( max-width: 400px)
+		font-size: 14px
 
 .part-1
+	&__litter-m
+		margin: 6px 10px 0px 0
+		@media screen and ( max-width: 400px)
+			margin: 10px 0px 0px 0
 	&__wrap
 		display: flex
 		justify-content: space-between
 		// align-items: center
 		margin: 0 0 15px 0
 
-	&__paragraph
+
+	&__author-block
+		margin: -122px 0 0 0
+		@media screen and ( max-width: 992px)
+			margin: 0
+			flex: 1 1 40%
+
+	&__paragraph-1
 		margin: 0 0 35px 0
+
+		@media screen and ( max-width: 992px)
+			margin: 0 20px 15px 0
+			flex: 1 1 60%
 	
-		
-		
+
 	&__post-h2
 		display: block
 		padding: 30px 0 0 0
@@ -145,17 +162,21 @@
 		color: $text-black
 
 		
-.flex-num
+.flex-100
 	flex: 0 0 100%
+
 .author-block
 	display: flex
 	justify-content: center
 	flex-wrap: wrap
-	align-items: center
+	align-content: flex-start
+	// align-items: center
 	max-width: 263px
 	width: 100%
 	min-height: 322px
 	height: 100%
+
+		
 
 	&>*
 		text-align: center
@@ -168,22 +189,58 @@
 		border-radius: 50%
 		overflow: hidden
 		max-width: fit-content
-
+		margin: 0 0 15px 0
+		@media screen and ( max-width: 576px)
+			flex: 1 1 100%
+			max-width: 70px
+			height: auto
 		&>img
 			height: 100%
 			width: 100%
 
-	&__name 
+	// &__name, 	&__profi, &__number-articles
+	// 	@media screen and ( max-width: 768px)
+	// 		margin: 0 0 15px 0
 
-	&__profi 
+	&__name
+		margin: 0 0 8px 0
 
-	&__number-articles 
+	&__profi
+		margin: 0 0 19px 0
+		color: $text-color
+		
 
-	&__socnet 
+
+	&__number-articles
+		margin: 0 0 26px 0
+		color: $text-black
+		font-weight: bold
+
+
+	&__socnet
+		margin: 0 0 34px 0
+		max-width: 140px
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		& .socialnet__item
+			margin: 0 5px
+			
+		@media screen and ( max-width: 576px)
+			flex-wrap: wrap
+			margin: 0 auto 34px
+			justify-content: center
+			& .socialnet__item
+				margin: 2px
+		
 
 	&__follow
+		font-weight: bold
+		color: $text-black
 
 	&__hr
+		margin: 0 0 15px 0
 
 
 .swiper-article
@@ -199,9 +256,16 @@
 		background-position: center
 		background-repeat: no-repeat
 		border: none
-		cursor: pointer
 		background-color: transparent
 		z-index: 20
+		@media screen and ( min-width: 992px)
+			cursor: pointer
+		@media screen and ( max-width: 576px)
+			width: 40px
+			height: 40px
+		@media screen and ( max-width: 320px)
+			width: 30px
+			height: 30px
 		&-prev
 			left: 3%
 			background-image: url(../img/arrow-prev.svg)
@@ -216,15 +280,12 @@
 	margin: 134px 0  0
 	@media screen and ( max-width: 992px)
 		margin: 0 0 20px 0
-	
 
 .right-block
-
 	max-width: 263px
 	min-height: 430px
 	width: 100%
 	height: 100%
-
 
 	&__title 
 		font-family: Roboto Slab
@@ -253,7 +314,6 @@
 		line-height: 25px
 		margin: 0 0 8px 0
 
-
 	&__text
 		margin: 0 0 20px 0
 		font-size: 14px
@@ -265,7 +325,6 @@
 		align-items: center
 		max-width: 100px
 		width: 100%
-
 
 	&__views
 		display: flex
@@ -297,6 +356,9 @@
 	font-weight: bold
 	line-height: 20px
 	color: $text-black
+	@media screen and ( max-width: 576px)
+		flex-wrap: wrap
+		justify-content: center
 	
 	&-item
 		display: flex
@@ -306,6 +368,8 @@
 		border-radius: 5px
 		border: 1px solid $grey-for-border
 		padding: 4px 14px
+		@media screen and ( max-width: 576px)
+			margin: 10px
 
 
 
