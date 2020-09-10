@@ -103,9 +103,9 @@
 			<!-- /.navbar__top -->
 		</div>
 		<!--/. container navbar__container -->
-		<nav class="navbar-bottom">
+		<nav class="navbar-bottom page__navbar-bottom">
 			<div class="container">
-				<ul class="menu">
+				<ul class="menu page__menu">
 					<li class="menu__item"><a href="#" class="menu__link">News</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Opinion</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Science</a></li>
@@ -182,7 +182,7 @@
 
 					<div class="hero-bottom hero__hero-bottom">
 
-						<div class="hero-bottom hero-bottom__clock">
+						<div class="hero-bottom__clock hero-bottom__margin-media">
 
 							<div class="hero-bottom__img-clock">
 								<img src="img/page/hero/clock.svg" alt="Clock Icon">
@@ -192,14 +192,14 @@
 
 						</div> <!-- /.hero-bottom hero-bottom__clock -->
 
-						<div class="like hero-bottom__like ">
+						<div class="like hero-bottom__like hero-bottom__margin-media">
 							<img src="img/heart-dark.svg" alt="Like" class="like__img" >
 							<span class="like__number">830</span>
 						</div>
 						<!-- /.like -->
 
-						<div class="comment hero-bottom__comment">
-							<img src="img/comment-dark.png" alt="Comment" class="comment__img" >
+						<div class="comment hero-bottom__comment hero-bottom__margin-media">
+							<img src="img/comment-dark.svg" alt="Comment" class="comment__img" >
 							<span class="comment__number">19</span>
 						</div>
 						<!-- /.comment -->
@@ -230,7 +230,7 @@
 
 			<div class="page-container art-main__page-container">
 				<div class="part-1__wrap">
-					<p class="paragraph paragraph-1 part-1__paragraph-1">
+					<p class="paragraph paragraph-1 part-1__paragraph">
 			
 						<img src="img/page/M.svg" alt="litter-M" class="litter-m part-1__litter-m" >
 						any geographers are trained in toponymy and cartology, this is not their main preoccupation. Geographers study the space and the temporal database distribution of phenomena,
@@ -336,9 +336,9 @@
 						<div  class="image-text art-main-slider__image-text">
 							<img src="img/authors/Andrew_Washington.png" alt="David Williams" class="author-img">
 						
-							<div class="image-text__text">
-								<span class="text-line text-line--grey columns__text-line">Andrew Washington</span>
-								<span class="text-line text-line--12-normal text-line--grey">Photographer</span>
+							<div class="image-text__text art-main-slider__text">
+								<span class="text-line decor-text-color columns__text-line">Andrew Washington</span>
+								<span class="text-line text-line--12-normal decor-text-light ">Photographer</span>
 							</div>
 						</div>
 
@@ -458,21 +458,21 @@
 					</h2>
 	
 					<div class="sharing__wrap">
-						<a href="#" class="btn-link btn-sharing decor-bg-red">
+						<a href="#" class="btn-link sharing__btn-sharing btn-sharing decor-bg-red">
 							<img src="img/heart-sharing.svg" alt="heart">
 							<span class="btn-sharing__text">Like it</span> <span class="btn-sharing__text decor-op04">42</span>
 						</a>
-						<a href="facebook.com" class="btn-link btn-sharing decor-bg-blue">
+						<a href="facebook.com" class="btn-link btn-sharing decor-bg-blue sharing__btn-sharing">
 							<img src="img/facebook-sharing.svg" alt="facebook">
 							<span class="btn-sharing__text">Share</span> 
 							<span class="btn-sharing__text decor-op04">80</span>
 						</a>
-						<a href="instagram.com" class="btn-link btn-sharing decor-bg-sky">
+						<a href="instagram.com" class="btn-link btn-sharing decor-bg-sky sharing__btn-sharing">
 							<img src="img/twitter-sharing.svg" alt="twitter">
 							<span class="btn-sharing__text">Tweet</span> 
 							<span class="btn-sharing__text decor-op04">33</span>
 						</a>
-						<a href="#" class="big-round sharing__big-round">
+						<a href="#" class="big-round sharing__btn-sharing sharing__big-round">
 							<img src="img/round-sharing.svg" alt="facebook">
 						</a>
 					</div>
@@ -748,16 +748,17 @@
 
 
 				<div class="comments-block__form-comments form-comments decor-bg-grey-bg">
-					<h3 class="title form-comments__title title-20-25">
-						What do you think?
-					</h3>
+
 					<div class="form-comments__wrap">
 						<div class="form-comments__img">
 							<img src="img/authors/Alexandra_Green.png" alt="Author comments">
 						</div>
-						<form class="form-comments__form">
+						<form class="form-comments__form" id="form-comments__form">
+							<h3 class="title form-comments__title title-20-25">
+								What do you think?
+							</h3>
 							<div class="input-group form-comments__input-group">
-								<textarea name="form-comments" id="form-comments__textarea" cols="30" rows="10" class="form-comments__textarea"></textarea>
+								<textarea name="formComments" id="form-comments__textarea" cols="30" rows="10" class="form-comments__textarea"></textarea>
 								<button class="btn form-comments__btn  decor-bg-blue-light" type="submit">
 									<span>Submit</span>
 									<img src="img/arrow.svg" alt="Arrow">
@@ -782,7 +783,7 @@
 
 	<section class="subscribe padding-wrap">
 		<div class="container subscribe__container">
-			<h2 class="post-h2 subscribe__post-h2">Subscribe now and get 20% off</h2>
+			<h2 class="post-h2 subscribe__post-h2 title-40-50">Subscribe now and get&nbsp;20%&nbsp;off</h2>
 	
 			<!-- <form action="send.php" method="POST" class="form form__subscribe form--radius">
 		
@@ -799,13 +800,14 @@
 	
 	
 			<form action="send.php" method="POST" class="form form__subscribe">
+
 					<input 
 					type="email" 
 					class="form-input__subscribe" 
 					placeholder="Enter your email"
 					name="userEmailSubscribe"
 					>
-				<button class="btn btn-readmore form-button__subscribe" type="submit">
+				<button class="btn btn-readmore form-button__subscribe decor-light decor-bg-blue-light" type="submit">
 						Subscribe
 				</button>
 			</form>
@@ -939,7 +941,7 @@
 				<!-- /.footer-top-item 5 -->
 
 				<!-- 6 -->
-				<nav class="footer-top-item">
+				<nav class="footer-top-item footer-top-item__end">
 					<h3 class="footer-top-item__title">
 						Moneys
 					</h3>

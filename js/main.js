@@ -402,8 +402,53 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
 
   });
 
+	$('.form-comments__form').validate({
+		errorClass: "invalid",
+		errorElement: "div",
+		rules: {
+			// строчное правило simple rule, converted to {required:true}
+			formComments: {
+				required: true,
+				minlength: 10,
+				maxlength: 100
+			},
+			//правило - объект
+			// footerPolicyCheckbox: {
+			//   required: true
+			// }
+		},
+		//сообщения
+		messages: {
+			formComments: {
+				required: "fill in the field",
+				minlength: "The text should be > 10 letters",
+				maxlength: "The text should be < 100 letters"
+			} 
+			// footerPolicyCheckbox: {
+			//   required: "fill in the field"
+			// }
+		},
 
+		submitHandler: function(form) {
+			$.ajax({
+				type: "POST",
+				url: "send.php",
+				data: $('form').serialize(),
+				success: function (response) {
+					// console.log($(form).serialize());
+					// console.log('Ajax сработал. Ответ сервера: ' + response);
+					$('#form-comments__form').reset();
+					//$('.footer__form').reset();
+					// // modal.removeClass('modal--visible');
+					// modalThanks.toggleClass('modal--visible');
+					//ym(62095768,'reachGoal','sendForm');
+				}
+			});
+		}
 
+	});
+
+	
 
   //$('.phone').mask('0000-0000');
   // маска для телефона
