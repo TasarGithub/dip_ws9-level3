@@ -21,8 +21,8 @@
 		display: none
 		max-width: 877px
 		width: 100%
-		height: auto
-		// height: 100%
+		// height: auto  // когда tabs__block ввел
+		height: 100%
 		background-repeat: no-repeat
 		background-position: center
 		background-size: cover
@@ -53,7 +53,7 @@
 		// overflow: hidden
 
 	&__author
-		margin: 0 0 145px 0
+		margin: 0 0 144px 0
 		@media screen and ( max-width: 768px)
 			margin: 0 0 11vw 0
 		@media screen and ( max-width: 576px)
@@ -61,6 +61,7 @@
 
 
 	&__link-category
+		display: block
 		margin: 0 0 26px 0
 		@media screen and (max-width: 768px)
 			margin: 0 0 2vw 0
@@ -108,7 +109,7 @@
 	&__img 
 
 	&__btn
-		margin: 0 24px 0 0
+		margin: 0 30px 0 0
 
 	&-swiper
 		margin: 0 0 250px 0
@@ -134,7 +135,7 @@
 	display: grid
 	&__title
 		width: 100%
-		padding: 20px 25px
+		padding: 21px 25px 17px
 		min-height: 60px
 		display: flex
 		align-items: center
@@ -156,14 +157,20 @@
 		text-decoration: none
 		&-1
 			color: $text-green
+			margin: 0px 0 8px 0
 		&-2
-			color: #6E99AE
+			color: $secondary
+			margin: 0 0 7px 0
 		&-3
-			color: #AC8EE3
+			color: $purple-middle
+			margin: 0 0 8px 0
 		&-4
-			color: #FFA34D
+			color: $yellow
+			margin: 0 0 8px 0
 		&-5
-			color: #3DC47E
+			color: $green
+			margin: -4px 0 8px 0
+
 
 	&__item
 		position: relative
@@ -178,7 +185,7 @@
 		cursor: pointer
 		&:last-child
 			border-bottom: none
-			min-height: 113px
+			min-height: 109px
 		&::before, &::after
 			content: ""
 			width: 0
@@ -206,7 +213,7 @@
 		line-height: 20px
 
 	&__play
-		margin: 0 0 -5px 5px
+		margin: 0 0 -5px 2px
 
 
 
@@ -264,11 +271,16 @@
 .tabs
 	&-swiper
 		&__it-text
-			font-size: 10px
-			line-height: 12px
+			padding: 7px 5px 5px 10px
+			@media screen and ( max-width: 400px)
+				font-size: 10px
+				line-height: 12px
 		&__img-play
 			width: 30px
 			height: 30px
+			@media screen and ( max-width: 400px)
+				width: 20px
+				height: 20px
 		&-button
 			position: absolute
 			top: 50%
@@ -306,4 +318,20 @@
 			// display: grid // Из-за него сжимался куда-то на 576 слайд
 			// justify-content: center
 
+	&__play
+		width: 50px
+		height: 50px
+		@media screen and ( max-width: 576px)
+			width: 25px
+			height: 25px
 
+.tabs__swiper-wrapper
+	height: auto
+	border-radius: 8px
+
+.tabs-swiper__it-text
+	& .text-line
+		&:last-child
+			font-size: 12px
+			line-height: 15px
+			margin: 5px 0 0  0

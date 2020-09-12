@@ -122,29 +122,29 @@ $(document).ready(function () {
     count = 1;
 
 
-  //initialize swiper when document ready
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    // direction: 'vertical',
-    loop: true,
-    //pagination: {
-    // //   el: '.swiper-pagination',
-    // //   type: 'bullets',
-    // //   clickable: true,
-		// // },
-		keyboard: {
-			enabled: true,
-			onlyInViewport: true,
-		},
+  // //initialize swiper when document ready
+  // var mySwiper = new Swiper ('.swiper-container.tabs__swiper-container"', {
+  //   // Optional parameters
+  //   // direction: 'vertical',
+  //   loop: true,
+  //   //pagination: {
+  //   // //   el: '.swiper-pagination',
+  //   // //   type: 'bullets',
+  //   // //   clickable: true,
+	// 	// // },
+	// 	keyboard: {
+	// 		enabled: true,
+	// 		onlyInViewport: true,
+	// 	},
 
-    navigation: {
-      nextEl: '.tabs-swiper-button-next',
-      prevEl: '.tabs-swiper-button-prev',
-		}
+  //   navigation: {
+  //     nextEl: '.tabs-swiper-button-next',
+  //     prevEl: '.tabs-swiper-button-prev',
+	// 	}
 		
-  });
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
+  // });
+  // var next = $('.swiper-button-next');
+  // var prev = $('.swiper-button-prev');
   // //var bullets = $('.swiper-pagination');
   
   // next.css('left',prev.width() + 6 + bullets.width() + 32);
@@ -177,8 +177,6 @@ var mySwiperCareers = new Swiper ('.swiper-container.swiper-container--careers',
 });
 
 
-var next = $('.swiper-button-next');
-var prev = $('.swiper-button-prev');
 // //var bullets = $('.swiper-pagination');
 
 // next.css('left',prev.width() + 6 + bullets.width() + 32);
@@ -721,7 +719,29 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
 // Andrikanych Yevhen 2020
 // https://www.youtube.com/c/freelancerlifestyle
 
+function swiperTabs () {
+  //initialize swiper when document ready
+  var mySwiper = new Swiper ('.swiper-container.tabs__swiper-container', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+    //pagination: {
+    // //   el: '.swiper-pagination',
+    // //   type: 'bullets',
+    // //   clickable: true,
+		// // },
+		keyboard: {
+			enabled: true,
+			onlyInViewport: true,
+		},
 
+    navigation: {
+      nextEl: '.tabs-swiper-button-next',
+      prevEl: '.tabs-swiper-button-prev',
+		}
+		
+  });
+}
 
 (function () {
 	let originalPositions = [];
@@ -794,6 +814,7 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
 					daDestination.insertBefore(daElement, daDestination.children[actualIndex]);
 					daElement.classList.add(daClassname);
 				}
+				swiperTabs(); //Инициализируем свайпер после создания новой html структуры
 			} else {
 				//Возвращаем на место
 				if (daElement.classList.contains(daClassname)) {
@@ -845,7 +866,7 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
 			if (a.breakpoint > b.breakpoint) { return -1 } else { return 1 }
 		});
 		arr.sort(function (a, b) {
-			if (a.place > b.place) { return 1 } else { return -1 }
+			if (a.place > b.place) { return 1 } else { return -1}
 		});
 	}
 	//Дополнительные сценарии адаптации
