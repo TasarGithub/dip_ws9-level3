@@ -214,6 +214,8 @@
 	width: 100%
 	min-height: 322px
 	height: 100%
+	@media screen and ( max-width: 768px)
+		max-width: 100%
 
 		
 
@@ -227,10 +229,11 @@
 		height: 90px
 		border-radius: 50%
 		overflow: hidden
-		max-width: fit-content
+		// max-width: fit-content
 		margin: 0 0 15px 0
+		flex: 0 0 auto
 		@media screen and ( max-width: 576px)
-			flex: 1 1 100%
+			flex: 0 0 100%
 			max-width: 70px
 			height: auto
 		&>img
