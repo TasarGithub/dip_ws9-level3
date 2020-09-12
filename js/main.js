@@ -702,9 +702,11 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
 		$('#favorit-6').toggleClass('favorit-red');
 	});
 
-	// $('#favorit-page').click(function (e) {
-	// 	$('#favorit-page').toggleClass('favorit-red');
-	// });
+	$('#favorit-page').click(function (e) {
+		console.log('favorit: ', this);
+
+		$('#favorit-page').toggleClass('favorit-red');
+	});
 
 	$('#comments-block__load-more').click(function (e) {
 		$('.inactive-comments').toggleClass('active-comments');

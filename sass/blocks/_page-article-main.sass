@@ -78,6 +78,8 @@
 		justify-content: space-between
 		// align-items: center
 		margin: 0 0 10px 0
+		@media screen and ( max-width: 768px)
+			flex-direction: column-reverse
 
 
 	&__author-block
@@ -85,6 +87,11 @@
 		@media screen and ( max-width: 992px)
 			margin: 0
 			flex: 1 1 40%
+		@media screen and ( max-width: 768px)
+			align-self: center
+			margin: 0 0 30px 0
+		// @media screen and ( max-width: 576px)
+			
 
 	&__paragraph
 		margin: 0 0 35px 0
@@ -92,6 +99,9 @@
 		@media screen and ( max-width: 992px)
 			margin: 0 0 15px 0
 			flex: 1 1 60%
+		@media screen and ( max-width: 768px)
+			flex: 1 1 100%
+			max-width: 100%
 	
 
 	&__post-h2
