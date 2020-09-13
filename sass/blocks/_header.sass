@@ -24,8 +24,8 @@
 		align-items: center
 		padding: 0 0 0 0   
 		border-bottom: 1px solid $grey-for-border
-		@media screen and ( max-width: 767px)
-			flex-wrap: wrap
+		// @media screen and ( max-width: 767px)
+		// 	flex-wrap: wrap
 		&--add-scroll-width
 		&__sections
 				display: flex
@@ -57,18 +57,21 @@
 			min-height: 44px
 			@media screen and ( max-width: 576px)
 				margin: 0 auto
+				flex: 1
 		&__image-text
+			@media screen and ( max-width: 768px)
+				margin: 0 0 0 auto
 			& .text-line
 				&:first-child
 					font-weight: bold
 					margin: 2px 0 1px 0
 					@media screen and ( max-width: 576px)
 						max-width: 100%
+						& .separately-word
+							display: none
 				&:last-child
 					font-size: 12px
 					line-height: 15px
-			@media screen and ( max-width: 576px)
-				margin: 0 auto
 			
 
 				
@@ -130,14 +133,20 @@
 
 .form
 	&-search
-		display: block
+		display: flex
+		align-items: center
 		min-height: 49px
 		width: 100%
-		@media screen and ( max-width: 767px)
-			order: 4
-			flex: 0 0 100%
-			border-top: 1px solid $grey-for-border
-			// margin: 20px 0 20px 0
+		@media screen and ( max-width: 992px)
+			flex: 0 1 33%
+			min-height: auto
+			margin: 0px auto -4px 7px
+			// width: 30%
+		// @media screen and ( max-width: 767px)
+		// 	order: 4
+		// 	flex: 0 0 100%
+		// 	border-top: 1px solid $grey-for-border
+		// 	// margin: 20px 0 20px 0
 
 		&__form-btn
 			display: flex
@@ -151,18 +160,24 @@
 			top: 0
 			bottom: 0
 			background-color: transparent
+			@media screen and ( max-width: 992px)
+				width: auto
+				padding: 0
 			@media screen and ( max-width: 768px)
 				justify-content: flex-start
-				width: 25px
+				width: 20px
+				padding: 0.5px 2px 2.5px
 
 		&-input
 			height: 100%
 			width: 100%
-			padding: 17px 20px 0 55px 
-			// @media screen and ( max-width: 992px)
-			// 	width: 340px
-			// @media screen and ( max-width: 767px)
-			// 	width: 180px
+			// padding: 17px 20px 0 55px 
+			padding: 0 0 0 55px 
+			@media screen and ( max-width: 992px)
+				padding: 0 0 0 24px 
+			@media screen and ( max-width: 767px)
+				font-size: 12px
+				line-height: 16px
 
 
 		
@@ -245,14 +260,22 @@
 	width: 100%
 	text-decoration: none
 	color: $text-color
-	// @media screen and ( max-width: 767px)
-	// 	display: none
+	@media screen and ( max-width: 767px)
+		justify-content: flex-end
+		flex:  0 0 35% 
+		width: auto
 	&__text
 		font-size: 14px
 		line-height: 20px
+		@media screen and ( max-width: 768px)
+			font-size: 12px
+			line-height: 16px
 	&__img
 		width: 20px
 		height: 20px
+		@media screen and ( max-width: 768px)
+			width: 17px
+			height: 17px
 
 .navbar-middle
 	display: flex
@@ -268,9 +291,11 @@
 			max-width: 100%
 			flex: 0 0 100%
 			order: -1
-			margin: 10px 0 20px 0
+			margin: 10px 0 10px 0
 		@media screen and ( max-width: 767px)
-			margin:  0 
+			margin: 5px 0 10px 0
+		@media screen and ( max-width: 576px)
+			margin: 5px 0 5px 0
 			
 		
 	&__logo-letter
@@ -279,7 +304,12 @@
 			flex: 0 0 100%
 			margin: 0 auto -2px
 			text-align: center
-
+			height: 40px
+			margin: 0 0 10px 0
+		@media screen and ( max-width: 768px)
+			margin: 0 0 10px 0
+		@media screen and ( max-width: 576px)
+			margin: 0 0 5px 0
 
 
 
@@ -303,18 +333,25 @@
 		max-width: 184px
 		min-height: 31px
 		margin: 0 0 0
+		@media screen and ( max-width: 992px)
+			background: url('../img/header/liberty.png') no-repeat left/40px 40px
+			padding: 0 0 0 40px 
+			height: 100%
+			max-width: 250px
+			min-height: auto
+		@media screen and ( max-width: 576px)
+			max-width: 184px
+			min-height: 31px
+
 
 .navbar__weather
 
 .navbar-top__subscribe-img
 	margin: 0 0 -4px 0
-	@media screen and ( max-width: 576px)
+	@media screen and ( max-width: 768px)
 		display: none
 
-.navbar-top__navbar-wrap-2element
-	margin: 0 2px -2px 0
-	@media screen and ( max-width: 576px)
-		max-width: 190px
+
 
 .navbar-wrap-2element
 	display: flex
@@ -323,7 +360,13 @@
 	max-width: 290px
 	width: 100%
 	
-
+.navbar-top__navbar-wrap-2element
+	margin: 0 2px -2px 0
+	@media screen and ( max-width: 768px)
+		justify-content: flex-end
+	@media screen and ( max-width: 576px)
+		max-width: 190px
+		flex: 1 1 25%
 
 
 .calendar

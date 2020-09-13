@@ -921,7 +921,8 @@ div[id$='-error'] {
 }
 
 .form-search {
-  display: block;
+  display: flex;
+  align-items: center;
   min-height: 49px;
   width: 100%;
 }
@@ -943,7 +944,7 @@ div[id$='-error'] {
 .form-search-input {
   height: 100%;
   width: 100%;
-  padding: 17px 20px 0 55px;
+  padding: 0 0 0 55px;
 }
 
 .menu-btn {
@@ -1059,16 +1060,16 @@ div[id$='-error'] {
   margin: 0 0 -4px 0;
 }
 
-.navbar-top__navbar-wrap-2element {
-  margin: 0 2px -2px 0;
-}
-
 .navbar-wrap-2element {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 290px;
   width: 100%;
+}
+
+.navbar-top__navbar-wrap-2element {
+  margin: 0 2px -2px 0;
 }
 
 .calendar {
@@ -3813,6 +3814,21 @@ div[id$='-error'] {
     max-width: 700px;
   }
 
+  .form-search {
+    flex: 0 1 33%;
+    min-height: auto;
+    margin: 0px auto -4px 7px;
+  }
+
+  .form-search__form-btn {
+    width: auto;
+    padding: 0;
+  }
+
+  .form-search-input {
+    padding: 0 0 0 24px;
+  }
+
   .menu {
     padding: 22px 0;
   }
@@ -3831,17 +3847,27 @@ div[id$='-error'] {
     max-width: 100%;
     flex: 0 0 100%;
     order: -1;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 10px 0;
   }
 
   .navbar-middle__logo-letter {
     flex: 0 0 100%;
     margin: 0 auto -2px;
     text-align: center;
+    height: 40px;
+    margin: 0 0 10px 0;
   }
 
   .logo {
     display: none;
+  }
+
+  .logo-letter__img {
+    background: url("../img/header/liberty.png") no-repeat left/40px 40px;
+    padding: 0 0 0 40px;
+    height: 100%;
+    max-width: 250px;
+    min-height: auto;
   }
 
   .navbar-bottom {
@@ -3992,9 +4018,36 @@ div[id$='-error'] {
 }
 
 @media screen and (max-width: 768px) {
+  .navbar-top__image-text {
+    margin: 0 0 0 auto;
+  }
+
   .form-search__form-btn {
     justify-content: flex-start;
-    width: 25px;
+    width: 20px;
+    padding: 0.5px 2px 2.5px;
+  }
+
+  .signin__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .signin__img {
+    width: 17px;
+    height: 17px;
+  }
+
+  .navbar-middle__logo-letter {
+    margin: 0 0 10px 0;
+  }
+
+  .navbar-top__subscribe-img {
+    display: none;
+  }
+
+  .navbar-top__navbar-wrap-2element {
+    justify-content: flex-end;
   }
 
   .tabs__wrap {
@@ -4154,10 +4207,6 @@ div[id$='-error'] {
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    padding: 110px 0 0;
-  }
-
   .container {
     max-width: 700px;
     width: 92%;
@@ -4166,10 +4215,6 @@ div[id$='-error'] {
   .page-container {
     max-width: 700px;
     width: 92%;
-  }
-
-  .navbar-top {
-    flex-wrap: wrap;
   }
 
   .navbar__bottom {
@@ -4189,10 +4234,9 @@ div[id$='-error'] {
     top: 110px;
   }
 
-  .form-search {
-    order: 4;
-    flex: 0 0 100%;
-    border-top: 1px solid #D9DADB;
+  .form-search-input {
+    font-size: 12px;
+    line-height: 16px;
   }
 
   .menu {
@@ -4204,8 +4248,14 @@ div[id$='-error'] {
     margin: 0 0 20px 0;
   }
 
+  .signin {
+    justify-content: flex-end;
+    flex: 0 0 35%;
+    width: auto;
+  }
+
   .navbar-middle__navbar-wrap-2element {
-    margin: 0;
+    margin: 5px 0 10px 0;
   }
 
   .mobile-block-invisible {
@@ -4407,26 +4457,37 @@ div[id$='-error'] {
 
   .navbar-top__subscribe {
     margin: 0 auto;
+    flex: 1;
   }
 
   .navbar-top__image-text .text-line:first-child {
     max-width: 100%;
   }
 
-  .navbar-top__image-text {
-    margin: 0 auto;
+  .navbar-top__image-text .text-line:first-child .separately-word {
+    display: none;
   }
 
   .subscribe-text-line:nth-child(2) {
     display: none;
   }
 
-  .navbar-top__subscribe-img {
-    display: none;
+  .navbar-middle__navbar-wrap-2element {
+    margin: 5px 0 5px 0;
+  }
+
+  .navbar-middle__logo-letter {
+    margin: 0 0 5px 0;
+  }
+
+  .logo-letter__img {
+    max-width: 184px;
+    min-height: 31px;
   }
 
   .navbar-top__navbar-wrap-2element {
     max-width: 190px;
+    flex: 1 1 25%;
   }
 
   .tabs__page-wrap {
