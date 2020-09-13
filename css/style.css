@@ -1916,7 +1916,7 @@ div[id$='-error'] {
   margin: 0 0 10px 0;
 }
 
-.cards-mini__wrap {
+.cards-mini {
   grid-template-rows: repeat(9, min-content);
   padding: 10px 0;
   width: 263px;
@@ -4564,7 +4564,7 @@ div[id$='-error'] {
     padding: 0;
   }
 
-  .cards-mini__wrap {
+  .cards-mini {
     flex: 0 0 100%;
   }
 
