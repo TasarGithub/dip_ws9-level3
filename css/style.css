@@ -1217,10 +1217,6 @@ div[id$='-error'] {
   margin: 0 30px 0 0;
 }
 
-.tabs-swiper {
-  margin: 0 0 250px 0;
-}
-
 .tabs__text-wrap {
   margin: 0 0 0 10px;
 }
@@ -1373,15 +1369,6 @@ div[id$='-error'] {
   margin: 0 auto;
 }
 
-.tabs-swiper__it-text {
-  padding: 7px 5px 5px 10px;
-}
-
-.tabs-swiper__img-play {
-  width: 30px;
-  height: 30px;
-}
-
 .tabs-swiper-button {
   position: absolute;
   top: 50%;
@@ -1423,7 +1410,11 @@ div[id$='-error'] {
   border-radius: 8px;
 }
 
-.tabs-swiper__it-text .text-line:last-child {
+.image-text__text--tabs {
+  padding: 7px 5px 5px 10px;
+}
+
+.image-text__text--tabs .text-line:last-child {
   font-size: 12px;
   line-height: 15px;
   margin: 5px 0 0  0;
@@ -4445,6 +4436,11 @@ div[id$='-error'] {
     line-height: 20px;
   }
 
+  .category {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
   .navbar-top__sections {
     width: 18px;
     max-width: none;
@@ -4506,6 +4502,10 @@ div[id$='-error'] {
     font-size: 25px;
     line-height: 30px;
     margin: 0 0 15vw 0;
+  }
+
+  .tabs__btn {
+    margin: 0 15px 0 0;
   }
 
   .tabs__play {
@@ -4830,14 +4830,14 @@ div[id$='-error'] {
 }
 
 @media screen and (max-width: 400px) {
-  .tabs-swiper__it-text {
+  .image-text__text--tabs {
     font-size: 10px;
     line-height: 12px;
   }
 
-  .tabs-swiper__img-play {
-    width: 20px;
-    height: 20px;
+  .image-text__text--tabs .text-line:last-child {
+    font-size: 10px;
+    line-height: 12px;
   }
 
   .footer-top-list__link {
