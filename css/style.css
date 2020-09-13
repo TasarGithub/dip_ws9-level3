@@ -1890,7 +1890,7 @@ div[id$='-error'] {
   margin: 0 0 16px 0;
 }
 
-.card__text-line {
+.card-text-line {
   color: #939699;
   opacity: 1;
   justify-content: start;
