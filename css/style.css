@@ -662,6 +662,7 @@ div[id$='-error'] {
   font-size: 12px;
   line-height: 15px;
   opacity: 0.4;
+  padding: 0 5px 0 0;
 }
 
 .image-text {
