@@ -1103,15 +1103,15 @@ div[id$='-error'] {
   color: #ffffff;
 }
 
-.navbar__burger {
+.navbar-top__burger {
   position: relative;
   width: 18px;
   height: 14px;
   cursor: pointer;
 }
 
-.navbar__burger::after,
-.navbar__burger::before {
+.navbar-top__burger::after,
+.navbar-top__burger::before {
   content: '';
   background-color: #BCBFC2;
   position: absolute;
@@ -1122,11 +1122,11 @@ div[id$='-error'] {
   transition: all 0.3s ease 0s;
 }
 
-.navbar__burger::after {
+.navbar-top__burger::after {
   top: 12px;
 }
 
-.navbar__burger > span {
+.navbar-top__burger > span {
   position: absolute;
   background-color: #BCBFC2;
   left: 0;
@@ -4279,7 +4279,7 @@ div[id$='-error'] {
     top: 108px;
   }
 
-  .navbar__burger {
+  .navbar-top__burger {
     display: block;
   }
 
