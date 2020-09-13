@@ -1570,7 +1570,7 @@ div[id$='-error'] {
   margin: 0 5px 0  0;
 }
 
-.post-big--author-img {
+.post-big__author-img {
   width: 30px;
   height: 30px;
 }
