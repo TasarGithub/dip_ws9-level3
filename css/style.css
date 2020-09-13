@@ -661,7 +661,7 @@ div[id$='-error'] {
 .date {
   font-size: 12px;
   line-height: 15px;
-  opacity: 0.4;
+  opacity: 0.5;
   padding: 0 5px 0 0;
 }
 
@@ -859,6 +859,14 @@ div[id$='-error'] {
   text-transform: uppercase;
   border-bottom: 1px solid #D9DADB;
   background-color: #ffffff;
+}
+
+.text-line {
+  display: block;
+  text-align: left;
+  color: #D1E2EB;
+  max-width: 24vw;
+  width: max-content;
 }
 
 .navbar {
@@ -3374,68 +3382,6 @@ div[id$='-error'] {
 
 .modal__thanks-text {
   text-align: center;
-}
-
-.text-line {
-  display: block;
-  text-align: left;
-  color: #D1E2EB;
-  max-width: 24vw;
-  width: max-content;
-}
-
-.text-line--op04 {
-  opacity: 0.4;
-}
-
-.text-line--op04--op05 {
-  opacity: 0.5;
-}
-
-.text-line--op04--op06 {
-  opacity: 0.6;
-}
-
-.text-line--op04--op085 {
-  opacity: 0.85;
-}
-
-.text-line--op04--bold {
-  font-weight: bold;
-}
-
-.text-line--op04--12-normal {
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.text-line--op04--white {
-  color: #ffffff;
-}
-
-.text-line--op04--black {
-  font-weight: bold;
-  color: #262D33;
-}
-
-.text-line--op04--grey {
-  color: #D1E2EB;
-}
-
-.text-line--op04--blue-light {
-  color: #4592FF;
-}
-
-.text-line--op04--text-green {
-  color: #3BBDC4;
-}
-
-.text-line--op04--red {
-  color: #FF4F52;
-}
-
-.text-line--op04--purple-middle {
-  color: #AC8EE3;
 }
 
 .decor {
