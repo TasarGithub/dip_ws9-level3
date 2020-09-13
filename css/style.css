@@ -1892,7 +1892,7 @@ div[id$='-error'] {
   max-width: 100%;
 }
 
-.card-img__wrap {
+.card__img {
   flex: 0 0 100%;
   max-width: 336px;
   min-height: 195px;
@@ -3937,7 +3937,7 @@ div[id$='-error'] {
     border: none;
   }
 
-  .card-img__wrap {
+  .card__img {
     display: none;
   }
 
