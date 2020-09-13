@@ -1952,7 +1952,7 @@ div[id$='-error'] {
   border: none;
 }
 
-.card-mini-img__wrap {
+.card-mini__img {
   max-width: 60px;
   min-height: 60px;
   width: 100%;
