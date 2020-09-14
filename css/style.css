@@ -3105,7 +3105,7 @@ div[id$='-error'] {
   padding: 0 0 0 30px;
 }
 
-.comments-items__hr {
+.comments-wrap__hr {
   background-color: #D9DADB;
   height: 1px;
   max-width: 100%;
