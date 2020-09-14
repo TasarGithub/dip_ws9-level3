@@ -3531,6 +3531,10 @@ div[id$='-error'] {
     cursor: pointer;
   }
 
+  .favorit:hover {
+    cursor: pointer;
+  }
+
   .hot-item:hover {
     cursor: pointer;
   }
