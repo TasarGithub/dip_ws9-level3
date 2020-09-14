@@ -980,7 +980,7 @@ div[id$='-error'] {
 .form-search-input {
   height: 100%;
   width: 100%;
-  padding: 0 0 0 55px;
+  padding: 0 10px 0 55px;
 }
 
 .menu-btn {
@@ -3780,7 +3780,7 @@ div[id$='-error'] {
   }
 
   .form-search-input {
-    padding: 0 0 0 24px;
+    padding: 0 10px 0 24px;
   }
 
   .menu {
@@ -4433,6 +4433,10 @@ div[id$='-error'] {
 
   .navbar-top__image-text .text-line:first-child .separately-word {
     display: none;
+  }
+
+  .form-search-input {
+    padding: 0 5px 0 24px;
   }
 
   .subscribe-text-line:nth-child(2) {
