@@ -869,6 +869,10 @@ div[id$='-error'] {
   width: max-content;
 }
 
+.text-line__margin {
+  margin: 0 0 5px 0;
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -1819,10 +1823,6 @@ div[id$='-error'] {
   background-color: #B4D1E0;
   border: none;
   margin: 0 auto;
-}
-
-.columns__text-line {
-  margin: 0 0 5px 0;
 }
 
 .flower {
