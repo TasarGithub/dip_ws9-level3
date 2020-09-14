@@ -2247,7 +2247,7 @@ div[id$='-error'] {
   max-width: 442px;
 }
 
-.form-input__subscribe {
+.form__input-subscribe {
   max-width: 313px;
   width: 100%;
   margin: 0 10px 0 0;
@@ -2258,16 +2258,16 @@ div[id$='-error'] {
   border: 1px solid #D9DADB;
 }
 
-.form-input__subscribe::placeholder {
+.form__input-subscribe::placeholder {
   color: #939699;
 }
 
-.form-input__subscribe::-moz-placeholder,
-.form-input__subscribe :-moz-placeholder {
+.form__input-subscribe::-moz-placeholder,
+.form__input-subscribe :-moz-placeholder {
   opacity: 1;
 }
 
-.form-button__subscribe {
+.form__button-subscribe {
   min-height: 40px;
   max-width: 119px;
 }
@@ -4585,13 +4585,13 @@ div[id$='-error'] {
     flex-wrap: wrap;
   }
 
-  .form-input__subscribe {
+  .form__input-subscribe {
     flex: 1 1 100%;
     margin: 0 10px 20px 0;
     max-width: 100%;
   }
 
-  .form-input__subscribe {
+  .form__input-subscribe {
     width: 100%;
   }
 
