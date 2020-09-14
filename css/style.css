@@ -2110,6 +2110,7 @@ div[id$='-error'] {
 .careers-slider__text-line-2 {
   font-size: 12px;
   line-height: 15px;
+  width: auto;
 }
 
 .careers-slider__post-h2 {
@@ -4545,16 +4546,30 @@ div[id$='-error'] {
     height: 100%;
   }
 
+  .careers-slider__author {
+    top: 35px;
+  }
+
   .careers-slider__post-h2 {
-    width: 90%;
+    max-width: 80%;
     top: 151px;
+    font-size: 7vw;
+    line-height: 8.7vw;
+  }
+
+  .careers-slider__post-h2 {
+    font-size: 6.5vw;
+    line-height: 7.7vw;
   }
 
   .careers-slider__btn {
-    top: 230px;
-    max-width: 130px;
-    padding: 6px 10px;
-    font-size: 11px;
+    top: 65vw;
+    max-width: 185px;
+    background-color: #4592FF;
+    color: #ffffff;
+    padding: 10px 10px 10px 14px;
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .careers-big {
@@ -4796,6 +4811,13 @@ div[id$='-error'] {
   .image-text__text--tabs .text-line:last-child {
     font-size: 10px;
     line-height: 12px;
+  }
+
+  .careers-slider__btn {
+    top: 73vw;
+    max-width: 130px;
+    padding: 6px 10px;
+    font-size: 11px;
   }
 
   .footer-top-list__link {
