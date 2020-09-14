@@ -951,7 +951,7 @@ div[id$='-error'] {
   left: 0;
   bottom: 0;
   z-index: 40;
-  height: 100vh;
+  height: 58px;
   overflow: auto;
   transition: all 0.3s ease 0s;
 }
@@ -4230,7 +4230,7 @@ div[id$='-error'] {
   }
 
   .navbar-bottom--mobile-menu {
-    top: 108px;
+    top: 50px;
   }
 
   .navbar-top__burger {
