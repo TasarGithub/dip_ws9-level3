@@ -568,28 +568,32 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
 		// });
 
 
-	$('.navbar__burger').click(function (e) {
+	$('.navbar-top__burger').click(function (e) {
 		// $('.user, .form__search').toggleClass('mobile-block--visible');
 		var el = document.querySelector(".navbar-middle");
 		var inViewport = elementInViewport(el);
 
-		console.log('window.outerWidth: ', window.outerWidth);
+		// console.log('window.outerWidth: ', window.outerWidth);
 		if (window.outerWidth < 768){
 			
 			
 				$('.navbar-bottom').toggleClass('navbar-bottom--mobile-menu');
-				$('.navbar__burger').toggleClass('active');
+				$('.navbar-top__burger').toggleClass('active');
 		} else {
-			if (!inViewport ) {
-				$('.navbar-bottom').toggleClass('navbar-burger-for-scroll');
-				// $('.navbar-bottom').toggleClass('navbar__bottom--mobile-menu');
-				$('.navbar__burger').toggleClass('active');
-				// $("body").toggleClass("fixed");
-				// $('body').toggleClass('body__lock');
-			} else if ($('.navbar__burger').hasClass('active')) {
-				$('.navbar__burger').toggleClass('active');
-				$('.navbar-bottom').toggleClass('navbar-burger-for-scroll');
-			}
+			//если не видно то  не выводим - думаю это ошибка, юзеру непонятно что это и зачем. Пусть выводит в любом случае
+			// if (!inViewport ) {
+			// 	$('.navbar-bottom').toggleClass('navbar-burger-for-scroll');
+			// 	// $('.navbar-bottom').toggleClass('navbar__bottom--mobile-menu');
+			// 	$('.navbar-top__burger').toggleClass('active');
+			// 	// $("body").toggleClass("fixed");
+			// 	// $('body').toggleClass('body__lock');
+			// } else
+			$('.navbar-top__burger').toggleClass('active');
+			$('.navbar-bottom').toggleClass('navbar-burger-for-scroll');
+			// if ($('.navbar-top__burger').hasClass('active')) {
+			// 	$('.navbar-top__burger').toggleClass('active');
+			// 	$('.navbar-bottom').toggleClass('navbar-burger-for-scroll');
+			// }
 	
 		}
 	});
