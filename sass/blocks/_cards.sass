@@ -19,18 +19,11 @@
 	max-width: 848px
 	background-color: $light
 	border-radius: 10px
+	background-color: $light
+	padding: 0 25px 0 25px
 	@media screen and ( max-width: 576px)
 		flex: 0 0 100%
 		margin: 0 0 20px 0
-
-	// align-items: start
-	
-
-
-	background-color: $light
-	padding: 0 25px
-.cards__card 
-
 
 
 .card
@@ -40,6 +33,7 @@
 	min-height: 245px
 	padding: 24px 0 23px
 	border-bottom: 1px solid $grey-for-border
+	position: relative
 	&:last-child
 		border: none
 	&:hover
@@ -56,6 +50,13 @@
 		opacity: 1
 		justify-content: start
 		max-width: 100%
+	&__favorit
+		//margin: 1px 3.5px 0 auto
+		border-radius: 3px 3px 0 0
+		position: absolute
+		right: 3px
+		top: 25px
+
 
 .card__img
 	flex: 0 0 100%
@@ -70,22 +71,16 @@
 
 
 .card-body
-	padding: 0 0 0 25px
+	padding: 5px 0 6px 25px
 	display: flex
 	flex-direction: column
 	justify-content: space-between
+	min-height: 195px
 	@media screen and ( max-width: 768px)
 		flex-basis: 90%
 	@media screen and ( max-width: 576px)
 		flex-basis: 100%
 		padding: 0 
-
-
-
-.card__text 
-
-
-
 
 
 
@@ -123,6 +118,8 @@
 	overflow: hidden
 	// justify-items: center
 	justify-content: center
+	@media screen and ( max-width: 1200px)
+		flex: 0 0 auto
 	@media screen and ( max-width: 576px)
 		flex: 0 0 100%
 	&__title
@@ -138,6 +135,7 @@
 		background-color: $grey-sky
 		border: none
 		margin: 0 auto
+
 .card-mini
 	padding: 13px 25px 13px 
 	position: relative

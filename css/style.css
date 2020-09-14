@@ -648,7 +648,7 @@ div[id$='-error'] {
   font-size: 12px;
   line-height: 15px;
   opacity: 0.6;
-  margin: -1px 0 0 5px;
+  margin: -1px 0 0 7px;
 }
 
 .like > img,
@@ -1862,7 +1862,7 @@ div[id$='-error'] {
   background-color: #ffffff;
   border-radius: 10px;
   background-color: #ffffff;
-  padding: 0 25px;
+  padding: 0 25px 0 25px;
 }
 
 .card {
@@ -1871,6 +1871,7 @@ div[id$='-error'] {
   min-height: 245px;
   padding: 24px 0 23px;
   border-bottom: 1px solid #D9DADB;
+  position: relative;
 }
 
 .card:last-child {
@@ -1898,6 +1899,13 @@ div[id$='-error'] {
   max-width: 100%;
 }
 
+.card__favorit {
+  border-radius: 3px 3px 0 0;
+  position: absolute;
+  right: 3px;
+  top: 25px;
+}
+
 .card__img {
   flex: 0 0 100%;
   max-width: 336px;
@@ -1907,10 +1915,11 @@ div[id$='-error'] {
 }
 
 .card-body {
-  padding: 0 0 0 25px;
+  padding: 5px 0 6px 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 195px;
 }
 
 .title-card {
@@ -3650,6 +3659,10 @@ div[id$='-error'] {
   #columns__item-1,
   #columns__item-2 {
     border-right: 1px solid #B4D1E0;
+  }
+
+  .cards-mini {
+    flex: 0 0 auto;
   }
 
   .careers__grid-main {
