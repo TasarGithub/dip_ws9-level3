@@ -2866,15 +2866,15 @@ div[id$='-error'] {
   background-image: url(../img/arrow-next.svg);
 }
 
-.part2__right-block {
-  margin: 134px 0  0;
-}
-
 .right-block {
   max-width: 263px;
   min-height: 430px;
   width: 100%;
   height: 100%;
+}
+
+.right-block__margin {
+  margin: 134px 0  0;
 }
 
 .right-block__title {
@@ -3931,7 +3931,7 @@ div[id$='-error'] {
     margin: 0 0 0 0;
   }
 
-  .part2__right-block {
+  .right-block__margin {
     margin: 0 0 20px 0;
   }
 
