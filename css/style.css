@@ -1749,7 +1749,6 @@ div[id$='-error'] {
   background-color: #ffffff;
   padding: 25px 25px 30px 25px;
   max-width: 263px;
-  min-height: 170;
   justify-self: end;
 }
 
@@ -3668,6 +3667,7 @@ div[id$='-error'] {
   .careers__grid-main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(min-content, 570px) auto auto;
+    grid-column-gap: 0;
     justify-content: space-between;
     align-items: start;
   }
