@@ -113,13 +113,14 @@
 	//grid by add class
 	// grid-template-columns: minmax(auto, 261px) auto
 	grid-template-rows: repeat(9, min-content)
-	padding: 10px 0
+	padding: 0 0 10px 0
 	width: 263px
 	// width: 100%
 	min-height: 770px
 	background-color: $light
 	align-self: start
 	border-radius: 10px
+	overflow: hidden
 	// justify-items: center
 	justify-content: center
 	@media screen and ( max-width: 576px)
@@ -128,7 +129,7 @@
 		font-size: 14px
 		line-height: 20px
 		letter-spacing: 0.5px
-		padding: 29px 25px 18px
+		padding: 3px 25px 0px
 		border-bottom: 1px solid $grey-for-border
 	&__hr
 		max-width: 213px
@@ -147,8 +148,12 @@
 	min-height: 94px
 	// border-bottom: 1px solid $grey-for-border
 	z-index: 10
-	&:hover
-		cursor: pointer
+	// @media screen and ( min-width: 992px)
+	// 	&:hover
+			// cursor: pointer
+		// &:focus
+		// 	background-color: black
+
 	&:last-child
 		border: none
 	&__img
@@ -175,7 +180,7 @@
 		position: absolute
 		z-index: 1
 		right: 25px	
-		bottom: 50%
+		bottom: 46%
 		transform: translateY(50%)
 		font-size: 70px
 		// line-height: 50px

@@ -647,7 +647,7 @@ div[id$='-error'] {
   align-items: center;
   font-size: 12px;
   line-height: 15px;
-  opacity: 0.4;
+  opacity: 0.6;
   margin: -1px 0 0 5px;
 }
 
@@ -661,7 +661,7 @@ div[id$='-error'] {
 .date {
   font-size: 12px;
   line-height: 15px;
-  opacity: 0.5;
+  opacity: 0.7;
   padding: 0 5px 0 0;
 }
 
@@ -706,11 +706,12 @@ div[id$='-error'] {
 
 .readme-bottom {
   border-top: 1px solid #B4D1E0;
-  padding: 13px 25px 12px 25px;
+  padding: 12px 25px 12px 25px;
   font-size: 14px;
   font-weight: bold;
   line-height: 20px;
   text-align: center;
+  color: #262D33;
 }
 
 .btn {
@@ -1564,7 +1565,7 @@ div[id$='-error'] {
   grid-column: 1/4;
   padding: 15px 0 0 0;
   display: grid;
-  grid-template-columns: minmax(auto, 261px) auto;
+  grid-template-columns: minmax(auto, 265px) auto;
   grid-template-rows: 300px auto;
   max-width: 555px;
   min-height: 370px;
@@ -1614,7 +1615,7 @@ div[id$='-error'] {
 
 .post__body {
   display: flex;
-  max-width: 240px;
+  max-width: 261px;
   flex-direction: column;
   min-height: 314px;
   padding: 22px 0 0 35px;
@@ -1926,12 +1927,13 @@ div[id$='-error'] {
 
 .cards-mini {
   grid-template-rows: repeat(9, min-content);
-  padding: 10px 0;
+  padding: 0 0 10px 0;
   width: 263px;
   min-height: 770px;
   background-color: #ffffff;
   align-self: start;
   border-radius: 10px;
+  overflow: hidden;
   justify-content: center;
 }
 
@@ -1939,7 +1941,7 @@ div[id$='-error'] {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.5px;
-  padding: 29px 25px 18px;
+  padding: 3px 25px 0px;
   border-bottom: 1px solid #D9DADB;
 }
 
@@ -1959,10 +1961,6 @@ div[id$='-error'] {
   align-items: center;
   min-height: 94px;
   z-index: 10;
-}
-
-.card-mini:hover {
-  cursor: pointer;
 }
 
 .card-mini:last-child {
@@ -2000,7 +1998,7 @@ div[id$='-error'] {
   position: absolute;
   z-index: 1;
   right: 25px;
-  bottom: 50%;
+  bottom: 46%;
   transform: translateY(50%);
   font-size: 70px;
   color: #262D33;
