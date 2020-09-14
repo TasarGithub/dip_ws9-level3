@@ -2669,6 +2669,10 @@ div[id$='-error'] {
   line-height: 30px;
 }
 
+.paragraph__margin {
+  margin: 0 0 35px 0;
+}
+
 .part-1__litter-m {
   margin: 6px 10px 0px 0;
 }
@@ -2681,10 +2685,6 @@ div[id$='-error'] {
 
 .part-1__author-block {
   margin: -122px 0 0 0;
-}
-
-.part-1__paragraph {
-  margin: 0 0 35px 0;
 }
 
 .part-1__post-h2 {
@@ -3918,7 +3918,7 @@ div[id$='-error'] {
     flex: 1 1 40%;
   }
 
-  .part-1__paragraph {
+  .part-1__author-block {
     margin: 0 0 15px 0;
     flex: 1 1 60%;
   }
@@ -4118,7 +4118,7 @@ div[id$='-error'] {
     margin: 0 0 30px 0;
   }
 
-  .part-1__paragraph {
+  .part-1__author-block {
     flex: 1 1 100%;
     max-width: 100%;
   }
