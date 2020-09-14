@@ -335,8 +335,11 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
           // console.log('Ajax сработал. Ответ сервера: ' + response);
           $('#modal-thanks--subscibe').toggleClass('modal--visible');
           //$('.control__form').reset(); не работает, надо именно форма нужна
-					$('form')[2].reset();
-	
+					// $('form')[1].reset();
+					$('#form-subscribe')[0].reset();
+					// $('#form-subscribe-page-2').reset();
+					// $('#form-subscribe-page-1').reset();
+					// $('#form-subscribe-page-3').reset();
 					
           //ym(62095768,'reachGoal','sendForm');
         }
@@ -436,10 +439,12 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
 				success: function (response) {
 					// console.log($(form).serialize());
 					// console.log('Ajax сработал. Ответ сервера: ' + response);
-					$('#form-comments__form').reset();
+					// $('#form-comments__form').reset();
+
 					//$('.footer__form').reset();
 					// // modal.removeClass('modal--visible');
-					// modalThanks.toggleClass('modal--visible');
+					$('#modal__thanks--message').toggleClass('modal--visible');
+					$('#form-comments')[0].reset();
 					//ym(62095768,'reachGoal','sendForm');
 				}
 			});

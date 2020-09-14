@@ -7,44 +7,27 @@ if ($_POST['userEmailSubscribe']<>''){
     $userEmailSubscribe = $_POST['userEmailSubscribe'];
 		// $userPhone = $_POST['userPhone'];
 		//Формирование письма
-		$title = "Новый e-mail для подписки на новости";
+		$title = "New e-mail for subscribe";
 		$body = "
-		<h2> Новый e-mail для подписки на новости </h2>
+		<h2> New e-mail</h2>
 		<b>Почта:</b> $userEmailSubscribe<br>
 		<b></b> <br>
 		<b></b> <br>
 		";
 }
 
-if ($_POST['userNameFooter']<>''){
-    $userNameFooter = $_POST['userNameFooter'];
-		$userPhoneFooter = $_POST['userPhoneFooter'];
-		$userMessageFooter = $_POST['userMessageFooter'];
-	 // echo $userName;
-		//Формирование письма
-		$title = "Новое обращение Best Tour Plan";
-		$body = "
-		<h2> Новое обращение </h2>
-		<b></b> $userNameFooter <br>
-		<b> Телефон: </b>  $userPhoneFooter <br>
-		<b> Сообщение:</b><br> $userMessageFooter";
 
-}
 
-if ($_POST['userNameModal']<>''){
-	$userNameModal = $_POST['userNameModal'];
-	$userPhoneModal = $_POST['userPhoneModal'];
-	$userEmailModal = $_POST['userEmailModal'];
-	$userMessageModal = $_POST['userMessageModal'];
+if ($_POST['formComments']<>''){
+	$formComments = $_POST['formComments'];
+
  // echo $userName;
 	//Формирование письма
-	$title = "Can I View Other Options?";
+	$title = "formComments";
 	$body = "
-	<h2> Новое обращение </h2>
-	<b></b> $userNameModal <br>
-	<b> Телефон: </b>  $userPhoneModal <br>
-	<b> Почта: </b>  $userEmailModal <br>
-	<b> Сообщение:</b><br> $userMessageModal";
+	<h2> New comment </h2>
+
+	<b> Message:</b><br> $formComments";
 
 }
 
