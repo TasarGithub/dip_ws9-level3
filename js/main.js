@@ -719,32 +719,61 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
 
 	$tabs('.tabs');
 
-	$('#card-1').click(function (e) {
+	// $('#card-1').click(function (e) {
+	// 	$('#favorit-1').toggleClass('favorit-red');
+	// });
+
+	// $('#card-2').click(function (e) {
+	// 	$('#favorit-2').toggleClass('favorit-red');
+	// });
+
+	// $('#card-3').click(function (e) {
+	// 	$('#favorit-3').toggleClass('favorit-red');
+	// });
+
+	// $('#card-4').click(function (e) {
+	// 	$('#favorit-4').toggleClass('favorit-red');
+	// });
+
+	// $('#card-5').click(function (e) {
+	// 	$('#favorit-5').toggleClass('favorit-red');
+	// });
+
+	// $('#card-6').click(function (e) {
+	// 	$('#favorit-6').toggleClass('favorit-red');
+	// });
+
+
+	$('#favorit-1').click(function (e) {
 		$('#favorit-1').toggleClass('favorit-red');
 	});
 
-	$('#card-2').click(function (e) {
+	$('#favorit-2').click(function (e) {
 		$('#favorit-2').toggleClass('favorit-red');
 	});
 
-	$('#card-3').click(function (e) {
+	$('#favorit-3').click(function (e) {
 		$('#favorit-3').toggleClass('favorit-red');
 	});
 
-	$('#card-4').click(function (e) {
+	$('#favorit-4').click(function (e) {
 		$('#favorit-4').toggleClass('favorit-red');
 	});
 
-	$('#card-5').click(function (e) {
+	$('#favorit-5').click(function (e) {
 		$('#favorit-5').toggleClass('favorit-red');
 	});
 
-	$('#card-6').click(function (e) {
+	$('#favorit-6').click(function (e) {
 		$('#favorit-6').toggleClass('favorit-red');
 	});
 
+
+
+
+
 	$('#favorit-page').click(function (e) {
-		console.log('favorit: ', this);
+		// console.log('favorit: ', this);
 
 		$('#favorit-page').toggleClass('favorit-red');
 	});

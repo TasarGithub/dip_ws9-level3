@@ -2437,7 +2437,6 @@ div[id$='-error'] {
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   color: #939699;
 }
 
@@ -3086,7 +3085,7 @@ div[id$='-error'] {
 
 .comments-block__container {
   max-width: 750px;
-  margin: 0  auto 0 35vh;
+  margin: 0  auto 0 91px;
 }
 
 .comments-block__header {
@@ -3763,6 +3762,10 @@ div[id$='-error'] {
     margin: 0 auto 0 0;
     padding: 20px 20px 20px 0;
     max-width: 303px;
+  }
+
+  .comments-block__container {
+    margin: 0 auto 0 70px;
   }
 }
 
