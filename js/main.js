@@ -570,8 +570,10 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
 
 	$('.navbar-top__burger').click(function (e) {
 		// $('.user, .form__search').toggleClass('mobile-block--visible');
-		var el = document.querySelector(".navbar-middle");
-		var inViewport = elementInViewport(el);
+		var navbarMiddle = document.querySelector(".navbar-middle");
+		var inViewportNavbarMiddle = elementInViewport(navbarMiddle);
+		var navbarTop = document.querySelector(".navbar-top");
+		var inViewportNavbarTop = elementInViewport(navbarMiddle);
 
 		// console.log('window.outerWidth: ', window.outerWidth);
 		if (window.outerWidth < 768){
@@ -581,15 +583,26 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
 				$('.navbar-top__burger').toggleClass('active');
 		} else {
 			//если не видно то  не выводим - думаю это ошибка, юзеру непонятно что это и зачем. Пусть выводит в любом случае
-			// if (!inViewport ) {
-			// 	$('.navbar-bottom').toggleClass('navbar-burger-for-scroll');
-			// 	// $('.navbar-bottom').toggleClass('navbar__bottom--mobile-menu');
-			// 	$('.navbar-top__burger').toggleClass('active');
-			// 	// $("body").toggleClass("fixed");
-			// 	// $('body').toggleClass('body__lock');
-			// } else
-			$('.navbar-top__burger').toggleClass('active');
-			$('.navbar-bottom').toggleClass('navbar-burger-for-scroll');
+			if (!inViewportNavbarTop ) {
+				$('.navbar-bottom').toggleClass('navbar-burger-for-scroll');
+				// $('.navbar-bottom').toggleClass('navbar__bottom--mobile-menu');
+				$('.navbar-top__burger').toggleClass('active');
+				// $("body").toggleClass("fixed");
+				// $('body').toggleClass('body__lock');
+			} else {
+				if ($('.navbar-bottom').hasClass('navbar-burger-for-scroll')) {
+					$('.navbar-bottom').removeClass('navbar-burger-for-scroll');
+					$('.navbar-top__burger').removeClass('active');
+				} else {
+					$('.navbar-bottom').toggleClass('navbar-bottom--click-for-pc-up');
+					setTimeout(() => $('.navbar-bottom').toggleClass('navbar-bottom--click-for-pc-up'), 200);
+				}
+					// $('.navbar-top__burger').toggleClass('active');
+	
+					
+					// $('.navbar-bottom').toggleClass('navbar-bottom--click-for-pc-up');
+			}
+			// $('.navbar-bottom').toggleClass('navbar-burger-for-scroll');
 			// if ($('.navbar-top__burger').hasClass('active')) {
 			// 	$('.navbar-top__burger').toggleClass('active');
 			// 	$('.navbar-bottom').toggleClass('navbar-burger-for-scroll');
@@ -597,6 +610,23 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
 	
 		}
 	});
+
+
+	// $(window).scroll(function() {
+	// 	var el = document.querySelector(".navbar-middle");
+	// 	var inViewport = elementInViewport(el);
+	// 	if (inViewport ) {
+
+	// 		if  $('.navbar-bottom').hasClass('navbar-burger-for-scroll'))) 
+	// 		{
+	// 			$('.navbar-bottom').removeClass('navbar-burger-for-scroll');}
+				
+	// 	} else {
+
+	// 	}
+
+
+	// }
 
 
 //загрузка гуглкарты при клике наведении мышкой

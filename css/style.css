@@ -944,6 +944,21 @@ div[id$='-error'] {
   top: 110px;
 }
 
+.navbar-bottom {
+  padding: 1px 6px 1px 2px;
+  background-color: #262D33;
+}
+
+.navbar-bottom--click-for-pc-down {
+  transform: translateY(10px);
+  transition: 0.1s;
+}
+
+.navbar-bottom--click-for-pc-up {
+  transform: translateY(-10px);
+  transition: 0.2s;
+}
+
 .navbar-burger-for-scroll {
   position: fixed;
   top: 50px;
@@ -951,9 +966,11 @@ div[id$='-error'] {
   left: 0;
   bottom: 0;
   z-index: 40;
-  height: 58px;
+  height: 100vh;
   overflow: auto;
   transition: all 0.3s ease 0s;
+  background: linear-gradient(180deg, #262D33 120px, rgba(38, 45, 51, 0.5) 100%);
+  padding: 20px 0 0 0;
 }
 
 .form-search {
@@ -1128,11 +1145,6 @@ div[id$='-error'] {
   display: block;
 }
 
-.navbar-bottom {
-  padding: 1px 6px 1px 2px;
-  background-color: #262D33;
-}
-
 .menu__link {
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -1172,16 +1184,16 @@ div[id$='-error'] {
   transition: all 0.3s ease 0s;
 }
 
-.navbar__burger.active > span {
+.navbar-top__burger.active > span {
   opacity: 0;
 }
 
-.navbar__burger.active::before {
+.navbar-top__burger.active::before {
   transform: rotate(45deg);
   top: 4px;
 }
 
-.navbar__burger.active::after {
+.navbar-top__burger.active::after {
   transform: rotate(-45deg);
   top: 4px;
 }
@@ -3768,6 +3780,10 @@ div[id$='-error'] {
     max-width: 700px;
   }
 
+  .navbar-bottom {
+    padding: 18px 0;
+  }
+
   .form-search {
     flex: 0 1 33%;
     min-height: auto;
@@ -3822,10 +3838,6 @@ div[id$='-error'] {
     height: 100%;
     max-width: 250px;
     min-height: auto;
-  }
-
-  .navbar-bottom {
-    padding: 18px 0;
   }
 
   .hot-list {
@@ -4188,6 +4200,23 @@ div[id$='-error'] {
     top: 110px;
   }
 
+  .navbar-bottom {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 40;
+    padding: 31px 0 48px 0;
+    height: 100vh;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+  }
+
+  .navbar-bottom--mobile-menu {
+    top: 50px;
+  }
+
   .form-search-input {
     font-size: 12px;
     line-height: 16px;
@@ -4214,23 +4243,6 @@ div[id$='-error'] {
 
   .mobile-block-invisible {
     display: none;
-  }
-
-  .navbar-bottom {
-    position: fixed;
-    top: -100%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 40;
-    padding: 31px 0 48px 0;
-    height: 100vh;
-    overflow: auto;
-    transition: all 0.3s ease 0s;
-  }
-
-  .navbar-bottom--mobile-menu {
-    top: 50px;
   }
 
   .navbar-top__burger {
