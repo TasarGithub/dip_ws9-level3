@@ -3634,6 +3634,7 @@ div[id$='-error'] {
     grid-row: 4/6;
     grid-column: 1/2;
     justify-self: start;
+    max-width: none;
   }
 
   .post-picture__img {
