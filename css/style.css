@@ -1674,7 +1674,7 @@ div[id$='-error'] {
   flex-direction: column;
   max-width: 263px;
   min-height: 370px;
-  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/articles/bg-artdesign.png") no-repeat center/cover;
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url("../img/articles/bg-artdesign.jpg") no-repeat center/cover;
 }
 
 .post-vertical__mark {
