@@ -157,6 +157,9 @@ $(document).ready(function () {
 var mySwiperCareers = new Swiper ('.swiper-container.swiper-container--careers', {
 	// Optional parameters
 	// direction: 'vertical',
+	autoplay: {
+    delay: 3000,
+  },
 	loop: true,
 	// autoHeight: true,
 	pagination: {
@@ -583,21 +586,21 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
 				$('.navbar-top__burger').toggleClass('active');
 		} else {
 			//если не видно то  не выводим - думаю это ошибка, юзеру непонятно что это и зачем. Пусть выводит в любом случае
-			if (!inViewportNavbarTop ) {
+			// if (!inViewportNavbarTop ) {
 				$('.navbar-bottom').toggleClass('navbar-burger-for-scroll');
 				// $('.navbar-bottom').toggleClass('navbar__bottom--mobile-menu');
 				$('.navbar-top__burger').toggleClass('active');
 				// $("body").toggleClass("fixed");
 				// $('body').toggleClass('body__lock');
-			} else {
-				if ($('.navbar-bottom').hasClass('navbar-burger-for-scroll')) {
-					$('.navbar-bottom').removeClass('navbar-burger-for-scroll');
-					$('.navbar-top__burger').removeClass('active');
-				} else {
-					$('.navbar-bottom').toggleClass('navbar-bottom--click-for-pc-up');
-					setTimeout(() => $('.navbar-bottom').toggleClass('navbar-bottom--click-for-pc-up'), 200);
-				}
-					// $('.navbar-top__burger').toggleClass('active');
+			// } else {
+			// 	if ($('.navbar-bottom').hasClass('navbar-burger-for-scroll')) {
+			// 		$('.navbar-bottom').removeClass('navbar-burger-for-scroll');
+			// 		$('.navbar-top__burger').removeClass('active');
+			// 	} else {
+			// 		// $('.navbar-bottom').toggleClass('navbar-bottom--click-for-pc-up');
+			// 		// setTimeout(() => $('.navbar-bottom').toggleClass('navbar-bottom--click-for-pc-up'), 200);
+			// 	}
+			// 		// $('.navbar-top__burger').toggleClass('active');
 	
 					
 					// $('.navbar-bottom').toggleClass('navbar-bottom--click-for-pc-up');
@@ -608,7 +611,7 @@ var mySwiperArticle = new Swiper ('.swiper-container.art-main__swiper-container'
 			// 	$('.navbar-bottom').toggleClass('navbar-burger-for-scroll');
 			// }
 	
-		}
+		//}
 	});
 
 
