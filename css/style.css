@@ -2846,7 +2846,7 @@ div[id$='-error'] {
   align-items: center;
 }
 
-.author-block__socnet .socialnet__item {
+.author-block__socnet .socialnet-item {
   margin: 0 5px;
 }
 
@@ -4163,6 +4163,10 @@ div[id$='-error'] {
     max-width: 100%;
   }
 
+  .author-block__socnet {
+    max-width: 100%;
+  }
+
   .more {
     padding: 30px 0 45px 0;
   }
@@ -4691,10 +4695,9 @@ div[id$='-error'] {
   }
 
   .hero-bottom__share {
-    flex: 0 0 100%;
+    flex: 0 0 auto;
     margin: 0 180px 0 0;
     height: 30px;
-    padding: 6px 0;
     font-size: 11px;
   }
 
@@ -4738,7 +4741,7 @@ div[id$='-error'] {
     justify-content: center;
   }
 
-  .author-block__socnet .socialnet__item {
+  .author-block__socnet .socialnet-item {
     margin: 2px;
   }
 

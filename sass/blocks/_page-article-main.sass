@@ -266,14 +266,16 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
-		& .socialnet__item
+		@media screen and ( max-width: 768px)
+			max-width: 100%
+		& .socialnet-item
 			margin: 0 5px
 			
 		@media screen and ( max-width: 576px)
 			flex-wrap: wrap
 			margin: 0 auto 34px
 			justify-content: center
-			& .socialnet__item
+			& .socialnet-item
 				margin: 2px
 		
 
