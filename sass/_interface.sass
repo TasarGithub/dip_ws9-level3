@@ -259,3 +259,29 @@
 	width: max-content
 	&__margin
 		margin: 0 0 5px 0
+
+.hover-link
+	@media(hover: hover) and (pointer: fine) 
+		&:hover
+			cursor: pointer
+			text-decoration: underline
+
+.hover-bg-grey-blue
+	@media(hover: hover) and (pointer: fine) 
+		&:hover
+			cursor: pointer
+			background-color: $grey-blue
+
+.hover-bg-grey-blue
+	@media(hover: hover) and (pointer: fine) 
+		&:hover
+			cursor: pointer
+			background-color: $blue
+
+.hover-border-grey-blue
+	@media(hover: hover) and (pointer: fine) 
+		&:hover
+			cursor: pointer
+			border: 4px solid $grey-blue
+
+

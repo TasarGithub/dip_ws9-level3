@@ -1033,12 +1033,17 @@ div[id$='-error'] {
   align-items: center;
 }
 
+.menu__item {
+  padding: 5px;
+}
+
 .menu__link {
   font-weight: Bold;
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
   line-height: 18px;
+  letter-spacing: 0.5px;
 }
 
 .subscribe-text-line:nth-child(1) {
@@ -1143,12 +1148,6 @@ div[id$='-error'] {
 
 .mobile-block-invisible {
   display: block;
-}
-
-.menu__link {
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 .navbar-top__burger {
@@ -1887,10 +1886,6 @@ div[id$='-error'] {
 
 .card:last-child {
   border: none;
-}
-
-.card:hover {
-  cursor: pointer;
 }
 
 .card__category {
@@ -2896,7 +2891,7 @@ div[id$='-error'] {
 }
 
 .right-block__margin {
-  margin: 134px 0  0;
+  margin: 134px 0	0;
 }
 
 .right-block__title {
@@ -3542,10 +3537,6 @@ div[id$='-error'] {
 }
 
 @media screen and (min-width: 992px) {
-  .swiper-article-button {
-    cursor: pointer;
-  }
-
   .load:hover {
     cursor: pointer;
   }
@@ -4929,6 +4920,26 @@ div[id$='-error'] {
     cursor: pointer;
   }
 
+  .hover-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .hover-bg-grey-blue:hover {
+    cursor: pointer;
+    background-color: #939699;
+  }
+
+  .hover-bg-grey-blue:hover {
+    cursor: pointer;
+    background-color: #4267B2;
+  }
+
+  .hover-border-grey-blue:hover {
+    cursor: pointer;
+    border: 4px solid #939699;
+  }
+
   .hot-item:hover {
     cursor: pointer;
   }
@@ -4947,6 +4958,10 @@ div[id$='-error'] {
 
   .hero-bottom__share:hover {
     background-color: rgba(147, 150, 153, 0.4);
+  }
+
+  .swiper-article-button {
+    cursor: pointer;
   }
 }
 

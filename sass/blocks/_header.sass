@@ -22,24 +22,24 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
-		padding: 0 0 0 0   
+		padding: 0 0 0 0
 		border-bottom: 1px solid $grey-for-border
 		// @media screen and ( max-width: 767px)
 		// 	flex-wrap: wrap
 		&--add-scroll-width
 		&__sections
-				display: flex
-				justify-content: space-between
-				align-items: center
-				max-width: 114px
-				width: 100%
-				min-height: 49px
-				border-right: 1px solid $grey-for-border
-				@media screen and ( max-width: 576px)
-					width: 18px
-					max-width: none
+			display: flex
+			justify-content: space-between
+			align-items: center
+			max-width: 114px
+			width: 100%
+			min-height: 49px
+			border-right: 1px solid $grey-for-border
+			@media screen and ( max-width: 576px)
+				width: 18px
+				max-width: none
 					//padding: 0 10px 0 0
-					border-right: none
+				border-right: none
 				
 		&__text-sections
 			font-weight: bold
@@ -109,7 +109,7 @@
 			height: 100vh
 			overflow: auto
 			transition: all 0.3s ease 0s
-		&--mobile-menu   //добавка этого класса, чтобы меню выехало
+		&--mobile-menu	 //добавка этого класса, чтобы меню выехало
 			top: 110px
 			@media screen and ( max-width: 767px)
 				// display: block
@@ -134,7 +134,7 @@
 		height: 100vh
 		overflow: auto
 		transition: all 0.3s ease 0s
-	&--mobile-menu   //добавка этого класса, чтобы меню выехало
+	&--mobile-menu	 //добавка этого класса, чтобы меню выехало
 		@media screen and ( max-width: 767px)
 			// display: block
 			top: 50px
@@ -146,20 +146,20 @@
 		transition: 0.2s
 
 .navbar-burger-for-scroll
-		position: fixed
+	position: fixed
 		//top: 78px
-		top: 50px
-		right: 0
-		left: 0
-		bottom: 0
-		z-index: 40
+	top: 50px
+	right: 0
+	left: 0
+	bottom: 0
+	z-index: 40
 		//padding: 31px 0 48px 0
-		height: 100vh
-		overflow: auto
-		transition: all 0.3s ease 0s
+	height: 100vh
+	overflow: auto
+	transition: all 0.3s ease 0s
 		// background-color: transparent
-		background: linear-gradient(180deg, #262D33 120px, rgba(38, 45, 51, 0.5) 100%)
-		padding: 20px 0 0 0
+	background: linear-gradient(180deg, #262D33 120px, rgba(38, 45, 51, 0.5) 100%)
+	padding: 20px 0 0 0
 
 
 
@@ -253,6 +253,7 @@
 		// align-items: center
 		justify-content: center
 	&__item
+		padding: 5px
 		@media screen and ( max-width: 767px)
 			margin: 0 0 20px 0
 
@@ -263,6 +264,10 @@
 	color: $light
 	text-transform: uppercase
 	line-height: 18px
+	letter-spacing: 0.5px
+
+
+
 	@media screen and ( max-width: 992px)
 		font-size: 12px
 		line-height: 15px
@@ -297,7 +302,7 @@
 	color: $text-color
 	@media screen and ( max-width: 767px)
 		justify-content: flex-end
-		flex:  0 0 35% 
+		flex: 0 0 35% 
 		width: auto
 	&__text
 		font-size: 14px
@@ -444,10 +449,6 @@
 
 
 
-.menu__link
-	letter-spacing: 0.5px
-	text-transform: uppercase
-	color: $light
 
 
 		// 	width: 18px
