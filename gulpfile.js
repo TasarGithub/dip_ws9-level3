@@ -1,4 +1,9 @@
-const {src, dest, watch,series} =  require('gulp');
+const {
+	src,
+	dest,
+	watch,
+	series
+} = require('gulp');
 const browserSync = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
@@ -17,44 +22,46 @@ const fileinclude = require('gulp-file-include');
 
 // Compile sass into CSS & auto-inject into browsers
 function servSass() {
-  return src("./sass/**/*.sass", "./sass/**/*.scss")
-      .pipe(wait(400))
-			.pipe(sass())
-			.pipe(group_media())
-      //восстановить - убрать комменты
-      // .pipe(autoprefixer({
-      //   cascade: false
-      // }))
-      .pipe(dest("./css"))
-      .pipe(browserSync.stream());
+	return src("./sass/**/*.sass", "./sass/**/*.scss")
+		.pipe(wait(400))
+		.pipe(sass())
+		.pipe(group_media())
+		//восстановить - убрать комменты
+		.pipe(autoprefixer({
+			cascade: false
+		}))
+		.pipe(dest("./css"))
+		.pipe(browserSync.stream());
 }
 
 // Static server
 function bs() {
-  servSass ();
-  browserSync.init({
-      server: {
-          baseDir: "./"
-      }
-  });
-  watch("./*.html").on('change', browserSync.reload);
-  watch("./sass/**/*.sass").on('change', servSass);
-  watch("./sass/**/*.scss").on('change', servSass);
-  watch("./js/*.js").on('change', browserSync.reload);
-  watch("./*.html").on('change', html);
-  //watch("./sass/**/*.sass").on('change', buildCSS); вернуть
-  //watch("./js/*.js").on('change', buildJS);  вернуть
-  // series(buildCSS, buildJS, html);
+	servSass();
+	browserSync.init({
+		server: {
+			baseDir: "./"
+		}
+	});
+	watch("./*.html").on('change', browserSync.reload);
+	watch("./sass/**/*.sass").on('change', servSass);
+	watch("./sass/**/*.scss").on('change', servSass);
+	watch("./js/*.js").on('change', browserSync.reload);
+	watch("./*.html").on('change', html);
+	//watch("./sass/**/*.sass").on('change', buildCSS); вернуть
+	//watch("./js/*.js").on('change', buildJS);  вернуть
+	// series(buildCSS, buildJS, html);
 }
 
 
 function minifyCss() {
-  return src('css/*.+(css|!min.css)')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(dest('dist/'));
+	return src('css/*.+(css|!min.css)')
+		.pipe(cleanCSS({
+			compatibility: 'ie8'
+		}))
+		.pipe(rename({
+			suffix: '.min'
+		}))
+		.pipe(dest('dist/'));
 }
 
 // gulp.task('minify-css', () => {
@@ -67,26 +74,26 @@ function minifyCss() {
 // });
 //
 
-  // function buildCSS() {
-  //   src('css/*.+(css|!min.css)')
-  //     .pipe(cleanCSS({compatibility: 'ie8'}))
-  //     // .pipe(rename({
-  //     //   suffix: '.min'
-  //     // }))
-  //     .pipe(dest('dist/css/'));
-  //   // done();
-  // }
+// function buildCSS() {
+//   src('css/*.+(css|!min.css)')
+//     .pipe(cleanCSS({compatibility: 'ie8'}))
+//     // .pipe(rename({
+//     //   suffix: '.min'
+//     // }))
+//     .pipe(dest('dist/css/'));
+//   // done();
+// }
 
-  // function buildJS() {
-  //   src(['js/**.js','!js/**.min.js'])
-  //     .pipe(minify({ext:{min:'.js'},
-  //         noSource: true
-  //     }))
-  //     .pipe(dest('dist/js/'));
+// function buildJS() {
+//   src(['js/**.js','!js/**.min.js'])
+//     .pipe(minify({ext:{min:'.js'},
+//         noSource: true
+//     }))
+//     .pipe(dest('dist/js/'));
 
-  //   src('js/**.min.js').pipe(dest('dist/js/'));
-  //   // done();
-  // }
+//   src('js/**.min.js').pipe(dest('dist/js/'));
+//   // done();
+// }
 
 
 
@@ -106,32 +113,37 @@ function minifyCss() {
 function html() {
 	src('**html')
 		.pipe(fileinclude())
-    // .pipe(htmlmin({ collapseWhitespace: true })) временно
-    .pipe(dest('dist/'));
-  // done();
+		// .pipe(htmlmin({ collapseWhitespace: true })) временно
+		.pipe(dest('dist/'));
+	// done();
 }
 
 
 
 function buildCssDone(done) {
-  src('css/*.+(css|!min.css)')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    // .pipe(rename({
-    //   suffix: '.min'
-    // }))
-    .pipe(dest('dist/css/'));
-  done();
+	src('css/*.+(css|!min.css)')
+		.pipe(cleanCSS({
+			compatibility: 'ie8'
+		}))
+		// .pipe(rename({
+		//   suffix: '.min'
+		// }))
+		.pipe(dest('dist/css/'));
+	done();
 }
 
 function buildJsDone(done) {
-  src(['js/**.js','!js/**.min.js'])
-    .pipe(minify({ext:{min:'.js'},
-        noSource: true
-    }))
-    .pipe(dest('dist/js/'));
+	src(['js/**.js', '!js/**.min.js'])
+		.pipe(minify({
+			ext: {
+				min: '.js'
+			},
+			noSource: true
+		}))
+		.pipe(dest('dist/js/'));
 
-  src('js/**.min.js').pipe(dest('dist/js/'));
-  done();
+	src('js/**.min.js').pipe(dest('dist/js/'));
+	done();
 }
 
 // вариант валеры на всякий случай
@@ -150,25 +162,25 @@ function buildJsDone(done) {
 function htmlDone(done) {
 	src('**html')
 		.pipe(fileinclude())
-    // .pipe(htmlmin({ collapseWhitespace: true })) временно
-    .pipe(dest('dist/'));
-  done();
+		// .pipe(htmlmin({ collapseWhitespace: true })) временно
+		.pipe(dest('dist/'));
+	done();
 }
 
 
 
 function php(done) {
-  src('**.php')
-    .pipe(dest('dist/'));
-  src('phpmailer/**/**')
-    .pipe(dest('dist/phpmailer'));
-  done();
+	src('**.php')
+		.pipe(dest('dist/'));
+	src('phpmailer/**/**')
+		.pipe(dest('dist/phpmailer'));
+	done();
 }
 
 function fonts(done) {
-  src('fonts/**/**')
-    .pipe(dest('dist/fonts'));
-  done();
+	src('fonts/**/**')
+		.pipe(dest('dist/fonts'));
+	done();
 }
 
 

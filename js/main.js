@@ -157,9 +157,9 @@ $(document).ready(function () {
 	var mySwiperCareers = new Swiper('.swiper-container.swiper-container--careers', {
 		// Optional parameters
 		// direction: 'vertical',
-		autoplay: {
-			delay: 3000,
-		},
+		// autoplay: {
+		// 	delay: 3000,
+		// },
 		loop: true,
 		// autoHeight: true,
 		pagination: {
