@@ -1033,10 +1033,6 @@ div[id$='-error'] {
   align-items: center;
 }
 
-.menu__item {
-  padding: 5px;
-}
-
 .menu__link {
   font-weight: Bold;
   text-decoration: none;
@@ -4921,6 +4917,11 @@ div[id$='-error'] {
     cursor: pointer;
   }
 
+  .category:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
   .hover-link:hover {
     cursor: pointer;
     text-decoration: underline;
@@ -4943,6 +4944,11 @@ div[id$='-error'] {
 
   .hover-border-grey-blue:hover {
     border: 4px solid #939699;
+  }
+
+  .menu__item:hover {
+    cursor: pointer;
+    text-decoration: underline;
   }
 
   .hot-item:hover {

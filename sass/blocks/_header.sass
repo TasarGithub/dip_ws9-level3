@@ -253,7 +253,11 @@
 		// align-items: center
 		justify-content: center
 	&__item
-		padding: 5px
+		// padding: 5px
+		@media(hover: hover) and (pointer: fine) 
+			&:hover
+				cursor: pointer
+				text-decoration: underline
 		@media screen and ( max-width: 767px)
 			margin: 0 0 20px 0
 
