@@ -4942,7 +4942,6 @@ div[id$='-error'] {
   }
 
   .hover-border-grey-blue:hover {
-    cursor: pointer;
     border: 4px solid #939699;
   }
 
