@@ -4913,6 +4913,11 @@ div[id$='-error'] {
     cursor: pointer;
   }
 
+  .btn:hover {
+    cursor: pointer;
+    background-color: #4267B2;
+  }
+
   .favorit:hover {
     cursor: pointer;
   }
