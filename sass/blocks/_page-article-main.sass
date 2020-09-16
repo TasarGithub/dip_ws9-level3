@@ -267,9 +267,18 @@
 		justify-content: space-between
 		align-items: center
 		@media screen and ( max-width: 768px)
-			max-width: 100%
+			// max-width: 100%
+			justify-content: center
+			& .socialnet-item
+				margin: 0 5px
 		& .socialnet-item
-			margin: 0 5px
+			@media(hover: hover) and (pointer: fine) 
+				&:hover
+					cursor: pointer
+					background-color: $grey-blue
+					border-radius: 50%
+
+
 			
 		@media screen and ( max-width: 576px)
 			flex-wrap: wrap

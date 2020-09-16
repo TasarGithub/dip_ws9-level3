@@ -279,12 +279,11 @@
 		&:hover
 			cursor: pointer
 			background-color: $grey-blue
+			color: $light
+			&>a
+				color: $light
 
-.hover-bg-grey-blue
-	@media(hover: hover) and (pointer: fine) 
-		&:hover
-			cursor: pointer
-			background-color: $blue
+
 
 .hover-bg-blue
 	@media(hover: hover) and (pointer: fine) 
@@ -298,4 +297,8 @@
 			// cursor: pointer
 			border: 4px solid $grey-blue
 
-
+.hover-font-bold
+	@media(hover: hover) and (pointer: fine) 
+		&:hover
+			// cursor: pointer
+			font-weight: bold

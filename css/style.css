@@ -2841,10 +2841,6 @@ div[id$='-error'] {
   align-items: center;
 }
 
-.author-block__socnet .socialnet-item {
-  margin: 0 5px;
-}
-
 .author-block__follow {
   font-weight: bold;
   color: #262D33;
@@ -4131,7 +4127,11 @@ div[id$='-error'] {
   }
 
   .author-block__socnet {
-    max-width: 100%;
+    justify-content: center;
+  }
+
+  .author-block__socnet .socialnet-item {
+    margin: 0 5px;
   }
 
   .more {
@@ -4935,11 +4935,11 @@ div[id$='-error'] {
   .hover-bg-grey-blue:hover {
     cursor: pointer;
     background-color: #939699;
+    color: #ffffff;
   }
 
-  .hover-bg-grey-blue:hover {
-    cursor: pointer;
-    background-color: #4267B2;
+  .hover-bg-grey-blue:hover > a {
+    color: #ffffff;
   }
 
   .hover-bg-blue:hover {
@@ -4949,6 +4949,10 @@ div[id$='-error'] {
 
   .hover-border-grey-blue:hover {
     border: 4px solid #939699;
+  }
+
+  .hover-font-bold:hover {
+    font-weight: bold;
   }
 
   .menu__item:hover {
@@ -4981,8 +4985,33 @@ div[id$='-error'] {
     background-color: rgba(147, 150, 153, 0.4);
   }
 
+  .author-block__socnet .socialnet-item:hover {
+    cursor: pointer;
+    background-color: #939699;
+    border-radius: 50%;
+  }
+
   .swiper-article-button {
     cursor: pointer;
+  }
+
+  .big-round:hover {
+    cursor: pointer;
+    background-color: #E7D9FF;
+    border-radius: 50%;
+  }
+
+  .more-card:hover {
+    cursor: pointer;
+  }
+
+  .more__img:hover {
+    border: 4px solid #939699;
+  }
+
+  .more__title:hover {
+    cursor: pointer;
+    text-decoration: underline;
   }
 }
 
