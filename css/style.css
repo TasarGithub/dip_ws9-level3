@@ -4955,6 +4955,11 @@ div[id$='-error'] {
     cursor: pointer;
   }
 
+  .footer-top-list__item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
   .hero-bottom__clock:hover {
     opacity: 1;
   }
