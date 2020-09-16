@@ -4935,6 +4935,11 @@ div[id$='-error'] {
     background-color: #4267B2;
   }
 
+  .hover-bg-blue:hover {
+    cursor: pointer;
+    background-color: #4267B2;
+  }
+
   .hover-border-grey-blue:hover {
     cursor: pointer;
     border: 4px solid #939699;
