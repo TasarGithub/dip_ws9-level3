@@ -24,7 +24,7 @@
 		
 		border-right: 1px solid $dark-for-border
 		padding: 0 25px 0 0
-		@media screen and ( min-width: 992px)
+		@media(hover: hover) and (pointer: fine)
 			&:hover
 				cursor: pointer
 		&:nth-child(2)
@@ -64,14 +64,13 @@
 			border-right: none
 			@media screen and ( max-width: 1200px)
 				& .hot-item__hot-link-last
-				margin: 0 -15px 0 0
+					margin: 0 -15px 0 0
 				@media screen and ( max-width: 620px)
 					margin: 0
 			
 
 		@media screen and ( max-width: 767px)
-				// border-right: 1px solid $dark-for-border
-				border-bottom: 1px solid $dark-for-border
+			border-bottom: 1px solid $dark-for-border
 		@media screen and ( max-width: 576px)
 			margin: 0 auto 10px auto
 

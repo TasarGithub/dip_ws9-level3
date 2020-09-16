@@ -1,8 +1,8 @@
 *, *::before, *::after
-  box-sizing: border-box
+	box-sizing: border-box
 
 html 
-  font-size:  14px
+	font-size: 14px
 body
 	font-family: 'Lato', sans-serif
 	font-size: 1rem
@@ -17,21 +17,21 @@ body
 	// 	overflow: hidden
 .fixed 
 	position: fixed //*позицианируем чтобы исчез скролл*/
-	width: 100%  //*что бы верстка не складывалась по ширине*/
+	width: 100%	//*что бы верстка не складывалась по ширине*/
 
 
 // [data-aload] 
 // 	background-image: none !important
 
 img 
-  max-width: 100%
+	max-width: 100%
 
 a
 	text-decoration: none
 	color: inherit
 
 input
-  outline-style: none
+	outline-style: none
 
 h1, h2, h3, h4, strong
 	margin: 0
@@ -65,7 +65,7 @@ button
 	outline: none
 	border: none
 	background-color: transparent
-	@media screen and ( min-width: 992px)
+	@media(hover: hover) and (pointer: fine)
 		&:hover
 			cursor: pointer
 
@@ -80,19 +80,19 @@ button
 	border-radius: 6px
 
 .invalid
-  color: tomato
+	color: tomato
 
 input
-  &.invalid
-    border-bottom: 1px solid tomato
+	&.invalid
+		border-bottom: 1px solid tomato
 
 div[class$='input-group']
-  position: relative
+	position: relative
 
 div[id$='-error']
-  position: absolute
-  right: 0
-  top: -15px
+	position: absolute
+	right: 0
+	top: -15px
 
 .form
 	position: relative
