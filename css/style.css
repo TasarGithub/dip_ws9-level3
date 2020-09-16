@@ -2352,6 +2352,7 @@ div[id$='-error'] {
 }
 
 .footer-top-list__item {
+  padding: 5px 10px;
   margin: 0 0 19px 0;
 }
 
@@ -2391,7 +2392,7 @@ div[id$='-error'] {
 }
 
 .footer-middle__logo-circle {
-  margin: 0 30px 10px  0;
+  margin: 0 30px 10px	0;
 }
 
 .footer-middle-menu {
